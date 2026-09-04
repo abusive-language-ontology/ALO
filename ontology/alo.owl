@@ -1,0 +1,4748 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://llod.jerteh.rs/alo/alo.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://llod.jerteh.rs/alo/alo.owl"
+     versionIRI="http://llod.jerteh.rs/alo/alo.owl/1.0.0">
+    <Prefix name="" IRI="http://llod.jerteh.rs/alo/alo.owl#"/>
+    <Prefix name="alo" IRI="http://llod.jerteh.rs/alo/alo.owl#"/>
+    <Prefix name="nif" IRI="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="prov" IRI="http://www.w3.org/ns/prov#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="ontolex" IRI="http://www.w3.org/ns/lemon/ontolex#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:abstract"/>
+        <Literal xml:lang="en">The ontology of abusive speech is designed for publishing results of the abusive language annotation process in a structured form. The goal is to have a placeholder for different dataset formats, to support diverse abusive language detection methodologies and content providers.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+        <Literal xml:lang="en">2025-03-01</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+        <Literal xml:lang="en">Danka Jokic, University of Belgrade</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+        <Literal xml:lang="en">The ontology of abusive speech is designed for publishing results of the abusive language annotation process in a structured form. The goal is to have a placeholder for different dataset formats, to support diverse abusive language detection methodologies and content providers.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:license"/>
+        <IRI>https://creativecommons.org/licenses/by-nc-sa/4.0/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:modified"/>
+        <Literal xml:lang="en">02-07-2026</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:publisher"/>
+        <Literal xml:lang="en">University of Belgrade</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:rightsHolder"/>
+        <Literal xml:lang="en">Danka Jokic</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+        <Literal xml:lang="en">Abusive Language Ontology (Alo)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal xml:lang="en">alo</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal xml:lang="en">http://llod.jerteh.rs/alo/alo.owl#</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">The ontology of abusive speech is designed for publishing results of the abusive language annotation process in a structured form. The goal is to have a placeholder for different dataset formats, to support diverse abusive language detection methodologies and content providers.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>https://github.com/danka-jokic/ALO</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en">1.0.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Ableism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AbuseCategory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AbusiveLanguageAnalysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AbusiveSpeech"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AbusiveText"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AbusivenessSet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adultism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Age"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ageism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Albanian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alcoholism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Annotation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnnotationLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AntiAlbanian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AntiCatholic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AntiCroatian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AntiGerman"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AntiImmigrant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AntiLGBTQPlus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AntiMuslim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AntiNonMuslim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AntiOrthodox"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AntiRefugee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AntiSemitism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AntiSerb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antigypsysm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assistant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Behaviour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biphobia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BisexualPerson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bosniac"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bystander"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CatchphraseFillerIdiom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Catholic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Classism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CognitiveDisability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Colorism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Context"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CriminalActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Croatian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dataset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DatasetEntry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Defamation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Derogation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Derogatory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Desease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Discrimination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disparagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disrespect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DrugAddiction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ephebiphobia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ethnicity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FemaleGenitalia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FemaleImmigrant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GenderIdentity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#German"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gerontophobia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Group"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HateConcept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HateSpeech"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hearing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Height"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Homophobia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HomosexualPerson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hurt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Immigrant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Incitement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Insult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intelligence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intention"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Irony"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jew"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LexicalSourceConcept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LexicalUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lookism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaleGenitalia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Malediction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Man"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metaphor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Misandry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Misogyny"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muslim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nationality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NewsArticle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonUrbanPerson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Obesity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Occupation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Offense"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OffensiveSpeech"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OldPerson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Opinion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Orthodox"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherTarget"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParticipantRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Perpetrator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalAppearance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalDisability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PoliticalBeliefs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Profanity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prostitution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Race"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Racism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Refugee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegionalIdentity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReligiousBeliefs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReligiousHatred"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RhetoricalFigure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Roma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sarcasm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SayingsProverbs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Segregation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sentiment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Serb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SevenDeadlySins"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sexism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SexualOrientation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shorty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sizeism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SkinColour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Slur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialMedia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpeechIntrusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stigmatization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SwearWord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tallness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Target"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TargetGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TargetType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thinness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Threat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Upstander"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Victim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Violence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Walking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Woman"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wordplay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Xenophobia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YoungPerson"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="nif:String"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontolex:LexicalEntry"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ontolex:LexicalSense"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="prov:Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="prov:Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="prov:Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="prov:Role"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#analysisPerformedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#annotationPerformedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToTargetGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containsEntry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAbuseCategory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAbusiveSpeech"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAbusiveText"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAbusivenessAnalysis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAnalysis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAnnotation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAnnotationLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHateConcept"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIntenton"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLexicalRootIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLexicalUnitType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNIFAnchor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSentiment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTarget"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTargetGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTargetType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involvesRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDirectedAgainst"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isHateConceptOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTargetTypeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#occursInContext"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#promotesAbusiveLanguage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#refersToLexicalEntry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#refersToLexicalSense"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#triggersIncitement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesRethoricalFigure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="prov:generated"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="prov:influenced"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#abusiveBoolean"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#abusiveText"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#abusivenessScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#awareness"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#datasetSource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#disturbingContentBoolean"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#entryId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#explicitness"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#expression"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasThreat"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#labeledTextEmbedding"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#negativeConnotation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sourceText"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#stereotype"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbCoSer2444"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbCoSerCorpus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbCoSerToxicSpansAnnotation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbCoSerWholeTextAnnotation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HateSpeech"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Negative"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Neutral"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Positive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Profanity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SentenceLevel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SexualOrientation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TextSpanLevel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WholeTextLevel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2444AbusiveSpeechToxicSpansSet1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2444AbusiveSpeechToxicSpansSet2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2444AbusivenessAnalysis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2444AbusivenessSet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2444ToxicSpan1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2444ToxicSpan2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2444ToxicSpansSet2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2444WholeAbusiveText"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2444WholeTextAnalysis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2444WholeTextSet1"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:abstract"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:modified"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:publisher"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:rightsHolder"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:source"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:imports"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="prov:category"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="prov:component"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="prov:constraints"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="prov:definition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="prov:dm"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="prov:editorialNote"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="prov:inverse"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="prov:n"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="prov:sharesDefinitionWith"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Ableism"/>
+        <Class IRI="#HateConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ableism"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#Disability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AbusiveLanguageAnalysis"/>
+        <Class abbreviatedIRI="prov:Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AbusiveSpeech"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#abusivenessScore"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:float"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AbusivenessSet"/>
+        <Class abbreviatedIRI="prov:Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AbusivenessSet"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#abusivenessScore"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:float"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adultism"/>
+        <Class IRI="#Ageism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Age"/>
+        <Class IRI="#TargetType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ageism"/>
+        <Class IRI="#HateConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ageism"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#Age"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Albanian"/>
+        <Class IRI="#Nationality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alcoholism"/>
+        <Class IRI="#Behaviour"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Animal"/>
+        <Class IRI="#LexicalSourceConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiAlbanian"/>
+        <Class IRI="#Xenophobia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiAlbanian"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#Albanian"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiCatholic"/>
+        <Class IRI="#ReligiousHatred"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiCatholic"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#Catholic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiCroatian"/>
+        <Class IRI="#Xenophobia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiCroatian"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#Croatian"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiGerman"/>
+        <Class IRI="#Xenophobia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiGerman"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#German"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiImmigrant"/>
+        <Class IRI="#Xenophobia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiImmigrant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#Immigrant"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiLGBTQPlus"/>
+        <Class IRI="#HateConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiLGBTQPlus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#SexualOrientation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiMuslim"/>
+        <Class IRI="#ReligiousHatred"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiMuslim"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#Muslim"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiNonMuslim"/>
+        <Class IRI="#ReligiousHatred"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiNonMuslim"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <ObjectUnionOf>
+                <Class IRI="#Catholic"/>
+                <Class IRI="#Orthodox"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiOrthodox"/>
+        <Class IRI="#ReligiousHatred"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiOrthodox"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#Orthodox"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiRefugee"/>
+        <Class IRI="#Xenophobia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiRefugee"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#Refugee"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiSemitism"/>
+        <Class IRI="#ReligiousHatred"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiSemitism"/>
+        <Class IRI="#Xenophobia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiSemitism"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#Jew"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiSerb"/>
+        <Class IRI="#Xenophobia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AntiSerb"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#Serb"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antigypsysm"/>
+        <Class IRI="#Racism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antigypsysm"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#Roma"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assistant"/>
+        <Class IRI="#ParticipantRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Behaviour"/>
+        <Class IRI="#TargetType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biphobia"/>
+        <Class IRI="#AntiLGBTQPlus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biphobia"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#BisexualPerson"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BisexualPerson"/>
+        <Class IRI="#SexualOrientation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bosniac"/>
+        <Class IRI="#Nationality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bystander"/>
+        <Class IRI="#ParticipantRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CatchphraseFillerIdiom"/>
+        <Class IRI="#LexicalUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Catholic"/>
+        <Class IRI="#ReligiousBeliefs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Classism"/>
+        <Class IRI="#HateConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Classism"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#SocialStatus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CognitiveDisability"/>
+        <Class IRI="#Disability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Colorism"/>
+        <Class IRI="#Lookism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Colorism"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#SkinColour"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CriminalActivity"/>
+        <Class IRI="#Behaviour"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Croatian"/>
+        <Class IRI="#Nationality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Defamation"/>
+        <Class IRI="#Intention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Derogation"/>
+        <Class IRI="#Intention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Derogatory"/>
+        <Class IRI="#AbuseCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Desease"/>
+        <Class IRI="#TargetType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disability"/>
+        <Class IRI="#TargetType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Discrimination"/>
+        <Class IRI="#Intention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disparagement"/>
+        <Class IRI="#Intention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disrespect"/>
+        <Class IRI="#Intention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DrugAddiction"/>
+        <Class IRI="#Behaviour"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ephebiphobia"/>
+        <Class IRI="#Ageism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ethnicity"/>
+        <Class IRI="#TargetType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FemaleGenitalia"/>
+        <Class IRI="#LexicalSourceConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FemaleImmigrant"/>
+        <Class IRI="#Immigrant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gender"/>
+        <Class IRI="#TargetType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GenderIdentity"/>
+        <Class IRI="#TargetType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#German"/>
+        <Class IRI="#Nationality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gerontophobia"/>
+        <Class IRI="#Ageism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Group"/>
+        <Class IRI="#Target"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HateSpeech"/>
+        <Class IRI="#AbuseCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HateSpeech"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTarget"/>
+            <Class IRI="#Target"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HateSpeech"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTargetGroup"/>
+            <Class IRI="#TargetGroup"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hearing"/>
+        <Class IRI="#PhysicalDisability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Height"/>
+        <Class IRI="#PhysicalAppearance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Homophobia"/>
+        <Class IRI="#AntiLGBTQPlus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Homophobia"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#HomosexualPerson"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HomosexualPerson"/>
+        <Class IRI="#SexualOrientation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hurt"/>
+        <Class IRI="#Incitement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Immigrant"/>
+        <Class IRI="#TargetType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Insult"/>
+        <Class IRI="#Intention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intelligence"/>
+        <Class IRI="#CognitiveDisability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Irony"/>
+        <Class IRI="#RhetoricalFigure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jew"/>
+        <Class IRI="#Nationality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Language"/>
+        <Class IRI="#TargetType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lookism"/>
+        <Class IRI="#HateConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lookism"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#PhysicalAppearance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaleGenitalia"/>
+        <Class IRI="#LexicalSourceConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Malediction"/>
+        <Class IRI="#AbuseCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Man"/>
+        <Class IRI="#Gender"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metaphor"/>
+        <Class IRI="#RhetoricalFigure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Misandry"/>
+        <Class IRI="#Sexism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Misandry"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#Man"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Misogyny"/>
+        <Class IRI="#Sexism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Misogyny"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#Woman"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Muslim"/>
+        <Class IRI="#ReligiousBeliefs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nationality"/>
+        <Class IRI="#TargetType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NewsArticle"/>
+        <Class IRI="#Context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonUrbanPerson"/>
+        <Class IRI="#TargetType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Obesity"/>
+        <Class IRI="#Weight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Occupation"/>
+        <Class IRI="#TargetType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Offense"/>
+        <Class IRI="#Intention"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OffensiveSpeech"/>
+        <Class IRI="#AbuseCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OldPerson"/>
+        <Class IRI="#Age"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Opinion"/>
+        <Class IRI="#TargetType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organization"/>
+        <Class IRI="#Target"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Orthodox"/>
+        <Class IRI="#ReligiousBeliefs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherTarget"/>
+        <Class IRI="#Target"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParticipantRole"/>
+        <Class abbreviatedIRI="prov:Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Perpetrator"/>
+        <Class IRI="#ParticipantRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#Target"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalAppearance"/>
+        <Class IRI="#TargetType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalDisability"/>
+        <Class IRI="#Disability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plant"/>
+        <Class IRI="#LexicalSourceConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoliticalBeliefs"/>
+        <Class IRI="#TargetType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Profanity"/>
+        <Class IRI="#AbuseCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Profanity"/>
+        <ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasTarget"/>
+                <Class IRI="#Target"/>
+            </ObjectSomeValuesFrom>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Profanity"/>
+        <ObjectComplementOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasTargetGroup"/>
+                <Class IRI="#TargetGroup"/>
+            </ObjectSomeValuesFrom>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prostitution"/>
+        <Class IRI="#Occupation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Race"/>
+        <Class IRI="#TargetType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Racism"/>
+        <Class IRI="#HateConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Racism"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#Race"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refugee"/>
+        <Class IRI="#TargetType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegionalIdentity"/>
+        <Class IRI="#TargetType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReligiousBeliefs"/>
+        <Class IRI="#TargetType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReligiousHatred"/>
+        <Class IRI="#HateConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReligiousHatred"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#ReligiousBeliefs"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Roma"/>
+        <Class IRI="#Ethnicity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sarcasm"/>
+        <Class IRI="#RhetoricalFigure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SayingsProverbs"/>
+        <Class IRI="#LexicalUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Segregation"/>
+        <Class IRI="#Incitement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Serb"/>
+        <Class IRI="#Nationality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SevenDeadlySins"/>
+        <Class IRI="#Behaviour"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sexism"/>
+        <Class IRI="#HateConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sexism"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#Gender"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SexualOrientation"/>
+        <Class IRI="#TargetType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shorty"/>
+        <Class IRI="#Height"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sight"/>
+        <Class IRI="#PhysicalDisability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sizeism"/>
+        <Class IRI="#Lookism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sizeism"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#Weight"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SkinColour"/>
+        <Class IRI="#TargetType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Slur"/>
+        <Class IRI="#AbuseCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialMedia"/>
+        <Class IRI="#Context"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialStatus"/>
+        <Class IRI="#TargetType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpeechIntrusion"/>
+        <Class IRI="#Behaviour"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stigmatization"/>
+        <Class IRI="#HateConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stigmatization"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <Class IRI="#Behaviour"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SwearWord"/>
+        <Class IRI="#Profanity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tallness"/>
+        <Class IRI="#Height"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TargetGroup"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTargetType"/>
+            <Class IRI="#TargetType"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thinness"/>
+        <Class IRI="#Weight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Threat"/>
+        <Class IRI="#AbuseCategory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Upstander"/>
+        <Class IRI="#ParticipantRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Victim"/>
+        <Class IRI="#ParticipantRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Violence"/>
+        <Class IRI="#Incitement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Walking"/>
+        <Class IRI="#PhysicalAppearance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weight"/>
+        <Class IRI="#PhysicalAppearance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Woman"/>
+        <Class IRI="#Gender"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wordplay"/>
+        <Class IRI="#RhetoricalFigure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Xenophobia"/>
+        <Class IRI="#HateConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Xenophobia"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isDirectedAgainst"/>
+            <ObjectUnionOf>
+                <Class IRI="#Ethnicity"/>
+                <Class IRI="#Immigrant"/>
+                <Class IRI="#Nationality"/>
+                <Class IRI="#Refugee"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YoungPerson"/>
+        <Class IRI="#Age"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Adultism"/>
+        <Class IRI="#Ephebiphobia"/>
+        <Class IRI="#Gerontophobia"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Age"/>
+        <Class IRI="#Behaviour"/>
+        <Class IRI="#Gender"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Albanian"/>
+        <Class IRI="#Croatian"/>
+        <Class IRI="#German"/>
+        <Class IRI="#Jew"/>
+        <Class IRI="#Serb"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Alcoholism"/>
+        <Class IRI="#DrugAddiction"/>
+        <Class IRI="#SpeechIntrusion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Animal"/>
+        <Class IRI="#FemaleGenitalia"/>
+        <Class IRI="#MaleGenitalia"/>
+        <Class IRI="#Plant"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AntiAlbanian"/>
+        <Class IRI="#AntiCroatian"/>
+        <Class IRI="#AntiGerman"/>
+        <Class IRI="#AntiSemitism"/>
+        <Class IRI="#AntiSerb"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AntiCatholic"/>
+        <Class IRI="#AntiMuslim"/>
+        <Class IRI="#AntiNonMuslim"/>
+        <Class IRI="#AntiOrthodox"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AntiMuslim"/>
+        <Class IRI="#AntiNonMuslim"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Assistant"/>
+        <Class IRI="#Bystander"/>
+        <Class IRI="#Perpetrator"/>
+        <Class IRI="#Upstander"/>
+        <Class IRI="#Victim"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BisexualPerson"/>
+        <Class IRI="#HomosexualPerson"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Catholic"/>
+        <Class IRI="#Muslim"/>
+        <Class IRI="#Orthodox"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CognitiveDisability"/>
+        <Class IRI="#PhysicalDisability"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Defamation"/>
+        <Class IRI="#Derogation"/>
+        <Class IRI="#Discrimination"/>
+        <Class IRI="#Disparagement"/>
+        <Class IRI="#Disrespect"/>
+        <Class IRI="#Insult"/>
+        <Class IRI="#Offense"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Derogatory"/>
+        <Class IRI="#HateSpeech"/>
+        <Class IRI="#Profanity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Group"/>
+        <Class IRI="#Organization"/>
+        <Class IRI="#OtherTarget"/>
+        <Class IRI="#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Hearing"/>
+        <Class IRI="#Sight"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Height"/>
+        <Class IRI="#Walking"/>
+        <Class IRI="#Weight"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Homophobia"/>
+        <Class IRI="#Misandry"/>
+        <Class IRI="#Misogyny"/>
+        <Class IRI="#Racism"/>
+        <Class IRI="#Xenophobia"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Hurt"/>
+        <Class IRI="#Segregation"/>
+        <Class IRI="#Violence"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Irony"/>
+        <Class IRI="#Metaphor"/>
+        <Class IRI="#Sarcasm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Irony"/>
+        <Class IRI="#Metaphor"/>
+        <Class IRI="#Sarcasm"/>
+        <Class IRI="#Wordplay"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Man"/>
+        <Class IRI="#Woman"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Obesity"/>
+        <Class IRI="#Thinness"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#OldPerson"/>
+        <Class IRI="#YoungPerson"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Shorty"/>
+        <Class IRI="#Tallness"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="prov:Activity"/>
+        <Class abbreviatedIRI="prov:Entity"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#DatasetEntry"/>
+        <NamedIndividual IRI="#AbCoSer2444"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dataset"/>
+        <NamedIndividual IRI="#AbCoSerCorpus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Annotation"/>
+        <NamedIndividual IRI="#AbCoSerToxicSpansAnnotation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Annotation"/>
+        <NamedIndividual IRI="#AbCoSerWholeTextAnnotation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbusiveSpeech"/>
+        <NamedIndividual IRI="#Action"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HateSpeech"/>
+        <NamedIndividual IRI="#HateSpeech"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sentiment"/>
+        <NamedIndividual IRI="#Negative"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sentiment"/>
+        <NamedIndividual IRI="#Neutral"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sentiment"/>
+        <NamedIndividual IRI="#Positive"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profanity"/>
+        <NamedIndividual IRI="#Profanity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SexualOrientation"/>
+        <NamedIndividual IRI="#SexualOrientation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AnnotationLevel"/>
+        <NamedIndividual IRI="#TextSpanLevel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AnnotationLevel"/>
+        <NamedIndividual IRI="#WholeTextLevel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbusiveSpeech"/>
+        <NamedIndividual IRI="#2444AbusiveSpeechToxicSpansSet1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbusiveSpeech"/>
+        <NamedIndividual IRI="#2444AbusiveSpeechToxicSpansSet2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbusiveLanguageAnalysis"/>
+        <NamedIndividual IRI="#2444AbusivenessAnalysis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbusivenessSet"/>
+        <NamedIndividual IRI="#2444AbusivenessSet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbusiveText"/>
+        <NamedIndividual IRI="#2444ToxicSpan1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbusiveText"/>
+        <NamedIndividual IRI="#2444ToxicSpan2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbusivenessSet"/>
+        <NamedIndividual IRI="#2444ToxicSpansSet2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbusiveText"/>
+        <NamedIndividual IRI="#2444WholeAbusiveText"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbusiveLanguageAnalysis"/>
+        <NamedIndividual IRI="#2444WholeTextAnalysis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbusivenessSet"/>
+        <NamedIndividual IRI="#2444WholeTextSet1"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAbusivenessAnalysis"/>
+        <NamedIndividual IRI="#AbCoSer2444"/>
+        <NamedIndividual IRI="#2444AbusivenessAnalysis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAbusivenessAnalysis"/>
+        <NamedIndividual IRI="#AbCoSer2444"/>
+        <NamedIndividual IRI="#2444WholeTextAnalysis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#containsEntry"/>
+        <NamedIndividual IRI="#AbCoSerCorpus"/>
+        <NamedIndividual IRI="#AbCoSer2444"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAnalysis"/>
+        <NamedIndividual IRI="#AbCoSerToxicSpansAnnotation"/>
+        <NamedIndividual IRI="#2444AbusivenessAnalysis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAnnotationLevel"/>
+        <NamedIndividual IRI="#AbCoSerToxicSpansAnnotation"/>
+        <NamedIndividual IRI="#TextSpanLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAnalysis"/>
+        <NamedIndividual IRI="#AbCoSerWholeTextAnnotation"/>
+        <NamedIndividual IRI="#2444WholeTextAnalysis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAnnotationLevel"/>
+        <NamedIndividual IRI="#AbCoSerWholeTextAnnotation"/>
+        <NamedIndividual IRI="#WholeTextLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAbuseCategory"/>
+        <NamedIndividual IRI="#Action"/>
+        <NamedIndividual IRI="#HateSpeech"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAbuseCategory"/>
+        <NamedIndividual IRI="#Action"/>
+        <NamedIndividual IRI="#Profanity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTargetType"/>
+        <NamedIndividual IRI="#Action"/>
+        <NamedIndividual IRI="#SexualOrientation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAbuseCategory"/>
+        <NamedIndividual IRI="#2444AbusiveSpeechToxicSpansSet1"/>
+        <NamedIndividual IRI="#HateSpeech"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTargetType"/>
+        <NamedIndividual IRI="#2444AbusiveSpeechToxicSpansSet1"/>
+        <NamedIndividual IRI="#SexualOrientation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAbuseCategory"/>
+        <NamedIndividual IRI="#2444AbusiveSpeechToxicSpansSet2"/>
+        <NamedIndividual IRI="#Profanity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:generated"/>
+        <NamedIndividual IRI="#2444AbusivenessAnalysis"/>
+        <NamedIndividual IRI="#2444AbusivenessSet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:generated"/>
+        <NamedIndividual IRI="#2444AbusivenessAnalysis"/>
+        <NamedIndividual IRI="#2444ToxicSpansSet2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAbusiveSpeech"/>
+        <NamedIndividual IRI="#2444AbusivenessSet"/>
+        <NamedIndividual IRI="#2444AbusiveSpeechToxicSpansSet1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAbusiveText"/>
+        <NamedIndividual IRI="#2444AbusivenessSet"/>
+        <NamedIndividual IRI="#2444ToxicSpan1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAbusiveSpeech"/>
+        <NamedIndividual IRI="#2444ToxicSpansSet2"/>
+        <NamedIndividual IRI="#2444AbusiveSpeechToxicSpansSet2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAbusiveText"/>
+        <NamedIndividual IRI="#2444ToxicSpansSet2"/>
+        <NamedIndividual IRI="#2444ToxicSpan2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:generated"/>
+        <NamedIndividual IRI="#2444WholeTextAnalysis"/>
+        <NamedIndividual IRI="#2444WholeTextSet1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAbusiveSpeech"/>
+        <NamedIndividual IRI="#2444WholeTextSet1"/>
+        <NamedIndividual IRI="#Action"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAbusiveText"/>
+        <NamedIndividual IRI="#2444WholeTextSet1"/>
+        <NamedIndividual IRI="#2444WholeAbusiveText"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#entryId"/>
+        <NamedIndividual IRI="#AbCoSer2444"/>
+        <Literal>175151</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#sourceText"/>
+        <NamedIndividual IRI="#AbCoSer2444"/>
+        <Literal xml:lang="sr">ja obozavam pedere na instagramu koji nam u bio objasne kako oni nemaju drugu drustvenu mrezu da slucajno ne pomislimo kako imaju profil na grinderu i kako se ne daj boze jebu u dupe</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#abusiveBoolean"/>
+        <NamedIndividual IRI="#2444AbusivenessSet"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#abusiveText"/>
+        <NamedIndividual IRI="#2444ToxicSpan1"/>
+        <Literal xml:lang="sr">pedere</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#abusiveText"/>
+        <NamedIndividual IRI="#2444ToxicSpan2"/>
+        <Literal xml:lang="sr">jebu u dupe</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#abusiveBoolean"/>
+        <NamedIndividual IRI="#2444ToxicSpansSet2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#abusiveText"/>
+        <NamedIndividual IRI="#2444WholeAbusiveText"/>
+        <Literal xml:lang="sr">ja obozavam pedere na instagramu koji nam u bio objasne kako oni nemaju drugu drustvenu mrezu da slucajno ne pomislimo kako imaju profil na grinderu i kako se ne daj boze jebu u dupe</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#abusiveBoolean"/>
+        <NamedIndividual IRI="#2444WholeTextSet1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#belongsToTargetGroup"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#containsEntry"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAbuseCategory"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAbusiveSpeech"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAbusiveText"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAbusivenessAnalysis"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAnalysis"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAnnotationLevel"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasHateConcept"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasIntenton"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLexicalRootIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTarget"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTargetGroup"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTargetType"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#involvesRole"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#promotesAbusiveLanguage"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#triggersIncitement"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usesRethoricalFigure"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="prov:generated"/>
+        <ObjectProperty abbreviatedIRI="prov:influenced"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasHateConcept"/>
+        <ObjectProperty IRI="#isHateConceptOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasTargetType"/>
+        <ObjectProperty IRI="#isTargetTypeOf"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#analysisPerformedBy"/>
+        <Class IRI="#AbusiveLanguageAnalysis"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#annotationPerformedBy"/>
+        <Class IRI="#Annotation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsToTargetGroup"/>
+        <Class IRI="#TargetType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#containsEntry"/>
+        <Class IRI="#Dataset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAbuseCategory"/>
+        <Class IRI="#AbusiveSpeech"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAbusiveSpeech"/>
+        <Class IRI="#AbusivenessSet"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAbusiveText"/>
+        <Class IRI="#AbusivenessSet"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAbusivenessAnalysis"/>
+        <Class IRI="#DatasetEntry"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAnalysis"/>
+        <Class IRI="#Annotation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAnnotation"/>
+        <Class IRI="#Dataset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAnnotationLevel"/>
+        <Class IRI="#Annotation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHateConcept"/>
+        <Class IRI="#AbusiveSpeech"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasIntenton"/>
+        <Class IRI="#AbusiveSpeech"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLexicalRootIn"/>
+        <Class IRI="#AbusiveSpeech"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLexicalUnitType"/>
+        <Class abbreviatedIRI="ontolex:LexicalEntry"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasNIFAnchor"/>
+        <Class IRI="#AbusiveText"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSentiment"/>
+        <Class IRI="#DatasetEntry"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTarget"/>
+        <Class IRI="#AbusiveSpeech"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTargetGroup"/>
+        <Class IRI="#AbusiveSpeech"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTargetType"/>
+        <Class IRI="#AbusiveSpeech"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involvesRole"/>
+        <Class IRI="#AbusiveSpeech"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDirectedAgainst"/>
+        <Class IRI="#HateConcept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isHateConceptOf"/>
+        <Class IRI="#HateConcept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTargetTypeOf"/>
+        <Class IRI="#TargetType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#occursInContext"/>
+        <Class IRI="#Dataset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#promotesAbusiveLanguage"/>
+        <Class IRI="#Incitement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#refersToLexicalEntry"/>
+        <ObjectUnionOf>
+            <Class IRI="#AbusiveText"/>
+            <Class IRI="#DatasetEntry"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#refersToLexicalSense"/>
+        <ObjectUnionOf>
+            <Class IRI="#AbusiveText"/>
+            <Class IRI="#DatasetEntry"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#triggersIncitement"/>
+        <Class IRI="#AbusiveSpeech"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesRethoricalFigure"/>
+        <Class IRI="#AbusiveSpeech"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#AbusiveSpeech"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="prov:generated"/>
+        <Class IRI="#AbusiveLanguageAnalysis"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#analysisPerformedBy"/>
+        <Class abbreviatedIRI="prov:Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#annotationPerformedBy"/>
+        <Class abbreviatedIRI="prov:Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongsToTargetGroup"/>
+        <Class IRI="#TargetGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containsEntry"/>
+        <Class IRI="#DatasetEntry"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAbuseCategory"/>
+        <Class IRI="#AbuseCategory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAbusiveSpeech"/>
+        <Class IRI="#AbusiveSpeech"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAbusiveText"/>
+        <Class IRI="#AbusiveText"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAbusivenessAnalysis"/>
+        <Class IRI="#AbusiveLanguageAnalysis"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAnalysis"/>
+        <Class IRI="#AbusiveLanguageAnalysis"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAnnotation"/>
+        <Class IRI="#Annotation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAnnotationLevel"/>
+        <Class IRI="#AnnotationLevel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHateConcept"/>
+        <Class IRI="#HateConcept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIntenton"/>
+        <Class IRI="#Intention"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLexicalRootIn"/>
+        <Class IRI="#LexicalSourceConcept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLexicalUnitType"/>
+        <Class IRI="#LexicalUnit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasNIFAnchor"/>
+        <Class abbreviatedIRI="nif:String"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSentiment"/>
+        <Class IRI="#Sentiment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTarget"/>
+        <Class IRI="#Target"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTargetGroup"/>
+        <Class IRI="#TargetGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTargetType"/>
+        <Class IRI="#TargetType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#involvesRole"/>
+        <Class IRI="#ParticipantRole"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDirectedAgainst"/>
+        <Class IRI="#TargetType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isHateConceptOf"/>
+        <Class IRI="#AbusiveSpeech"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTargetTypeOf"/>
+        <Class IRI="#AbusiveSpeech"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#occursInContext"/>
+        <Class IRI="#Context"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#promotesAbusiveLanguage"/>
+        <Class IRI="#AbusiveSpeech"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#refersToLexicalEntry"/>
+        <Class abbreviatedIRI="ontolex:LexicalEntry"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#refersToLexicalSense"/>
+        <Class abbreviatedIRI="ontolex:LexicalSense"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#triggersIncitement"/>
+        <Class IRI="#Incitement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesRethoricalFigure"/>
+        <Class IRI="#RhetoricalFigure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#Context"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="prov:generated"/>
+        <Class IRI="#AbusivenessSet"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#abusiveBoolean"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#abusiveText"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#abusivenessScore"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#awareness"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#datasetSource"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#disturbingContentBoolean"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#entryId"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#explicitness"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasThreat"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#labeledTextEmbedding"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#negativeConnotation"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#sourceText"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#abusiveBoolean"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#abusiveBoolean"/>
+        <Class IRI="#AbusivenessSet"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#abusiveText"/>
+        <Class IRI="#AbusiveText"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#abusivenessScore"/>
+        <ObjectUnionOf>
+            <Class IRI="#AbusiveSpeech"/>
+            <Class IRI="#AbusivenessSet"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#awareness"/>
+        <Class IRI="#AbusivenessSet"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#datasetSource"/>
+        <Class IRI="#Dataset"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#disturbingContentBoolean"/>
+        <Class IRI="#AbusivenessSet"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#entryId"/>
+        <Class IRI="#DatasetEntry"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#explicitness"/>
+        <Class IRI="#AbusivenessSet"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#expression"/>
+        <Class abbreviatedIRI="ontolex:LexicalSense"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasThreat"/>
+        <Class IRI="#AbusiveSpeech"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#labeledTextEmbedding"/>
+        <ObjectUnionOf>
+            <Class IRI="#AbusiveText"/>
+            <Class IRI="#DatasetEntry"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#negativeConnotation"/>
+        <Class IRI="#AbusiveSpeech"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sourceText"/>
+        <ObjectUnionOf>
+            <Class IRI="#AbusiveText"/>
+            <Class IRI="#DatasetEntry"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#stereotype"/>
+        <Class abbreviatedIRI="ontolex:LexicalSense"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#abusiveBoolean"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#abusiveText"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#abusivenessScore"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:float"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#awareness"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#datasetSource"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#disturbingContentBoolean"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#entryId"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#explicitness"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#expression"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasThreat"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#labeledTextEmbedding"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#negativeConnotation"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sourceText"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#stereotype"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ableism</IRI>
+        <Literal xml:lang="en">Ableism is discrimination and social prejudice against people with disabilities based on the belief that typical abilities (those of non-disabled people) are superior. It is a system of beliefs, practices, and societal structures that devalues and discriminates against people with physical, intellectual, sensory, mental, or developmental disabilities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Ableism</IRI>
+        <Literal xml:lang="en">Ableism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AbuseCategory</IRI>
+        <Literal xml:lang="en">Abusive language is hurtful language that a speaker uses to insult or offend another individual or a group of individuals based on their personal qualities, appearance, social status, opinions, statements, or actions (Casseli, 2020).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AbuseCategory</IRI>
+        <Literal xml:lang="en">AbuseCategory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AbusiveLanguageAnalysis</IRI>
+        <Literal xml:lang="en">Abusive language analysis is an activity performed on a text in order to detect if the text contains abusive language.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AbusiveLanguageAnalysis</IRI>
+        <Literal xml:lang="en">AbusiveLanguageAnalysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AbusiveSpeech</IRI>
+        <Literal xml:lang="en">Class that represents Abusive Speech concept.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AbusiveSpeech</IRI>
+        <Literal xml:lang="en">AbusiveSpeech</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AbusiveText</IRI>
+        <Literal xml:lang="en">AbusiveText represents a textual resource that has been annotated as containing abusive language, regardless of the specific linguistic realization, target, or abusive category.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AbusiveText</IRI>
+        <Literal xml:lang="en">AbusiveText</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AbusivenessSet</IRI>
+        <Literal xml:lang="en">A class that holds results of abusive language analysis performed on a text.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AbusivenessSet</IRI>
+        <Literal xml:lang="en">AbusivenessSet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Action</IRI>
+        <Literal xml:lang="en">2444AbusiveSpeechWholeTextSet1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Adultism</IRI>
+        <Literal xml:lang="en">Adultism is a term used to describe the systemic bias, prejudice, and discrimination that adults (particularly those in positions of power) may hold or exhibit against young people.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Adultism</IRI>
+        <Literal xml:lang="en">Adultism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Age</IRI>
+        <Literal xml:lang="en">Represents age as a characteristic on the basis of which an individual or group may be targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Age</IRI>
+        <Literal xml:lang="en">Age</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ageism</IRI>
+        <Literal xml:lang="en">Ageism refers to stereotyping, prejudice, and/or discrimination against individuals or groups on the basis of their age.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Ageism</IRI>
+        <Literal xml:lang="en">Ageism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Albanian</IRI>
+        <Literal xml:lang="en">Represents Albanian national affiliation as a characteristic that may serve as the basis for targeting an individual or group with abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Albanian</IRI>
+        <Literal xml:lang="en">Albanian</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Alcoholism</IRI>
+        <Literal xml:lang="en">Represents alcohol dependence as the characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Alcoholism</IRI>
+        <Literal xml:lang="en">Alcoholism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Animal</IRI>
+        <Literal xml:lang="en">Represents the semantic domain of animals from which abusive lexical expressions may be derived through metaphorical or pejorative usage.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Animal</IRI>
+        <Literal xml:lang="en">Animal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Annotation</IRI>
+        <Literal xml:lang="en">A class that contains high level details of annotation performed on a dataset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Annotation</IRI>
+        <Literal xml:lang="en">Annotation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AnnotationLevel</IRI>
+        <Literal xml:lang="en">Annotation Level class represents different types of annotation on a text.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AnnotationLevel</IRI>
+        <Literal xml:lang="en">AnnotationLevel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AntiAlbanian</IRI>
+        <Literal xml:lang="en">Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Albanian ethnic or national identity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AntiAlbanian</IRI>
+        <Literal xml:lang="en">AntiAlbanian</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AntiCatholic</IRI>
+        <Literal xml:lang="en">Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Catholic faith or affiliation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AntiCatholic</IRI>
+        <Literal xml:lang="en">AntiCatholic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AntiCroatian</IRI>
+        <Literal xml:lang="en">Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Croatian ethnic or national identity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AntiCroatian</IRI>
+        <Literal xml:lang="en">AntiCroatian</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AntiGerman</IRI>
+        <Literal xml:lang="en">Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their German ethnic or national identity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AntiGerman</IRI>
+        <Literal xml:lang="en">AntiGerman</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AntiImmigrant</IRI>
+        <Literal xml:lang="en">Represents prejudice, discrimination, hostility, or hatred directed toward immigrants or individuals perceived to be immigrants.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AntiImmigrant</IRI>
+        <Literal xml:lang="en">AntiImmigrant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AntiLGBTQPlus</IRI>
+        <Literal xml:lang="en">Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their sexual orientation, gender identity, or gender expression.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AntiLGBTQPlus</IRI>
+        <Literal xml:lang="en">AntiLGBTQPlus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AntiMuslim</IRI>
+        <Literal xml:lang="en">Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Muslim faith or affiliation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AntiMuslim</IRI>
+        <Literal xml:lang="en">AntiMuslim</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AntiNonMuslim</IRI>
+        <Literal xml:lang="en">Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups who do not profess the Muslim faith.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AntiNonMuslim</IRI>
+        <Literal xml:lang="en">AntiNonMuslim</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AntiOrthodox</IRI>
+        <Literal xml:lang="en">Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Orthodox faith or affiliation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AntiOrthodox</IRI>
+        <Literal xml:lang="en">AntiOrthodox</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AntiRefugee</IRI>
+        <Literal xml:lang="en">Represents prejudice, discrimination, hostility, or hatred directed toward refugees or individuals perceived to be refugees.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AntiRefugee</IRI>
+        <Literal xml:lang="en">AntiRefugee</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AntiSemitism</IRI>
+        <Literal xml:lang="en">Represents prejudice, discrimination, hostility, or hatred directed toward Jewish individuals or communities based on their Jewish identity, ethnicity, religion, or heritage.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AntiSemitism</IRI>
+        <Literal xml:lang="en">AntiSemitism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AntiSerb</IRI>
+        <Literal xml:lang="en">Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Serbian ethnic or national identity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AntiSerb</IRI>
+        <Literal xml:lang="en">AntiSerb</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Antigypsysm</IRI>
+        <Literal xml:lang="en">Antigypsyism is a historically constructed, persistent complex of stereotyped perceptions, prejudice, and discrimination that leads to social exclusion and violence against Romani people. It includes hostility, prejudice, and the assignment of collective negative traits to people identified as &quot;Gypsies.&quot;   
+Anti-gypsyism is recognized by international bodies like the Council of Europe, the European Union, and the OSCE as a specific type of racism.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Antigypsysm</IRI>
+        <Literal xml:lang="en">Antigypsysm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Assistant</IRI>
+        <Literal xml:lang="en">Represents a participant who supports, encourages, or helps the perpetrator in carrying out or amplifying abusive behavior.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Assistant</IRI>
+        <Literal xml:lang="en">Assistant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Behaviour</IRI>
+        <Literal xml:lang="en">Represents behaviour or conduct as a characteristic on the basis of which a person or group may be targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Behaviour</IRI>
+        <Literal xml:lang="en">Behaviour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Biphobia</IRI>
+        <Literal xml:lang="en">Biphobia is the fear, hatred, discomfort, prejudice, discrimination, or aversion directed towards bisexual people or bisexuality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Biphobia</IRI>
+        <Literal xml:lang="en">Biphobia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BisexualPerson</IRI>
+        <Literal xml:lang="en">Represents bisexual individuals or groups as the targets of abusive speech based on their sexual orientation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BisexualPerson</IRI>
+        <Literal xml:lang="en">BisexualPerson</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bosniac</IRI>
+        <Literal xml:lang="en">Represents Bosniac national affiliation as a characteristic that may serve as the basis for targeting an individual or group with abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Bosniac</IRI>
+        <Literal xml:lang="en">Bosniac</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bystander</IRI>
+        <Literal xml:lang="en">Represents a participant who observes an abusive interaction without directly participating in, supporting, or opposing the abusive behavior.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Bystander</IRI>
+        <Literal xml:lang="en">Bystander</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CatchphraseFillerIdiom</IRI>
+        <Literal xml:lang="en">Represents linguistic expressions catchphrase, filler and idiom.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CatchphraseFillerIdiom</IRI>
+        <Literal xml:lang="en">CatchphraseFillerIdiom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Catholic</IRI>
+        <Literal xml:lang="en">Represents Catholic affiliation as the basis for abusive speech directed toward an individual or group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Catholic</IRI>
+        <Literal xml:lang="en">Catholic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Classism</IRI>
+        <Literal xml:lang="en">A form of social prejudice and discrimination involving negative attitudes, stereotyping, discriminatory actions, or institutional practices directed against individuals or groups based on their actual or perceived social class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Classism</IRI>
+        <Literal xml:lang="en">Classism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CognitiveDisability</IRI>
+        <Literal xml:lang="en">Represents cognitive, intellectual, developmental, or learning disabilities as the characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CognitiveDisability</IRI>
+        <Literal xml:lang="en">CognitiveDisability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Colorism</IRI>
+        <Literal xml:lang="en">Prejudice or discrimination against individuals with a darker skin tone, typically among people of the same ethnic or racial group.1 While related to physical appearance, it&apos;s a specific form of prejudice based on skin shade, often linked to internalized racism.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Colorism</IRI>
+        <Literal xml:lang="en">Colorism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Context</IRI>
+        <Literal xml:lang="en">Represents the communication context or source in which a text is published or distributed, such as social media platforms or news articles.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Context</IRI>
+        <Literal xml:lang="en">Context</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CriminalActivity</IRI>
+        <Literal xml:lang="en">Represents actual or perceived involvement in criminal activity as the basis for abusive speech directed toward an individual or group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriminalActivity</IRI>
+        <Literal xml:lang="en">CriminalActivity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Croatian</IRI>
+        <Literal xml:lang="en">Represents Croatian national affiliation as a characteristic that may serve as the basis for targeting an individual or group with abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Croatian</IRI>
+        <Literal xml:lang="en">Croatian</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dataset</IRI>
+        <Literal xml:lang="en">A dataset which contains examples of abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dataset</IRI>
+        <Literal xml:lang="en">Dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DatasetEntry</IRI>
+        <Literal xml:lang="en">Class DatasetEntry represents a data record in dataset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DatasetEntry</IRI>
+        <Literal xml:lang="en">DatasetEntry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Defamation</IRI>
+        <Literal xml:lang="en">Represents the intention to damage the reputation of an individual or group through false or harmful statements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Defamation</IRI>
+        <Literal xml:lang="en">Defamation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Derogation</IRI>
+        <Literal xml:lang="en">Represents the intention to demean, belittle, or diminish the perceived value or dignity of an individual or group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Derogation</IRI>
+        <Literal xml:lang="en">Derogation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Derogatory</IRI>
+        <Literal xml:lang="en">Derogatory speech (DS), a tweet is used to attack or humiliate an individual or group in a general sense, not in a way hate speech does.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Derogatory</IRI>
+        <Literal xml:lang="en">Derogatory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Desease</IRI>
+        <Literal xml:lang="en">Represents disease or medical conditions as the characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Desease</IRI>
+        <Literal xml:lang="en">Desease</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Disability</IRI>
+        <Literal xml:lang="en">Represents disability as a characteristic on the basis of which a person or group may be targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Disability</IRI>
+        <Literal xml:lang="en">Disability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Discrimination</IRI>
+        <Literal xml:lang="en">Represents the intention to promote or justify discriminatory treatment of an individual or group based on protected or social characteristics.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Discrimination</IRI>
+        <Literal xml:lang="en">Discrimination</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Disparagement</IRI>
+        <Literal xml:lang="en">Represents the intention to express contempt or disrespect toward an individual or group through belittling or offensive language.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Disparagement</IRI>
+        <Literal xml:lang="en">Disparagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Disrespect</IRI>
+        <Literal xml:lang="en">Represents the intention to express a lack of respect or regard toward an individual or group through abusive language.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Disrespect</IRI>
+        <Literal xml:lang="en">Disrespect</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DrugAddiction</IRI>
+        <Literal xml:lang="en">Represents drug addiction or substance dependence as the characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DrugAddiction</IRI>
+        <Literal xml:lang="en">DrugAddiction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ephebiphobia</IRI>
+        <Literal xml:lang="en">Ephebiphobia specifically denotes the fear, dislike, or irrational hatred of youth or adolescents. It describes a distinct negative attitude towards teenagers and young adults.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Ephebiphobia</IRI>
+        <Literal xml:lang="en">Ephebiphobia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ethnicity</IRI>
+        <Literal xml:lang="en">Represents ethnicity as the characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Ethnicity</IRI>
+        <Literal xml:lang="en">Ethnicity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FemaleGenitalia</IRI>
+        <Literal xml:lang="en">Represents the semantic domain of female genital anatomy, encompassing abusive lexical expressions derived from or referring to female genital concepts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FemaleGenitalia</IRI>
+        <Literal xml:lang="en">FemaleGenitalia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FemaleImmigrant</IRI>
+        <Literal xml:lang="en">Represents female immigrants as the target of abusive speech based on their immigrant status and gender.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FemaleImmigrant</IRI>
+        <Literal xml:lang="en">FemaleImmigrant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Gender</IRI>
+        <Literal xml:lang="en">Represents gender as the characteristic on the basis of which abusive speech is directed toward an individual or group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Gender</IRI>
+        <Literal xml:lang="en">Gender</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GenderIdentity</IRI>
+        <Literal xml:lang="en">Represents gender identity as the characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GenderIdentity</IRI>
+        <Literal xml:lang="en">GenderIdentity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#German</IRI>
+        <Literal xml:lang="en">Represents German national affiliation as a characteristic that may serve as the basis for targeting an individual or group with abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#German</IRI>
+        <Literal xml:lang="en">German</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Gerontophobia</IRI>
+        <Literal xml:lang="en">Gerontophobia refers to the fear, dislike, or irrational hatred of elderly people or of the process of aging itself.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Gerontophobia</IRI>
+        <Literal xml:lang="en">Gerontophobia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Group</IRI>
+        <Literal xml:lang="en">Represents a social, demographic, cultural, religious, ethnic, or other identifiable group targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Group</IRI>
+        <Literal xml:lang="en">Group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HateConcept</IRI>
+        <Literal xml:lang="en">A class which represents a conceptual category of hate or prejudice directed toward individuals or groups based on shared protected or social characteristics, such as race, ethnicity, gender, age, disability, religion, or sexual orientation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HateConcept</IRI>
+        <Literal xml:lang="en">HateConcept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HateSpeech</IRI>
+        <Literal xml:lang="en">Any communication that disparages a person or a group on the basis of some characteristic such as race, color, ethnicity, gender, sexual orientation, nationality, religion, or other characteristics (Basile et al., 2019).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HateSpeech</IRI>
+        <Literal xml:lang="en">HateSpeech</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hearing</IRI>
+        <Literal xml:lang="en">Represents hearing disabilities or impairments as the characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hearing</IRI>
+        <Literal xml:lang="en">Hearing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Height</IRI>
+        <Literal xml:lang="en">Represents height as the physical characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Height</IRI>
+        <Literal xml:lang="en">Height</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Homophobia</IRI>
+        <Literal xml:lang="en">Homophobia is the fear, hatred, discomfort, prejudice, discrimination, or aversion directed towards homosexual people (gay men and lesbians) or homosexuality itself.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Homophobia</IRI>
+        <Literal xml:lang="en">Homophobia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HomosexualPerson</IRI>
+        <Literal xml:lang="en">Represents homosexual individuals or groups as the targets of abusive speech based on their sexual orientation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HomosexualPerson</IRI>
+        <Literal xml:lang="en">HomosexualPerson</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hurt</IRI>
+        <Literal xml:lang="en">Represents incitement encouraging or advocating hurted against an individual or group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hurt</IRI>
+        <Literal xml:lang="en">Hurt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Immigrant</IRI>
+        <Literal xml:lang="en">Represents real or perceived immigrant status as the characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Immigrant</IRI>
+        <Literal xml:lang="en">Immigrant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Incitement</IRI>
+        <Literal xml:lang="en">Represents a characteristic of abusive speech that encourages, advocates, or calls for harmful actions, such as discrimination, segregation, or violence, against an individual or group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Incitement</IRI>
+        <Literal xml:lang="en">The aim of abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Incitement</IRI>
+        <Literal xml:lang="en">Incitement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Insult</IRI>
+        <Literal xml:lang="en">Represents the intention to insult, demean, or humiliate an individual or group through abusive language.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Insult</IRI>
+        <Literal xml:lang="en">Insult</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Intelligence</IRI>
+        <Literal xml:lang="en">Represents intelligence as the characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Intelligence</IRI>
+        <Literal xml:lang="en">Intelligence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Intention</IRI>
+        <Literal xml:lang="en">Represents the communicative purpose or intended effect of abusive speech, describing what the speaker aims to achieve through the abusive expression.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Intention</IRI>
+        <Literal xml:lang="en">Intention</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Irony</IRI>
+        <Literal xml:lang="en">Represents a rhetorical figure in which the intended meaning differs from, or is opposite to, the literal meaning of the expression.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Irony</IRI>
+        <Literal xml:lang="en">Irony</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Jew</IRI>
+        <Literal xml:lang="en">Represents affiliation with the Jewish people as a characteristic that may serve as the basis for targeting an individual or group with abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Jew</IRI>
+        <Literal xml:lang="en">Jew</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Language</IRI>
+        <Literal xml:lang="en">Represents language as the characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Language</IRI>
+        <Literal xml:lang="en">Language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LexicalSourceConcept</IRI>
+        <Literal xml:lang="en">Represents the semantic domain of an abusive lexical expression, corresponding to the conceptual category from which the expression originates (e.g., animals, plants, professions, or diseases).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LexicalSourceConcept</IRI>
+        <Literal xml:lang="en">LexicalSourceConcept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LexicalUnit</IRI>
+        <Literal xml:lang="en">Represents a classification of lexical entries according to their lexical realization or conventional linguistic form, such as a single word, multiword expression, idiom, catchphrase, proverb, or similar lexical unit types.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LexicalUnit</IRI>
+        <Literal xml:lang="en">LexicalUnit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Lookism</IRI>
+        <Literal xml:lang="en">Lookism refers to prejudice or discrimination based on physical appearance and especially physical appearance believed to fall short of societal notions of beauty.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Lookism</IRI>
+        <Literal xml:lang="en">Lookism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MaleGenitalia</IRI>
+        <Literal xml:lang="en">Represents the semantic domain of male genital anatomy, encompassing abusive lexical expressions derived from or referring to male genital concepts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MaleGenitalia</IRI>
+        <Literal xml:lang="en">MaleGenitalia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Malediction</IRI>
+        <Literal xml:lang="sr">Kletva je svečana izjava, želja ili prizivanje natprirodne sile sa namerom da se nekome ili nečemu nanese zlo, kazna ili nesreća; čin proklinjanja. Ovo odgovara engleskom značenju &quot;invocation of harm / malediction&quot;. (&quot;Dabogda crk&apos;o&quot; je primer kletve).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Malediction</IRI>
+        <Literal xml:lang="en">Malediction (curse) is a solemn utterance or expressed wish intended to invoke a supernatural power to inflict harm, punishment, evil, or misfortune upon someone or something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Malediction</IRI>
+        <Literal xml:lang="en">Malediction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Man</IRI>
+        <Literal xml:lang="en">Represents men as the target of abusive speech based on their gender.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Man</IRI>
+        <Literal xml:lang="en">Man</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Metaphor</IRI>
+        <Literal xml:lang="en">Represents a rhetorical figure in which a word or expression is used to refer to something to which it is not literally applicable, based on an implicit comparison.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Metaphor</IRI>
+        <Literal xml:lang="en">Metaphor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Misandry</IRI>
+        <Literal xml:lang="en">Misandry is the dislike of, contempt for, ingrained prejudice against, or hatred of men and boys. It is the parallel concept to misogyny.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Misandry</IRI>
+        <Literal xml:lang="en">Misandry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Misogyny</IRI>
+        <Literal xml:lang="en">Misogyny is the dislike of, contempt for, ingrained prejudice against, or hatred of women and girls. It is a specific form of sexism characterized by a hostile and often demeaning attitude towards women.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Misogyny</IRI>
+        <Literal xml:lang="en">Misogyny</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Muslim</IRI>
+        <Literal xml:lang="en">Represents Muslim affiliation as the basis for abusive speech directed toward an individual or group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Muslim</IRI>
+        <Literal xml:lang="en">Muslim</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Nationality</IRI>
+        <Literal xml:lang="en">Represents national affiliation as a characteristic that may serve as the basis for targeting an individual or group with abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Nationality</IRI>
+        <Literal xml:lang="en">Nationality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Negative</IRI>
+        <Literal xml:lang="en">Represents negative sentiment associated with a dataset entry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Negative</IRI>
+        <Literal xml:lang="en">Negative</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Neutral</IRI>
+        <Literal xml:lang="en">epresents neutral sentiment associated with a dataset entry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Neutral</IRI>
+        <Literal xml:lang="en">Neutral</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NewsArticle</IRI>
+        <Literal xml:lang="en">Represents a news article published by a news organization or media outlet, providing the context in which a text appears.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NewsArticle</IRI>
+        <Literal xml:lang="en">NewsArticle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NonUrbanPerson</IRI>
+        <Literal xml:lang="en">Represents residence in or affiliation with a non-urban area as a characteristic that may serve as the basis for targeting an individual or group with abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NonUrbanPerson</IRI>
+        <Literal xml:lang="en">NonUrbanPerson</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Obesity</IRI>
+        <Literal xml:lang="en">Represents obesity as the physical characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Obesity</IRI>
+        <Literal xml:lang="en">Obesity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Occupation</IRI>
+        <Literal xml:lang="en">Strong negative sentiments, prejudice, discrimination, and generalized negative stereotypes directed towards entire groups of individuals based solely on their chosen job.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Occupation</IRI>
+        <Literal xml:lang="en">Occupation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Offense</IRI>
+        <Literal xml:lang="en">Represents the intention to offend or cause emotional distress to an individual or group through abusive language.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Offense</IRI>
+        <Literal xml:lang="en">Offense</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OffensiveSpeech</IRI>
+        <Literal xml:lang="en">Represents a category of abusive speech that captures offensive content aimed at insulting, offending, or violating norms of acceptable communication, without necessarily involving derogation, profanity, threat, or hate speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OffensiveSpeech</IRI>
+        <Literal xml:lang="en">OffensiveSpeech</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OldPerson</IRI>
+        <Literal xml:lang="en">Represents older age as a target type in abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OldPerson</IRI>
+        <Literal xml:lang="en">OldPerson</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Opinion</IRI>
+        <Literal xml:lang="en">Represents expressed opinions, views, or statements as characteristics that may serve as the basis for targeting an individual or group with abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Opinion</IRI>
+        <Literal xml:lang="en">Opinion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Organization</IRI>
+        <Literal xml:lang="en">Represents an organization, institution, company, or other organized entity that is the target of abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Organization</IRI>
+        <Literal xml:lang="en">Organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Orthodox</IRI>
+        <Literal xml:lang="en">Represents Orthodox Christian affiliation as the basis for abusive speech directed toward an individual or group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Orthodox</IRI>
+        <Literal xml:lang="en">Orthodox</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OtherTarget</IRI>
+        <Literal xml:lang="en">Target of abusive speech which is not in other defined categories</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OtherTarget</IRI>
+        <Literal xml:lang="en">OtherTarget</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ParticipantRole</IRI>
+        <Literal xml:lang="en">Represents the role assigned to a participant in an abusive communication event or interaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ParticipantRole</IRI>
+        <Literal xml:lang="en">ParticipantRole</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Perpetrator</IRI>
+        <Literal xml:lang="en">Represents a participant who produces, initiates, or carries out abusive behavior toward another individual or group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Perpetrator</IRI>
+        <Literal xml:lang="en">Perpetrator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Person</IRI>
+        <Literal xml:lang="en">Represents an individual who is the target of abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Person</IRI>
+        <Literal xml:lang="en">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PhysicalAppearance</IRI>
+        <Literal xml:lang="en">Represents physical appearance as the characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhysicalAppearance</IRI>
+        <Literal xml:lang="en">PhysicalAppearance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PhysicalDisability</IRI>
+        <Literal xml:lang="en">Represents physical disabilities affecting mobility, motor function, or other physical capabilities as the characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhysicalDisability</IRI>
+        <Literal xml:lang="en">PhysicalDisability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Plant</IRI>
+        <Literal xml:lang="en">Represents the semantic domain of plants, encompassing abusive lexical expressions derived from or referring to plant concepts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Plant</IRI>
+        <Literal xml:lang="en">Plant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PoliticalBeliefs</IRI>
+        <Literal xml:lang="en">Represents political beliefs or political affiliation as the characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PoliticalBeliefs</IRI>
+        <Literal xml:lang="en">PoliticalBeliefs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Positive</IRI>
+        <Literal xml:lang="en">Represents positive sentiment associated with a dataset entry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Positive</IRI>
+        <Literal xml:lang="en">Positive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Profanity</IRI>
+        <Literal xml:lang="en">Profanity: This term encompasses a broader range of offensive language, including swearing, cursing, and other vulgar expressions. Profanity generally refers to language that is disrespectful or irreverent, especially towards sacred thing (Wikipedia)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Profanity</IRI>
+        <Literal xml:lang="en">Untargeted offensive language that is considered socially offensive due to being vulgar, obscene, or irreverent (Caselli et al., 2020, Britanicca).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Profanity</IRI>
+        <Literal xml:lang="en">Profanity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Prostitution</IRI>
+        <Literal xml:lang="en">Represents individuals engaged in prostitution or sex work as the target of abusive speech based on their occupation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Prostitution</IRI>
+        <Literal xml:lang="en">Prostitution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Race</IRI>
+        <Literal xml:lang="en">Represents race as the characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Race</IRI>
+        <Literal xml:lang="en">Race</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Racism</IRI>
+        <Literal xml:lang="en">Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their race, ethnicity, or perceived racial or ethnic origin.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Racism</IRI>
+        <Literal xml:lang="en">Racism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Refugee</IRI>
+        <Literal xml:lang="en">Represents refugee status as the characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Refugee</IRI>
+        <Literal xml:lang="en">Refugee</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RegionalIdentity</IRI>
+        <Literal xml:lang="en">Represents regional identity or regional affiliation as the characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RegionalIdentity</IRI>
+        <Literal xml:lang="en">RegionalIdentity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ReligiousBeliefs</IRI>
+        <Literal xml:lang="en">Represents religious belief as the characteristic on the basis of which abusive speech is directed toward an individual or group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ReligiousBeliefs</IRI>
+        <Literal xml:lang="en">ReligiousBeliefs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ReligiousHatred</IRI>
+        <Literal xml:lang="en">Religious harted refers specifically to intense dislike, animosity, or enmity directed towards individuals or groups on the basis of their religious (or non-religious) affiliation or beliefs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ReligiousHatred</IRI>
+        <Literal xml:lang="en">ReligiousHatred</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RhetoricalFigure</IRI>
+        <Literal xml:lang="en">Represents a rhetorical device or figure of speech that may be used to express abusive or offensive meaning.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RhetoricalFigure</IRI>
+        <Literal xml:lang="en">RhetoricalFigure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Roma</IRI>
+        <Literal xml:lang="en">Represents belonging to Roma or Romani enthnicity as the characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Roma</IRI>
+        <Literal xml:lang="en">Roma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sarcasm</IRI>
+        <Literal xml:lang="en">Represents a rhetorical figure that uses irony, ridicule, or mockery to express contempt or criticism.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sarcasm</IRI>
+        <Literal xml:lang="en">Sarcasm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SayingsProverbs</IRI>
+        <Literal xml:lang="en">Represents sayings and proverbs that may convey abusive or offensive meaning.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SayingsProverbs</IRI>
+        <Literal xml:lang="en">SayingsProverbs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Segregation</IRI>
+        <Literal xml:lang="en">Represents incitement encouraging the exclusion or segregation of an individual or group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Segregation</IRI>
+        <Literal xml:lang="en">Segregation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sentiment</IRI>
+        <Literal xml:lang="en">Represents the emotional polarity or attitude expressed toward a target, entity, or situation in a textual expression.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sentiment</IRI>
+        <Literal xml:lang="en">Sentiment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Serb</IRI>
+        <Literal xml:lang="en">Represents Serbian national affiliation as a characteristic that may serve as the basis for targeting an individual or group with abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Serb</IRI>
+        <Literal xml:lang="en">Serb</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SevenDeadlySins</IRI>
+        <Literal xml:lang="en">Represents behaviors or characteristics associated with the traditional seven deadly sins (e.g., pride, greed, envy, wrath, lust, gluttony, and sloth) as the basis for abusive speech directed toward an individual or group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SevenDeadlySins</IRI>
+        <Literal xml:lang="en">SevenDeadlySins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sexism</IRI>
+        <Literal xml:lang="en">Sexism refers to prejudice, stereotyping, or discrimination, typically against women, on the basis of sex or gender.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sexism</IRI>
+        <Literal xml:lang="en">The belief that one sex is superior to or more valuable than another (Britannica).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sexism</IRI>
+        <Literal xml:lang="en">Sexism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SexualOrientation</IRI>
+        <Literal xml:lang="en">Represents sexual orientation as the characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SexualOrientation</IRI>
+        <Literal xml:lang="en">SexualOrientation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Shorty</IRI>
+        <Literal xml:lang="en">Represents short stature as the physical characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Shorty</IRI>
+        <Literal xml:lang="en">Shorty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sight</IRI>
+        <Literal xml:lang="en">Represents visual disabilities or impairments as the characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sight</IRI>
+        <Literal xml:lang="en">Sight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sizeism</IRI>
+        <Literal xml:lang="en">Prejudice or discrimination on the grounds of a person&apos;s body size (e.g., against people who are overweight or underweight)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sizeism</IRI>
+        <Literal xml:lang="en">Sizeism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SkinColour</IRI>
+        <Literal xml:lang="en">Represents skin colour as a characteristic that may serve as the basis for targeting an individual or group with abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SkinColour</IRI>
+        <Literal xml:lang="en">SkinColour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Slur</IRI>
+        <Literal xml:lang="en">A slur is a derogatory or insulting term used to express contempt or prejudice against individuals or groups, typically based on their identity or perceived membership in a particular social group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Slur</IRI>
+        <Literal xml:lang="sr">Uvreda je pogrdni ili uvredljivi izraz koji se koristi za izražavanje prezira ili predrasuda prema pojedincima ili grupama, obično na osnovu njihovog identiteta ili percipirane pripadnosti određenoj društvenoj grupi.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Slur</IRI>
+        <Literal xml:lang="en">Slur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SocialMedia</IRI>
+        <Literal xml:lang="en">Represents a social media platform or post serving as the context in which a text is created, shared, or discussed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SocialMedia</IRI>
+        <Literal xml:lang="en">SocialMedia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SocialStatus</IRI>
+        <Literal xml:lang="en">Represents social status as a characteristic that may serve as the basis for targeting an individual or group with abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SocialStatus</IRI>
+        <Literal xml:lang="en">SocialStatus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SpeechIntrusion</IRI>
+        <Literal xml:lang="en">Represents intrusive or disruptive speech behavior as the basis for abusive speech directed toward an individual or group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SpeechIntrusion</IRI>
+        <Literal xml:lang="en">SpeechIntrusion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Stigmatization</IRI>
+        <Literal xml:lang="en">Stigmatization involves negative attitudes and discriminatory behavior towards individuals based on their specific behaviors or conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Stigmatization</IRI>
+        <Literal xml:lang="en">Stigmatization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SwearWord</IRI>
+        <Literal xml:lang="en">Profanities are derogatory, offensive, and indecent words used to hold something up to ridicule (Dictionary of Matica Srpska).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SwearWord</IRI>
+        <Literal xml:lang="sr">Psovke su pogrdne, uvredljive, nepristojne riječi kojima se što izvrgava ruglu (Rečnik Matice srpske)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SwearWord</IRI>
+        <Literal xml:lang="en">SwearWord</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tallness</IRI>
+        <Literal xml:lang="en">Represents tall stature as the physical characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Tallness</IRI>
+        <Literal xml:lang="en">Tallness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Target</IRI>
+        <Literal xml:lang="en">Target of abusive speech can be person, group or other.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Target</IRI>
+        <Literal xml:lang="en">Target</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TargetGroup</IRI>
+        <Literal xml:lang="en">Target types are usually combined into target group based on some common characteristics.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TargetGroup</IRI>
+        <Literal xml:lang="en">TargetGroup</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TargetType</IRI>
+        <Literal xml:lang="en">Represents the characteristic or social category to which a targeted person or group belongs and on the basis of which abusive speech is directed toward them.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TargetType</IRI>
+        <Literal xml:lang="en">TargetType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Thinness</IRI>
+        <Literal xml:lang="en">Represents thinness as the physical characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Thinness</IRI>
+        <Literal xml:lang="en">Thinness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Threat</IRI>
+        <Literal xml:lang="en">A statement of an intention to inflict pain, injury, damage, or other hostile action on someone in retribution for something done or not done.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Threat</IRI>
+        <Literal xml:lang="en">Threat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Upstander</IRI>
+        <Literal xml:lang="en">Represents a participant who intervenes in, challenges, reports, or opposes abusive behavior in support of the victim or targeted group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Upstander</IRI>
+        <Literal xml:lang="en">Upstander</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Victim</IRI>
+        <Literal xml:lang="en">Represents a participant or target who is subjected to abusive behavior or harmful communication.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Victim</IRI>
+        <Literal xml:lang="en">Victim</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Violence</IRI>
+        <Literal xml:lang="en">Represents incitement encouraging or advocating violence against an individual or group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Violence</IRI>
+        <Literal xml:lang="en">Violence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Walking</IRI>
+        <Literal xml:lang="en">Represents walking style or gait as the physical characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Walking</IRI>
+        <Literal xml:lang="en">Walking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Weight</IRI>
+        <Literal xml:lang="en">Represents body weight as the physical characteristic on the basis of which an individual or group is targeted by abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Weight</IRI>
+        <Literal xml:lang="en">Weight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Woman</IRI>
+        <Literal xml:lang="en">Represents women as the target of abusive speech based on their gender.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Woman</IRI>
+        <Literal xml:lang="en">Woman</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wordplay</IRI>
+        <Literal xml:lang="en">A rhetorical technique or figure of speech characterized by the clever manipulation or exploitation of the sounds, meanings (especially polysemy or ambiguity), or form of words, typically intended to produce a humorous or witty effect.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Wordplay</IRI>
+        <Literal xml:lang="en">Wordplay</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Xenophobia</IRI>
+        <Literal xml:lang="en">Xenophobia is the dislike of or prejudice against people from other countries or who are perceived as foreign or strange. Since nationality is often tied to a country of origin, xenophobia directly addresses animosity towards individuals based on their national background when they are perceived as &quot;other&quot; or &quot;foreign.&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Xenophobia</IRI>
+        <Literal xml:lang="en">Xenophobia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#YoungPerson</IRI>
+        <Literal xml:lang="en">Represents younger age as a target type in abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#YoungPerson</IRI>
+        <Literal xml:lang="en">YoungPerson</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#abusiveBoolean</IRI>
+        <Literal xml:lang="en">Boolean, if 0 not abusive language, if 1 abusive language.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#abusiveBoolean</IRI>
+        <Literal xml:lang="en">abusiveBoolean</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#abusiveText</IRI>
+        <Literal xml:lang="en">Text that is result or scope of annotation process. It could be same text as in data entry or part of that text either a sentence or text span.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#abusiveText</IRI>
+        <Literal xml:lang="en">abusiveText</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#abusivenessScore</IRI>
+        <Literal xml:lang="en">Abusiveness expressed as number between 0 and 1.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#abusivenessScore</IRI>
+        <Literal xml:lang="en">abusivenessScore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#analysisPerformedBy</IRI>
+        <Literal xml:lang="en">Relates an abusive speech analysis to the agent, system, or annotator that performed it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#analysisPerformedBy</IRI>
+        <Literal xml:lang="en">analysisPerformedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#annotationPerformedBy</IRI>
+        <Literal xml:lang="en">Relates an annotation to the annotator, agent, or system that created it (class Agent).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#annotationPerformedBy</IRI>
+        <Literal xml:lang="en">annotationPerformedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#awareness</IRI>
+        <Literal xml:lang="en">Intentional abusive speech has value 1, unintentional has value 0.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#awareness</IRI>
+        <Literal xml:lang="en">awareness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#belongsToTargetGroup</IRI>
+        <Literal xml:lang="en">Targets can belong to Target Groups for course grained annotation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#belongsToTargetGroup</IRI>
+        <Literal xml:lang="en">belongsToTargetGroup</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#containsEntry</IRI>
+        <Literal xml:lang="en">A dataset contains dataset entries.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#containsEntry</IRI>
+        <Literal xml:lang="en">containsEntry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#datasetSource</IRI>
+        <Literal xml:lang="en">A string placeholder containing a link or short description of dataset provenance (e.g. Twitter, reference to paper, link to github etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#datasetSource</IRI>
+        <Literal xml:lang="en">datasetSource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#disturbingContentBoolean</IRI>
+        <Literal xml:lang="en">Indicates whether the content is considered disturbing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#disturbingContentBoolean</IRI>
+        <Literal xml:lang="en">disturbingContentBoolean</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#entryId</IRI>
+        <Literal xml:lang="en">EntryId contains reference number to external source of data entry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#entryId</IRI>
+        <Literal xml:lang="en">entryId</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#explicitness</IRI>
+        <Literal xml:lang="en">Abusive speech can be explicit or implicit (vailed). Explicit abusive speech has value 1, implicit has value 0.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#explicitness</IRI>
+        <Literal xml:lang="en">explicitness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#expression</IRI>
+        <Literal xml:lang="en">A typical expression or phrase associated with a lexical sense.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#expression</IRI>
+        <Literal xml:lang="en">expression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAbuseCategory</IRI>
+        <Literal xml:lang="en">Relates abusive speech to the category of abuse it expresses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAbuseCategory</IRI>
+        <Literal xml:lang="en">hasAbuseCategory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAbusiveSpeech</IRI>
+        <Literal xml:lang="en">Relates an abusiveness set to abusive speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAbusiveSpeech</IRI>
+        <Literal xml:lang="en">hasAbusiveSpeech</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAbusiveText</IRI>
+        <Literal xml:lang="en">Relates an abusiveness set to abusive text that contains abusive content.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAbusiveText</IRI>
+        <Literal xml:lang="en">hasAbusiveText</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAbusivenessAnalysis</IRI>
+        <Literal xml:lang="en">Relates a dataset entry to abusive language analysis perfomed on it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAbusivenessAnalysis</IRI>
+        <Literal xml:lang="en">hasAbusivenessAnalysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAnalysis</IRI>
+        <Literal xml:lang="en">Annotation activity is performed by analyzing data entries for abusive speech detection.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAnalysis</IRI>
+        <Literal xml:lang="en">hasAnalysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAnnotation</IRI>
+        <Literal xml:lang="en">A dataset can have one or more annotations performed on the dataset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAnnotation</IRI>
+        <Literal xml:lang="en">hasAnnotation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAnnotationLevel</IRI>
+        <Literal xml:lang="en">A class defines if annotation is performed on the whole text, sentence level or text spans.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAnnotationLevel</IRI>
+        <Literal xml:lang="en">hasAnnotationLevel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasHateConcept</IRI>
+        <Literal xml:lang="en">Relates abusive speech to the hate-related concept expressed or targeted in it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasHateConcept</IRI>
+        <Literal xml:lang="en">hasHateConcept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasIntenton</IRI>
+        <Literal xml:lang="en">Relates abusive speech to the intention or communicative purpose behind it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasIntenton</IRI>
+        <Literal xml:lang="en">hasIntenton</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLexicalRootIn</IRI>
+        <Literal xml:lang="en">Relates abusive speech to the lexical source concept which it is derived from.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasLexicalRootIn</IRI>
+        <Literal xml:lang="en">hasLexicalRootIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLexicalUnitType</IRI>
+        <Literal xml:lang="en">Associates a lexical entry with its lexical unit type, indicating whether it represents a word, multiword expression, idiom, catchphrase, filler, proverb, or another lexical unit category.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasLexicalUnitType</IRI>
+        <Literal xml:lang="en">hasLexicalUnitType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasNIFAnchor</IRI>
+        <Literal xml:lang="en">Relates an abusive text to its NIF anchor string.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNIFAnchor</IRI>
+        <Literal xml:lang="en">hasNIFAnchor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSentiment</IRI>
+        <Literal xml:lang="en">Relates sentiment to the dataset entry where the sentiment annotation was found or perfrmed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSentiment</IRI>
+        <Literal xml:lang="en">hasSentiment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTarget</IRI>
+        <Literal xml:lang="en">Relates abusive speech to the individual, group, or entity targeted by it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTarget</IRI>
+        <Literal xml:lang="en">hasTarget</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTargetGroup</IRI>
+        <Literal xml:lang="en">Relates abusive speech to the group targeted by it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTargetGroup</IRI>
+        <Literal xml:lang="en">hasTargetGroup</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTargetType</IRI>
+        <Literal xml:lang="en">Relates abusive speech to the target type on the basis of which it is directed toward an individual or group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTargetType</IRI>
+        <Literal xml:lang="en">hasTargetType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasThreat</IRI>
+        <Literal xml:lang="en">Indicates whether the content contains a threat.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasThreat</IRI>
+        <Literal xml:lang="en">hasThreat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#involvesRole</IRI>
+        <Literal xml:lang="en">Relates an abusive speech instance or interaction to the participant role involved in it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#involvesRole</IRI>
+        <Literal xml:lang="en">involvesRole</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isDirectedAgainst</IRI>
+        <Literal xml:lang="en">Relates a hate concept to the target type on the basis of which an individual or group is targeted.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isDirectedAgainst</IRI>
+        <Literal xml:lang="en">isDirectedAgainst</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isHateConceptOf</IRI>
+        <Literal xml:lang="en">Relates hate concept to abusive speech where it was detected.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isHateConceptOf</IRI>
+        <Literal xml:lang="en">isHateConceptOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isTargetTypeOf</IRI>
+        <Literal xml:lang="en">Relates terget type to abusive speech is it detected in.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isTargetTypeOf</IRI>
+        <Literal xml:lang="en">isTargetTypeOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#labeledTextEmbedding</IRI>
+        <Literal xml:lang="en">The embedding vector of the texcual data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#labeledTextEmbedding</IRI>
+        <Literal xml:lang="en">embeddingVector</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#negativeConnotation</IRI>
+        <Literal xml:lang="en">Indicates whether the content has negative connotation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#negativeConnotation</IRI>
+        <Literal xml:lang="en">negativeConnotation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#occursInContext</IRI>
+        <Literal xml:lang="en">Relates fataset to the communicative, social, or textual context in which it occurs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#occursInContext</IRI>
+        <Literal xml:lang="en">occursInContext</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#promotesAbusiveLanguage</IRI>
+        <Literal xml:lang="en">Relates incitement to the abusive language or harmful expression it promotes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#promotesAbusiveLanguage</IRI>
+        <Literal xml:lang="en">promotesAbusiveLanguage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#refersToLexicalEntry</IRI>
+        <Literal xml:lang="en">Connects AbusiveText to Lexical Entry in an Ontolex Dictionary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#refersToLexicalEntry</IRI>
+        <Literal xml:lang="en">refersToLexicalEntry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#refersToLexicalSense</IRI>
+        <Literal xml:lang="en">Connects AbusiveText to lexical sense of an entry in an Ontolex dictionary.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#refersToLexicalSense</IRI>
+        <Literal xml:lang="en">refersToLexicalSense</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sourceText</IRI>
+        <Literal xml:lang="en">Data entry contains text that is subject of annotation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sourceText</IRI>
+        <Literal xml:lang="en">sourceText</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#stereotype</IRI>
+        <Literal xml:lang="en">Indicates whether the lexical entry may be used in a stereotypical meaning or context</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#stereotype</IRI>
+        <Literal xml:lang="en">stereotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#triggersIncitement</IRI>
+        <Literal xml:lang="en">Relates abusive speech to incitement that it may provoke, encourage, or trigger.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#triggersIncitement</IRI>
+        <Literal xml:lang="en">triggersIncitement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usesRethoricalFigure</IRI>
+        <Literal xml:lang="en">Relates abusive speech to the rhetorical figure or stylistic device used in it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usesRethoricalFigure</IRI>
+        <Literal xml:lang="en">usesRethoricalFigure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#2444AbusivenessAnalysis</IRI>
+        <Literal xml:lang="en">2444ToxicSpansAnalysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#2444AbusivenessSet</IRI>
+        <Literal>2444ToxicSpansSet1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>nif:String</AbbreviatedIRI>
+        <Literal xml:lang="en">Class for connecting AbusiveText with NIF String class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>nif:String</AbbreviatedIRI>
+        <Literal xml:lang="en">nif:String</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>nif:String</AbbreviatedIRI>
+        <Literal xml:lang="en">String</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ontolex:LexicalEntry</AbbreviatedIRI>
+        <Literal xml:lang="en">Represents a LexicalEntry concept reused from the Ontolex ontology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontolex:LexicalEntry</AbbreviatedIRI>
+        <Literal xml:lang="en">LexicalEntry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ontolex:LexicalSense</AbbreviatedIRI>
+        <Literal xml:lang="en">Represents a LexicalSense concept reused from the Ontolex ontology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ontolex:LexicalSense</AbbreviatedIRI>
+        <Literal xml:lang="en">LexicalSense</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>prov:Activity</AbbreviatedIRI>
+        <IRI>http://www.w3.org/ns/prov-o#</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>prov:Activity</AbbreviatedIRI>
+        <Literal>Activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:category"/>
+        <AbbreviatedIRI>prov:Activity</AbbreviatedIRI>
+        <Literal>starting-point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:component"/>
+        <AbbreviatedIRI>prov:Activity</AbbreviatedIRI>
+        <Literal>entities-activities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:constraints"/>
+        <AbbreviatedIRI>prov:Activity</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:definition"/>
+        <AbbreviatedIRI>prov:Activity</AbbreviatedIRI>
+        <Literal>An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:dm"/>
+        <AbbreviatedIRI>prov:Activity</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:n"/>
+        <AbbreviatedIRI>prov:Activity</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>prov:Agent</AbbreviatedIRI>
+        <IRI>http://www.w3.org/ns/prov-o#</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>prov:Agent</AbbreviatedIRI>
+        <Literal>Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:category"/>
+        <AbbreviatedIRI>prov:Agent</AbbreviatedIRI>
+        <Literal>starting-point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:component"/>
+        <AbbreviatedIRI>prov:Agent</AbbreviatedIRI>
+        <Literal>agents-responsibility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:definition"/>
+        <AbbreviatedIRI>prov:Agent</AbbreviatedIRI>
+        <Literal xml:lang="en">An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent&apos;s activity. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:dm"/>
+        <AbbreviatedIRI>prov:Agent</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:n"/>
+        <AbbreviatedIRI>prov:Agent</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>prov:Entity</AbbreviatedIRI>
+        <IRI>http://www.w3.org/ns/prov-o#</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>prov:Entity</AbbreviatedIRI>
+        <Literal>Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:constraints"/>
+        <AbbreviatedIRI>prov:Entity</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:definition"/>
+        <AbbreviatedIRI>prov:Entity</AbbreviatedIRI>
+        <Literal>An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>prov:Role</AbbreviatedIRI>
+        <IRI>http://www.w3.org/ns/prov-o#</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>prov:Role</AbbreviatedIRI>
+        <Literal>Role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>prov:Role</AbbreviatedIRI>
+        <AbbreviatedIRI>prov:hadRole</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:category"/>
+        <AbbreviatedIRI>prov:Role</AbbreviatedIRI>
+        <Literal>qualified</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:component"/>
+        <AbbreviatedIRI>prov:Role</AbbreviatedIRI>
+        <Literal>agents-responsibility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:definition"/>
+        <AbbreviatedIRI>prov:Role</AbbreviatedIRI>
+        <Literal xml:lang="en">A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:dm"/>
+        <AbbreviatedIRI>prov:Role</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-attribute-role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:n"/>
+        <AbbreviatedIRI>prov:Role</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-attribute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>prov:generated</AbbreviatedIRI>
+        <AbbreviatedIRI>prov:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>prov:generated</AbbreviatedIRI>
+        <IRI>http://www.w3.org/ns/prov-o#</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>prov:generated</AbbreviatedIRI>
+        <IRI>http://www.w3.org/ns/prov-o-inverses#</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>prov:generated</AbbreviatedIRI>
+        <Literal>generated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:category"/>
+        <AbbreviatedIRI>prov:generated</AbbreviatedIRI>
+        <Literal>expanded</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:component"/>
+        <AbbreviatedIRI>prov:generated</AbbreviatedIRI>
+        <Literal>entities-activities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:editorialNote"/>
+        <AbbreviatedIRI>prov:generated</AbbreviatedIRI>
+        <Literal xml:lang="en">prov:generated is one of few inverse property defined, to allow Activity-oriented assertions in addition to Entity-oriented assertions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:inverse"/>
+        <AbbreviatedIRI>prov:generated</AbbreviatedIRI>
+        <Literal>wasGeneratedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="prov:sharesDefinitionWith"/>
+        <AbbreviatedIRI>prov:generated</AbbreviatedIRI>
+        <AbbreviatedIRI>prov:Generation</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="prov:constraints"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+    </SubAnnotationPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

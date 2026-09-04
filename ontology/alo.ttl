@@ -1,0 +1,2175 @@
+@prefix : <http://llod.jerteh.rs/alo/alo.owl#> .
+@prefix alo: <http://llod.jerteh.rs/alo/alo.owl#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@base <http://llod.jerteh.rs/alo/alo.owl#> .
+
+<http://llod.jerteh.rs/alo/alo.owl> rdf:type owl:Ontology ;
+                                     owl:versionIRI <http://llod.jerteh.rs/alo/alo.owl/1.0.0> ;
+                                     terms:abstract "The ontology of abusive speech is designed for publishing results of the abusive language annotation process in a structured form. The goal is to have a placeholder for different dataset formats, to support diverse abusive language detection methodologies and content providers."@en ;
+                                     terms:created "2025-03-01"@en ;
+                                     terms:creator "Danka Jokic, University of Belgrade"@en ;
+                                     terms:description "The ontology of abusive speech is designed for publishing results of the abusive language annotation process in a structured form. The goal is to have a placeholder for different dataset formats, to support diverse abusive language detection methodologies and content providers."@en ;
+                                     terms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+                                     terms:modified "02-07-2026"@en ;
+                                     terms:publisher "University of Belgrade"@en ;
+                                     terms:rightsHolder "Danka Jokic"@en ;
+                                     terms:title "Abusive Language Ontology (Alo)"@en ;
+                                     vann:preferredNamespacePrefix "alo"@en ,
+                                                                   "http://llod.jerteh.rs/alo/alo.owl#"@en ;
+                                     rdfs:comment "The ontology of abusive speech is designed for publishing results of the abusive language annotation process in a structured form. The goal is to have a placeholder for different dataset formats, to support diverse abusive language detection methodologies and content providers."@en ;
+                                     rdfs:seeAlso <https://github.com/danka-jokic/ALO> ;
+                                     owl:versionInfo "1.0.0"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/abstract
+terms:abstract rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+terms:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+terms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+terms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+terms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+terms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+terms:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+terms:publisher rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rightsHolder
+terms:rightsHolder rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+terms:source rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+terms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#imports
+owl:imports rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#category
+prov:category rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#component
+prov:component rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#constraints
+prov:constraints rdf:type owl:AnnotationProperty ;
+                 rdfs:subPropertyOf rdfs:seeAlso .
+
+
+###  http://www.w3.org/ns/prov#definition
+prov:definition rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#dm
+prov:dm rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#editorialNote
+prov:editorialNote rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#inverse
+prov:inverse rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#n
+prov:n rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#sharesDefinitionWith
+prov:sharesDefinitionWith rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://llod.jerteh.rs/alo/alo.owl#analysisPerformedBy
+alo:analysisPerformedBy rdf:type owl:ObjectProperty ;
+                        rdfs:domain alo:AbusiveLanguageAnalysis ;
+                        rdfs:range prov:Agent ;
+                        rdfs:comment "Relates an abusive speech analysis to the agent, system, or annotator that performed it."@en ;
+                        rdfs:label "analysisPerformedBy"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#annotationPerformedBy
+alo:annotationPerformedBy rdf:type owl:ObjectProperty ;
+                          rdfs:domain alo:Annotation ;
+                          rdfs:range prov:Agent ;
+                          rdfs:comment "Relates an annotation to the annotator, agent, or system that created it (class Agent)."@en ;
+                          rdfs:label "annotationPerformedBy"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#belongsToTargetGroup
+alo:belongsToTargetGroup rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain alo:TargetType ;
+                         rdfs:range alo:TargetGroup ;
+                         rdfs:comment "Targets can belong to Target Groups for course grained annotation."@en ;
+                         rdfs:label "belongsToTargetGroup"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#containsEntry
+alo:containsEntry rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:domain alo:Dataset ;
+                  rdfs:range alo:DatasetEntry ;
+                  rdfs:comment "A dataset contains dataset entries."@en ;
+                  rdfs:label "containsEntry"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#hasAbuseCategory
+alo:hasAbuseCategory rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdfs:domain alo:AbusiveSpeech ;
+                     rdfs:range alo:AbuseCategory ;
+                     rdfs:comment "Relates abusive speech to the category of abuse it expresses."@en ;
+                     rdfs:label "hasAbuseCategory"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#hasAbusiveSpeech
+alo:hasAbusiveSpeech rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdfs:domain alo:AbusivenessSet ;
+                     rdfs:range alo:AbusiveSpeech ;
+                     rdfs:comment "Relates an abusiveness set to abusive speech."@en ;
+                     rdfs:label "hasAbusiveSpeech"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#hasAbusiveText
+alo:hasAbusiveText rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:domain alo:AbusivenessSet ;
+                   rdfs:range alo:AbusiveText ;
+                   rdfs:comment "Relates an abusiveness set to abusive text that contains abusive content."@en ;
+                   rdfs:label "hasAbusiveText"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#hasAbusivenessAnalysis
+alo:hasAbusivenessAnalysis rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf owl:topObjectProperty ;
+                           rdfs:domain alo:DatasetEntry ;
+                           rdfs:range alo:AbusiveLanguageAnalysis ;
+                           rdfs:comment "Relates a dataset entry to abusive language analysis perfomed on it"@en ;
+                           rdfs:label "hasAbusivenessAnalysis"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#hasAnalysis
+alo:hasAnalysis rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain alo:Annotation ;
+                rdfs:range alo:AbusiveLanguageAnalysis ;
+                rdfs:comment "Annotation activity is performed by analyzing data entries for abusive speech detection."@en ;
+                rdfs:label "hasAnalysis"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#hasAnnotation
+alo:hasAnnotation rdf:type owl:ObjectProperty ;
+                  rdfs:domain alo:Dataset ;
+                  rdfs:range alo:Annotation ;
+                  rdfs:comment "A dataset can have one or more annotations performed on the dataset."@en ;
+                  rdfs:label "hasAnnotation"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#hasAnnotationLevel
+alo:hasAnnotationLevel rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdfs:domain alo:Annotation ;
+                       rdfs:range alo:AnnotationLevel ;
+                       rdfs:comment "A class defines if annotation is performed on the whole text, sentence level or text spans."@en ;
+                       rdfs:label "hasAnnotationLevel"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#hasHateConcept
+alo:hasHateConcept rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   owl:inverseOf alo:isHateConceptOf ;
+                   rdfs:domain alo:AbusiveSpeech ;
+                   rdfs:range alo:HateConcept ;
+                   rdfs:comment "Relates abusive speech to the hate-related concept expressed or targeted in it."@en ;
+                   rdfs:label "hasHateConcept"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#hasIntenton
+alo:hasIntenton rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain alo:AbusiveSpeech ;
+                rdfs:range alo:Intention ;
+                rdfs:comment "Relates abusive speech to the intention or communicative purpose behind it."@en ;
+                rdfs:label "hasIntenton"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#hasLexicalRootIn
+alo:hasLexicalRootIn rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdfs:domain alo:AbusiveSpeech ;
+                     rdfs:range alo:LexicalSourceConcept ;
+                     rdfs:comment "Relates abusive speech to the lexical source concept which it is derived from."@en ;
+                     rdfs:label "hasLexicalRootIn"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#hasLexicalUnitType
+alo:hasLexicalUnitType rdf:type owl:ObjectProperty ;
+                       rdfs:domain ontolex:LexicalEntry ;
+                       rdfs:range alo:LexicalUnit ;
+                       rdfs:comment "Associates a lexical entry with its lexical unit type, indicating whether it represents a word, multiword expression, idiom, catchphrase, filler, proverb, or another lexical unit category."@en ;
+                       rdfs:label "hasLexicalUnitType"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#hasNIFAnchor
+alo:hasNIFAnchor rdf:type owl:ObjectProperty ;
+                 rdfs:domain alo:AbusiveText ;
+                 rdfs:range nif:String ;
+                 rdfs:comment "Relates an abusive text to its NIF anchor string."@en ;
+                 rdfs:label "hasNIFAnchor"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#hasSentiment
+alo:hasSentiment rdf:type owl:ObjectProperty ;
+                 rdfs:domain alo:DatasetEntry ;
+                 rdfs:range alo:Sentiment ;
+                 rdfs:comment "Relates sentiment to the dataset entry where the sentiment annotation was found or perfrmed."@en ;
+                 rdfs:label "hasSentiment"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#hasTarget
+alo:hasTarget rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain alo:AbusiveSpeech ;
+              rdfs:range alo:Target ;
+              rdfs:comment "Relates abusive speech to the individual, group, or entity targeted by it."@en ;
+              rdfs:label "hasTarget"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#hasTargetGroup
+alo:hasTargetGroup rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:domain alo:AbusiveSpeech ;
+                   rdfs:range alo:TargetGroup ;
+                   rdfs:comment "Relates abusive speech to the group targeted by it."@en ;
+                   rdfs:label "hasTargetGroup"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#hasTargetType
+alo:hasTargetType rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  owl:inverseOf alo:isTargetTypeOf ;
+                  rdfs:domain alo:AbusiveSpeech ;
+                  rdfs:range alo:TargetType ;
+                  rdfs:comment "Relates abusive speech to the target type on the basis of which it is directed toward an individual or group."@en ;
+                  rdfs:label "hasTargetType"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#involvesRole
+alo:involvesRole rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain alo:AbusiveSpeech ;
+                 rdfs:range alo:ParticipantRole ;
+                 rdfs:comment "Relates an abusive speech instance or interaction to the participant role involved in it."@en ;
+                 rdfs:label "involvesRole"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst
+alo:isDirectedAgainst rdf:type owl:ObjectProperty ;
+                      rdfs:domain alo:HateConcept ;
+                      rdfs:range alo:TargetType ;
+                      rdfs:comment "Relates a hate concept to the target type on the basis of which an individual or group is targeted."@en ;
+                      rdfs:label "isDirectedAgainst"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#isHateConceptOf
+alo:isHateConceptOf rdf:type owl:ObjectProperty ;
+                    rdfs:domain alo:HateConcept ;
+                    rdfs:range alo:AbusiveSpeech ;
+                    rdfs:comment "Relates hate concept to abusive speech where it was detected."@en ;
+                    rdfs:label "isHateConceptOf"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#isTargetTypeOf
+alo:isTargetTypeOf rdf:type owl:ObjectProperty ;
+                   rdfs:domain alo:TargetType ;
+                   rdfs:range alo:AbusiveSpeech ;
+                   rdfs:comment "Relates terget type to abusive speech is it detected in."@en ;
+                   rdfs:label "isTargetTypeOf"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#occursInContext
+alo:occursInContext rdf:type owl:ObjectProperty ;
+                    rdfs:domain alo:Dataset ;
+                    rdfs:range alo:Context ;
+                    rdfs:comment "Relates fataset to the communicative, social, or textual context in which it occurs."@en ;
+                    rdfs:label "occursInContext"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#promotesAbusiveLanguage
+alo:promotesAbusiveLanguage rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf owl:topObjectProperty ;
+                            rdfs:domain alo:Incitement ;
+                            rdfs:range alo:AbusiveSpeech ;
+                            rdfs:comment "Relates incitement to the abusive language or harmful expression it promotes."@en ;
+                            rdfs:label "promotesAbusiveLanguage"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#refersToLexicalEntry
+alo:refersToLexicalEntry rdf:type owl:ObjectProperty ;
+                         rdfs:domain [ rdf:type owl:Class ;
+                                       owl:unionOf ( alo:AbusiveText
+                                                     alo:DatasetEntry
+                                                   )
+                                     ] ;
+                         rdfs:range ontolex:LexicalEntry ;
+                         rdfs:comment "Connects AbusiveText to Lexical Entry in an Ontolex Dictionary"@en ;
+                         rdfs:label "refersToLexicalEntry"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#refersToLexicalSense
+alo:refersToLexicalSense rdf:type owl:ObjectProperty ;
+                         rdfs:domain [ rdf:type owl:Class ;
+                                       owl:unionOf ( alo:AbusiveText
+                                                     alo:DatasetEntry
+                                                   )
+                                     ] ;
+                         rdfs:range ontolex:LexicalSense ;
+                         rdfs:comment "Connects AbusiveText to lexical sense of an entry in an Ontolex dictionary."@en ;
+                         rdfs:label "refersToLexicalSense"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#triggersIncitement
+alo:triggersIncitement rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdfs:domain alo:AbusiveSpeech ;
+                       rdfs:range alo:Incitement ;
+                       rdfs:comment "Relates abusive speech to incitement that it may provoke, encourage, or trigger."@en ;
+                       rdfs:label "triggersIncitement"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#usesRethoricalFigure
+alo:usesRethoricalFigure rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
+                         rdfs:domain alo:AbusiveSpeech ;
+                         rdfs:range alo:RhetoricalFigure ;
+                         rdfs:comment "Relates abusive speech to the rhetorical figure or stylistic device used in it."@en ;
+                         rdfs:label "usesRethoricalFigure"@en .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdfs:domain alo:AbusiveSpeech ;
+                      rdfs:range alo:Context .
+
+
+###  http://www.w3.org/ns/prov#generated
+prov:generated rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf prov:influenced ;
+               rdfs:domain alo:AbusiveLanguageAnalysis ;
+               rdfs:range alo:AbusivenessSet ;
+               rdfs:isDefinedBy prov: ,
+                                <http://www.w3.org/ns/prov-o#> ,
+                                <http://www.w3.org/ns/prov-o-inverses#> ;
+               rdfs:label "generated" ;
+               prov:category "expanded" ;
+               prov:component "entities-activities" ;
+               prov:editorialNote "prov:generated is one of few inverse property defined, to allow Activity-oriented assertions in addition to Entity-oriented assertions."@en ;
+               prov:inverse "wasGeneratedBy" ;
+               prov:sharesDefinitionWith prov:Generation .
+
+
+###  http://www.w3.org/ns/prov#influenced
+prov:influenced rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://llod.jerteh.rs/alo/alo.owl#abusiveBoolean
+alo:abusiveBoolean rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdf:type owl:FunctionalProperty ;
+                   rdfs:domain alo:AbusivenessSet ;
+                   rdfs:range xsd:boolean ;
+                   rdfs:comment "Boolean, if 0 not abusive language, if 1 abusive language."@en ;
+                   rdfs:label "abusiveBoolean"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#abusiveText
+alo:abusiveText rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain alo:AbusiveText ;
+                rdfs:range rdf:langString ;
+                rdfs:comment "Text that is result or scope of annotation process. It could be same text as in data entry or part of that text either a sentence or text span."@en ;
+                rdfs:label "abusiveText"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#abusivenessScore
+alo:abusivenessScore rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf owl:topDataProperty ;
+                     rdfs:domain [ rdf:type owl:Class ;
+                                   owl:unionOf ( alo:AbusiveSpeech
+                                                 alo:AbusivenessSet
+                                               )
+                                 ] ;
+                     rdfs:range [ rdf:type rdfs:Datatype ;
+                                  owl:onDatatype xsd:float ;
+                                  owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:float
+                                                         ]
+                                                         [ xsd:maxInclusive "1.0"^^xsd:float
+                                                         ]
+                                                       )
+                                ] ;
+                     rdfs:comment "Abusiveness expressed as number between 0 and 1."@en ;
+                     rdfs:label "abusivenessScore"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#awareness
+alo:awareness rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain alo:AbusivenessSet ;
+              rdfs:range xsd:boolean ;
+              rdfs:comment "Intentional abusive speech has value 1, unintentional has value 0."@en ;
+              rdfs:label "awareness"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#datasetSource
+alo:datasetSource rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain alo:Dataset ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "A string placeholder containing a link or short description of dataset provenance (e.g. Twitter, reference to paper, link to github etc.)."@en ;
+                  rdfs:label "datasetSource"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#disturbingContentBoolean
+alo:disturbingContentBoolean rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf owl:topDataProperty ;
+                             rdfs:domain alo:AbusivenessSet ;
+                             rdfs:range xsd:boolean ;
+                             rdfs:comment "Indicates whether the content is considered disturbing."@en ;
+                             rdfs:label "disturbingContentBoolean"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#entryId
+alo:entryId rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain alo:DatasetEntry ;
+            rdfs:range xsd:string ;
+            rdfs:comment "EntryId contains reference number to external source of data entry."@en ;
+            rdfs:label "entryId"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#explicitness
+alo:explicitness rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain alo:AbusivenessSet ;
+                 rdfs:range xsd:boolean ;
+                 rdfs:comment "Abusive speech can be explicit or implicit (vailed). Explicit abusive speech has value 1, implicit has value 0."@en ;
+                 rdfs:label "explicitness"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#expression
+alo:expression rdf:type owl:DatatypeProperty ;
+               rdfs:domain ontolex:LexicalSense ;
+               rdfs:range rdf:langString ;
+               rdfs:comment "A typical expression or phrase associated with a lexical sense."@en ;
+               rdfs:label "expression"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#hasThreat
+alo:hasThreat rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain alo:AbusiveSpeech ;
+              rdfs:range xsd:boolean ;
+              rdfs:comment "Indicates whether the content contains a threat."@en ;
+              rdfs:label "hasThreat"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#labeledTextEmbedding
+alo:labeledTextEmbedding rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf owl:topDataProperty ;
+                         rdfs:domain [ rdf:type owl:Class ;
+                                       owl:unionOf ( alo:AbusiveText
+                                                     alo:DatasetEntry
+                                                   )
+                                     ] ;
+                         rdfs:range xsd:string ;
+                         rdfs:comment "The embedding vector of the texcual data."@en ;
+                         rdfs:label "embeddingVector"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#negativeConnotation
+alo:negativeConnotation rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf owl:topDataProperty ;
+                        rdfs:domain alo:AbusiveSpeech ;
+                        rdfs:range xsd:boolean ;
+                        rdfs:comment "Indicates whether the content has negative connotation."@en ;
+                        rdfs:label "negativeConnotation"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#sourceText
+alo:sourceText rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( alo:AbusiveText
+                                           alo:DatasetEntry
+                                         )
+                           ] ;
+               rdfs:range rdf:langString ;
+               rdfs:comment "Data entry contains text that is subject of annotation."@en ;
+               rdfs:label "sourceText"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#stereotype
+alo:stereotype rdf:type owl:DatatypeProperty ;
+               rdfs:domain ontolex:LexicalSense ;
+               rdfs:range rdf:langString ;
+               rdfs:comment "Indicates whether the lexical entry may be used in a stereotypical meaning or context"@en ;
+               rdfs:label "stereotype"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://llod.jerteh.rs/alo/alo.owl#Ableism
+alo:Ableism rdf:type owl:Class ;
+            rdfs:subClassOf alo:HateConcept ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty alo:isDirectedAgainst ;
+                              owl:someValuesFrom alo:Disability
+                            ] ;
+            rdfs:comment "Ableism is discrimination and social prejudice against people with disabilities based on the belief that typical abilities (those of non-disabled people) are superior. It is a system of beliefs, practices, and societal structures that devalues and discriminates against people with physical, intellectual, sensory, mental, or developmental disabilities."@en ;
+            rdfs:label "Ableism"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AbuseCategory
+alo:AbuseCategory rdf:type owl:Class ;
+                  rdfs:comment "Abusive language is hurtful language that a speaker uses to insult or offend another individual or a group of individuals based on their personal qualities, appearance, social status, opinions, statements, or actions (Casseli, 2020)."@en ;
+                  rdfs:label "AbuseCategory"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AbusiveLanguageAnalysis
+alo:AbusiveLanguageAnalysis rdf:type owl:Class ;
+                            rdfs:subClassOf prov:Activity ;
+                            rdfs:comment "Abusive language analysis is an activity performed on a text in order to detect if the text contains abusive language."@en ;
+                            rdfs:label "AbusiveLanguageAnalysis"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech
+alo:AbusiveSpeech rdf:type owl:Class ;
+                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty alo:abusivenessScore ;
+                                    owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                         owl:onDatatype xsd:float ;
+                                                         owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:float
+                                                                                ]
+                                                                                [ xsd:maxInclusive "1.0"^^xsd:float
+                                                                                ]
+                                                                              )
+                                                       ]
+                                  ] ;
+                  rdfs:comment "Class that represents Abusive Speech concept."@en ;
+                  rdfs:label "AbusiveSpeech"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AbusiveText
+alo:AbusiveText rdf:type owl:Class ;
+                rdfs:comment "AbusiveText represents a textual resource that has been annotated as containing abusive language, regardless of the specific linguistic realization, target, or abusive category."@en ;
+                rdfs:label "AbusiveText"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AbusivenessSet
+alo:AbusivenessSet rdf:type owl:Class ;
+                   rdfs:subClassOf prov:Entity ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty alo:abusivenessScore ;
+                                     owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                          owl:onDatatype xsd:float ;
+                                                          owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:float
+                                                                                 ]
+                                                                                 [ xsd:maxInclusive "1.0"^^xsd:float
+                                                                                 ]
+                                                                               )
+                                                        ]
+                                   ] ;
+                   rdfs:comment "A class that holds results of abusive language analysis performed on a text."@en ;
+                   rdfs:label "AbusivenessSet"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Adultism
+alo:Adultism rdf:type owl:Class ;
+             rdfs:subClassOf alo:Ageism ;
+             rdfs:comment "Adultism is a term used to describe the systemic bias, prejudice, and discrimination that adults (particularly those in positions of power) may hold or exhibit against young people."@en ;
+             rdfs:label "Adultism"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Age
+alo:Age rdf:type owl:Class ;
+        rdfs:subClassOf alo:TargetType ;
+        rdfs:comment "Represents age as a characteristic on the basis of which an individual or group may be targeted by abusive speech."@en ;
+        rdfs:label "Age"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Ageism
+alo:Ageism rdf:type owl:Class ;
+           rdfs:subClassOf alo:HateConcept ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty alo:isDirectedAgainst ;
+                             owl:someValuesFrom alo:Age
+                           ] ;
+           rdfs:comment "Ageism refers to stereotyping, prejudice, and/or discrimination against individuals or groups on the basis of their age."@en ;
+           rdfs:label "Ageism"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Albanian
+alo:Albanian rdf:type owl:Class ;
+             rdfs:subClassOf alo:Nationality ;
+             rdfs:comment "Represents Albanian national affiliation as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."@en ;
+             rdfs:label "Albanian"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Alcoholism
+alo:Alcoholism rdf:type owl:Class ;
+               rdfs:subClassOf alo:Behaviour ;
+               rdfs:comment "Represents alcohol dependence as the characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+               rdfs:label "Alcoholism"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Animal
+alo:Animal rdf:type owl:Class ;
+           rdfs:subClassOf alo:LexicalSourceConcept ;
+           rdfs:comment "Represents the semantic domain of animals from which abusive lexical expressions may be derived through metaphorical or pejorative usage."@en ;
+           rdfs:label "Animal"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Annotation
+alo:Annotation rdf:type owl:Class ;
+               rdfs:comment "A class that contains high level details of annotation performed on a dataset."@en ;
+               rdfs:label "Annotation"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AnnotationLevel
+alo:AnnotationLevel rdf:type owl:Class ;
+                    rdfs:comment "Annotation Level class represents different types of annotation on a text."@en ;
+                    rdfs:label "AnnotationLevel"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AntiAlbanian
+alo:AntiAlbanian rdf:type owl:Class ;
+                 rdfs:subClassOf alo:Xenophobia ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty alo:isDirectedAgainst ;
+                                   owl:someValuesFrom alo:Albanian
+                                 ] ;
+                 rdfs:comment "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Albanian ethnic or national identity."@en ;
+                 rdfs:label "AntiAlbanian"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AntiCatholic
+alo:AntiCatholic rdf:type owl:Class ;
+                 rdfs:subClassOf alo:ReligiousHatred ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty alo:isDirectedAgainst ;
+                                   owl:someValuesFrom alo:Catholic
+                                 ] ;
+                 rdfs:comment "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Catholic faith or affiliation"@en ;
+                 rdfs:label "AntiCatholic"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AntiCroatian
+alo:AntiCroatian rdf:type owl:Class ;
+                 rdfs:subClassOf alo:Xenophobia ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty alo:isDirectedAgainst ;
+                                   owl:someValuesFrom alo:Croatian
+                                 ] ;
+                 rdfs:comment "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Croatian ethnic or national identity."@en ;
+                 rdfs:label "AntiCroatian"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AntiGerman
+alo:AntiGerman rdf:type owl:Class ;
+               rdfs:subClassOf alo:Xenophobia ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty alo:isDirectedAgainst ;
+                                 owl:someValuesFrom alo:German
+                               ] ;
+               rdfs:comment "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their German ethnic or national identity."@en ;
+               rdfs:label "AntiGerman"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AntiImmigrant
+alo:AntiImmigrant rdf:type owl:Class ;
+                  rdfs:subClassOf alo:Xenophobia ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty alo:isDirectedAgainst ;
+                                    owl:someValuesFrom alo:Immigrant
+                                  ] ;
+                  rdfs:comment "Represents prejudice, discrimination, hostility, or hatred directed toward immigrants or individuals perceived to be immigrants."@en ;
+                  rdfs:label "AntiImmigrant"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AntiLGBTQPlus
+alo:AntiLGBTQPlus rdf:type owl:Class ;
+                  rdfs:subClassOf alo:HateConcept ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty alo:isDirectedAgainst ;
+                                    owl:someValuesFrom alo:SexualOrientation
+                                  ] ;
+                  rdfs:comment "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their sexual orientation, gender identity, or gender expression."@en ;
+                  rdfs:label "AntiLGBTQPlus"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AntiMuslim
+alo:AntiMuslim rdf:type owl:Class ;
+               rdfs:subClassOf alo:ReligiousHatred ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty alo:isDirectedAgainst ;
+                                 owl:someValuesFrom alo:Muslim
+                               ] ;
+               owl:disjointWith alo:AntiNonMuslim ;
+               rdfs:comment "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Muslim faith or affiliation"@en ;
+               rdfs:label "AntiMuslim"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AntiNonMuslim
+alo:AntiNonMuslim rdf:type owl:Class ;
+                  rdfs:subClassOf alo:ReligiousHatred ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty alo:isDirectedAgainst ;
+                                    owl:someValuesFrom [ rdf:type owl:Class ;
+                                                         owl:unionOf ( alo:Catholic
+                                                                       alo:Orthodox
+                                                                     )
+                                                       ]
+                                  ] ;
+                  rdfs:comment "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups who do not profess the Muslim faith."@en ;
+                  rdfs:label "AntiNonMuslim"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AntiOrthodox
+alo:AntiOrthodox rdf:type owl:Class ;
+                 rdfs:subClassOf alo:ReligiousHatred ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty alo:isDirectedAgainst ;
+                                   owl:someValuesFrom alo:Orthodox
+                                 ] ;
+                 rdfs:comment "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Orthodox faith or affiliation"@en ;
+                 rdfs:label "AntiOrthodox"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AntiRefugee
+alo:AntiRefugee rdf:type owl:Class ;
+                rdfs:subClassOf alo:Xenophobia ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty alo:isDirectedAgainst ;
+                                  owl:someValuesFrom alo:Refugee
+                                ] ;
+                rdfs:comment "Represents prejudice, discrimination, hostility, or hatred directed toward refugees or individuals perceived to be refugees."@en ;
+                rdfs:label "AntiRefugee"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AntiSemitism
+alo:AntiSemitism rdf:type owl:Class ;
+                 rdfs:subClassOf alo:ReligiousHatred ,
+                                 alo:Xenophobia ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty alo:isDirectedAgainst ;
+                                   owl:someValuesFrom alo:Jew
+                                 ] ;
+                 rdfs:comment "Represents prejudice, discrimination, hostility, or hatred directed toward Jewish individuals or communities based on their Jewish identity, ethnicity, religion, or heritage."@en ;
+                 rdfs:label "AntiSemitism"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AntiSerb
+alo:AntiSerb rdf:type owl:Class ;
+             rdfs:subClassOf alo:Xenophobia ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty alo:isDirectedAgainst ;
+                               owl:someValuesFrom alo:Serb
+                             ] ;
+             rdfs:comment "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Serbian ethnic or national identity."@en ;
+             rdfs:label "AntiSerb"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Antigypsysm
+alo:Antigypsysm rdf:type owl:Class ;
+                rdfs:subClassOf alo:Racism ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty alo:isDirectedAgainst ;
+                                  owl:someValuesFrom alo:Roma
+                                ] ;
+                rdfs:comment """Antigypsyism is a historically constructed, persistent complex of stereotyped perceptions, prejudice, and discrimination that leads to social exclusion and violence against Romani people. It includes hostility, prejudice, and the assignment of collective negative traits to people identified as \"Gypsies.\"   
+Anti-gypsyism is recognized by international bodies like the Council of Europe, the European Union, and the OSCE as a specific type of racism."""@en ;
+                rdfs:label "Antigypsysm"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Assistant
+alo:Assistant rdf:type owl:Class ;
+              rdfs:subClassOf alo:ParticipantRole ;
+              rdfs:comment "Represents a participant who supports, encourages, or helps the perpetrator in carrying out or amplifying abusive behavior."@en ;
+              rdfs:label "Assistant"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Behaviour
+alo:Behaviour rdf:type owl:Class ;
+              rdfs:subClassOf alo:TargetType ;
+              rdfs:comment "Represents behaviour or conduct as a characteristic on the basis of which a person or group may be targeted by abusive speech."@en ;
+              rdfs:label "Behaviour"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Biphobia
+alo:Biphobia rdf:type owl:Class ;
+             rdfs:subClassOf alo:AntiLGBTQPlus ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty alo:isDirectedAgainst ;
+                               owl:someValuesFrom alo:BisexualPerson
+                             ] ;
+             rdfs:comment "Biphobia is the fear, hatred, discomfort, prejudice, discrimination, or aversion directed towards bisexual people or bisexuality."@en ;
+             rdfs:label "Biphobia"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#BisexualPerson
+alo:BisexualPerson rdf:type owl:Class ;
+                   rdfs:subClassOf alo:SexualOrientation ;
+                   owl:disjointWith alo:HomosexualPerson ;
+                   rdfs:comment "Represents bisexual individuals or groups as the targets of abusive speech based on their sexual orientation."@en ;
+                   rdfs:label "BisexualPerson"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Bosniac
+alo:Bosniac rdf:type owl:Class ;
+            rdfs:subClassOf alo:Nationality ;
+            rdfs:comment "Represents Bosniac national affiliation as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."@en ;
+            rdfs:label "Bosniac"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Bystander
+alo:Bystander rdf:type owl:Class ;
+              rdfs:subClassOf alo:ParticipantRole ;
+              rdfs:comment "Represents a participant who observes an abusive interaction without directly participating in, supporting, or opposing the abusive behavior."@en ;
+              rdfs:label "Bystander"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#CatchphraseFillerIdiom
+alo:CatchphraseFillerIdiom rdf:type owl:Class ;
+                           rdfs:subClassOf alo:LexicalUnit ;
+                           rdfs:comment "Represents linguistic expressions catchphrase, filler and idiom."@en ;
+                           rdfs:label "CatchphraseFillerIdiom"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Catholic
+alo:Catholic rdf:type owl:Class ;
+             rdfs:subClassOf alo:ReligiousBeliefs ;
+             rdfs:comment "Represents Catholic affiliation as the basis for abusive speech directed toward an individual or group."@en ;
+             rdfs:label "Catholic"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Classism
+alo:Classism rdf:type owl:Class ;
+             rdfs:subClassOf alo:HateConcept ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty alo:isDirectedAgainst ;
+                               owl:someValuesFrom alo:SocialStatus
+                             ] ;
+             rdfs:comment "A form of social prejudice and discrimination involving negative attitudes, stereotyping, discriminatory actions, or institutional practices directed against individuals or groups based on their actual or perceived social class."@en ;
+             rdfs:label "Classism"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#CognitiveDisability
+alo:CognitiveDisability rdf:type owl:Class ;
+                        rdfs:subClassOf alo:Disability ;
+                        owl:disjointWith alo:PhysicalDisability ;
+                        rdfs:comment "Represents cognitive, intellectual, developmental, or learning disabilities as the characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+                        rdfs:label "CognitiveDisability"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Colorism
+alo:Colorism rdf:type owl:Class ;
+             rdfs:subClassOf alo:Lookism ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty alo:isDirectedAgainst ;
+                               owl:someValuesFrom alo:SkinColour
+                             ] ;
+             rdfs:comment "Prejudice or discrimination against individuals with a darker skin tone, typically among people of the same ethnic or racial group.1 While related to physical appearance, it's a specific form of prejudice based on skin shade, often linked to internalized racism."@en ;
+             rdfs:label "Colorism"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Context
+alo:Context rdf:type owl:Class ;
+            rdfs:comment "Represents the communication context or source in which a text is published or distributed, such as social media platforms or news articles."@en ;
+            rdfs:label "Context"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#CriminalActivity
+alo:CriminalActivity rdf:type owl:Class ;
+                     rdfs:subClassOf alo:Behaviour ;
+                     rdfs:comment "Represents actual or perceived involvement in criminal activity as the basis for abusive speech directed toward an individual or group."@en ;
+                     rdfs:label "CriminalActivity"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Croatian
+alo:Croatian rdf:type owl:Class ;
+             rdfs:subClassOf alo:Nationality ;
+             rdfs:comment "Represents Croatian national affiliation as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."@en ;
+             rdfs:label "Croatian"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Dataset
+alo:Dataset rdf:type owl:Class ;
+            rdfs:comment "A dataset which contains examples of abusive speech."@en ;
+            rdfs:label "Dataset"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#DatasetEntry
+alo:DatasetEntry rdf:type owl:Class ;
+                 rdfs:comment "Class DatasetEntry represents a data record in dataset."@en ;
+                 rdfs:label "DatasetEntry"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Defamation
+alo:Defamation rdf:type owl:Class ;
+               rdfs:subClassOf alo:Intention ;
+               rdfs:comment "Represents the intention to damage the reputation of an individual or group through false or harmful statements."@en ;
+               rdfs:label "Defamation"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Derogation
+alo:Derogation rdf:type owl:Class ;
+               rdfs:subClassOf alo:Intention ;
+               rdfs:comment "Represents the intention to demean, belittle, or diminish the perceived value or dignity of an individual or group."@en ;
+               rdfs:label "Derogation"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Derogatory
+alo:Derogatory rdf:type owl:Class ;
+               rdfs:subClassOf alo:AbuseCategory ;
+               rdfs:comment "Derogatory speech (DS), a tweet is used to attack or humiliate an individual or group in a general sense, not in a way hate speech does."@en ;
+               rdfs:label "Derogatory"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Desease
+alo:Desease rdf:type owl:Class ;
+            rdfs:subClassOf alo:TargetType ;
+            rdfs:comment "Represents disease or medical conditions as the characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+            rdfs:label "Desease"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Disability
+alo:Disability rdf:type owl:Class ;
+               rdfs:subClassOf alo:TargetType ;
+               rdfs:comment "Represents disability as a characteristic on the basis of which a person or group may be targeted by abusive speech."@en ;
+               rdfs:label "Disability"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Discrimination
+alo:Discrimination rdf:type owl:Class ;
+                   rdfs:subClassOf alo:Intention ;
+                   rdfs:comment "Represents the intention to promote or justify discriminatory treatment of an individual or group based on protected or social characteristics."@en ;
+                   rdfs:label "Discrimination"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Disparagement
+alo:Disparagement rdf:type owl:Class ;
+                  rdfs:subClassOf alo:Intention ;
+                  rdfs:comment "Represents the intention to express contempt or disrespect toward an individual or group through belittling or offensive language."@en ;
+                  rdfs:label "Disparagement"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Disrespect
+alo:Disrespect rdf:type owl:Class ;
+               rdfs:subClassOf alo:Intention ;
+               rdfs:comment "Represents the intention to express a lack of respect or regard toward an individual or group through abusive language."@en ;
+               rdfs:label "Disrespect"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#DrugAddiction
+alo:DrugAddiction rdf:type owl:Class ;
+                  rdfs:subClassOf alo:Behaviour ;
+                  rdfs:comment "Represents drug addiction or substance dependence as the characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+                  rdfs:label "DrugAddiction"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Ephebiphobia
+alo:Ephebiphobia rdf:type owl:Class ;
+                 rdfs:subClassOf alo:Ageism ;
+                 rdfs:comment "Ephebiphobia specifically denotes the fear, dislike, or irrational hatred of youth or adolescents. It describes a distinct negative attitude towards teenagers and young adults."@en ;
+                 rdfs:label "Ephebiphobia"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Ethnicity
+alo:Ethnicity rdf:type owl:Class ;
+              rdfs:subClassOf alo:TargetType ;
+              rdfs:comment "Represents ethnicity as the characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+              rdfs:label "Ethnicity"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#FemaleGenitalia
+alo:FemaleGenitalia rdf:type owl:Class ;
+                    rdfs:subClassOf alo:LexicalSourceConcept ;
+                    rdfs:comment "Represents the semantic domain of female genital anatomy, encompassing abusive lexical expressions derived from or referring to female genital concepts."@en ;
+                    rdfs:label "FemaleGenitalia"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#FemaleImmigrant
+alo:FemaleImmigrant rdf:type owl:Class ;
+                    rdfs:subClassOf alo:Immigrant ;
+                    rdfs:comment "Represents female immigrants as the target of abusive speech based on their immigrant status and gender."@en ;
+                    rdfs:label "FemaleImmigrant"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Gender
+alo:Gender rdf:type owl:Class ;
+           rdfs:subClassOf alo:TargetType ;
+           rdfs:comment "Represents gender as the characteristic on the basis of which abusive speech is directed toward an individual or group."@en ;
+           rdfs:label "Gender"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#GenderIdentity
+alo:GenderIdentity rdf:type owl:Class ;
+                   rdfs:subClassOf alo:TargetType ;
+                   rdfs:comment "Represents gender identity as the characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+                   rdfs:label "GenderIdentity"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#German
+alo:German rdf:type owl:Class ;
+           rdfs:subClassOf alo:Nationality ;
+           rdfs:comment "Represents German national affiliation as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."@en ;
+           rdfs:label "German"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Gerontophobia
+alo:Gerontophobia rdf:type owl:Class ;
+                  rdfs:subClassOf alo:Ageism ;
+                  rdfs:comment "Gerontophobia refers to the fear, dislike, or irrational hatred of elderly people or of the process of aging itself."@en ;
+                  rdfs:label "Gerontophobia"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Group
+alo:Group rdf:type owl:Class ;
+          rdfs:subClassOf alo:Target ;
+          rdfs:comment "Represents a social, demographic, cultural, religious, ethnic, or other identifiable group targeted by abusive speech."@en ;
+          rdfs:label "Group"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#HateConcept
+alo:HateConcept rdf:type owl:Class ;
+                rdfs:comment "A class which represents a conceptual category of hate or prejudice directed toward individuals or groups based on shared protected or social characteristics, such as race, ethnicity, gender, age, disability, religion, or sexual orientation."@en ;
+                rdfs:label "HateConcept"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#HateSpeech
+alo:HateSpeech rdf:type owl:Class ;
+               rdfs:subClassOf alo:AbuseCategory ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty alo:hasTarget ;
+                                 owl:someValuesFrom alo:Target
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty alo:hasTargetGroup ;
+                                 owl:someValuesFrom alo:TargetGroup
+                               ] .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Hearing
+alo:Hearing rdf:type owl:Class ;
+            rdfs:subClassOf alo:PhysicalDisability ;
+            owl:disjointWith alo:Sight ;
+            rdfs:comment "Represents hearing disabilities or impairments as the characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+            rdfs:label "Hearing"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Height
+alo:Height rdf:type owl:Class ;
+           rdfs:subClassOf alo:PhysicalAppearance ;
+           rdfs:comment "Represents height as the physical characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+           rdfs:label "Height"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Homophobia
+alo:Homophobia rdf:type owl:Class ;
+               rdfs:subClassOf alo:AntiLGBTQPlus ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty alo:isDirectedAgainst ;
+                                 owl:someValuesFrom alo:HomosexualPerson
+                               ] ;
+               rdfs:comment "Homophobia is the fear, hatred, discomfort, prejudice, discrimination, or aversion directed towards homosexual people (gay men and lesbians) or homosexuality itself."@en ;
+               rdfs:label "Homophobia"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#HomosexualPerson
+alo:HomosexualPerson rdf:type owl:Class ;
+                     rdfs:subClassOf alo:SexualOrientation ;
+                     rdfs:comment "Represents homosexual individuals or groups as the targets of abusive speech based on their sexual orientation."@en ;
+                     rdfs:label "HomosexualPerson"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Hurt
+alo:Hurt rdf:type owl:Class ;
+         rdfs:subClassOf alo:Incitement ;
+         rdfs:comment "Represents incitement encouraging or advocating hurted against an individual or group."@en ;
+         rdfs:label "Hurt"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Immigrant
+alo:Immigrant rdf:type owl:Class ;
+              rdfs:subClassOf alo:TargetType ;
+              rdfs:comment "Represents real or perceived immigrant status as the characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+              rdfs:label "Immigrant"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Incitement
+alo:Incitement rdf:type owl:Class ;
+               rdfs:comment "Represents a characteristic of abusive speech that encourages, advocates, or calls for harmful actions, such as discrimination, segregation, or violence, against an individual or group."@en ,
+                            "The aim of abusive speech."@en ;
+               rdfs:label "Incitement"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Insult
+alo:Insult rdf:type owl:Class ;
+           rdfs:subClassOf alo:Intention ;
+           rdfs:comment "Represents the intention to insult, demean, or humiliate an individual or group through abusive language."@en ;
+           rdfs:label "Insult"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Intelligence
+alo:Intelligence rdf:type owl:Class ;
+                 rdfs:subClassOf alo:CognitiveDisability ;
+                 rdfs:comment "Represents intelligence as the characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+                 rdfs:label "Intelligence"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Intention
+alo:Intention rdf:type owl:Class ;
+              rdfs:comment "Represents the communicative purpose or intended effect of abusive speech, describing what the speaker aims to achieve through the abusive expression."@en ;
+              rdfs:label "Intention"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Irony
+alo:Irony rdf:type owl:Class ;
+          rdfs:subClassOf alo:RhetoricalFigure ;
+          rdfs:comment "Represents a rhetorical figure in which the intended meaning differs from, or is opposite to, the literal meaning of the expression."@en ;
+          rdfs:label "Irony"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Jew
+alo:Jew rdf:type owl:Class ;
+        rdfs:subClassOf alo:Nationality ;
+        rdfs:comment "Represents affiliation with the Jewish people as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."@en ;
+        rdfs:label "Jew"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Language
+alo:Language rdf:type owl:Class ;
+             rdfs:subClassOf alo:TargetType ;
+             rdfs:comment "Represents language as the characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+             rdfs:label "Language"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#LexicalSourceConcept
+alo:LexicalSourceConcept rdf:type owl:Class ;
+                         rdfs:comment "Represents the semantic domain of an abusive lexical expression, corresponding to the conceptual category from which the expression originates (e.g., animals, plants, professions, or diseases)."@en ;
+                         rdfs:label "LexicalSourceConcept"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#LexicalUnit
+alo:LexicalUnit rdf:type owl:Class ;
+                rdfs:comment "Represents a classification of lexical entries according to their lexical realization or conventional linguistic form, such as a single word, multiword expression, idiom, catchphrase, proverb, or similar lexical unit types."@en ;
+                rdfs:label "LexicalUnit"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Lookism
+alo:Lookism rdf:type owl:Class ;
+            rdfs:subClassOf alo:HateConcept ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty alo:isDirectedAgainst ;
+                              owl:someValuesFrom alo:PhysicalAppearance
+                            ] ;
+            rdfs:comment "Lookism refers to prejudice or discrimination based on physical appearance and especially physical appearance believed to fall short of societal notions of beauty."@en ;
+            rdfs:label "Lookism"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#MaleGenitalia
+alo:MaleGenitalia rdf:type owl:Class ;
+                  rdfs:subClassOf alo:LexicalSourceConcept ;
+                  rdfs:comment "Represents the semantic domain of male genital anatomy, encompassing abusive lexical expressions derived from or referring to male genital concepts."@en ;
+                  rdfs:label "MaleGenitalia"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Malediction
+alo:Malediction rdf:type owl:Class ;
+                rdfs:subClassOf alo:AbuseCategory ;
+                rdfs:comment "Kletva je svečana izjava, želja ili prizivanje natprirodne sile sa namerom da se nekome ili nečemu nanese zlo, kazna ili nesreća; čin proklinjanja. Ovo odgovara engleskom značenju \"invocation of harm / malediction\". (\"Dabogda crk'o\" je primer kletve)."@sr ,
+                             "Malediction (curse) is a solemn utterance or expressed wish intended to invoke a supernatural power to inflict harm, punishment, evil, or misfortune upon someone or something."@en ;
+                rdfs:label "Malediction"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Man
+alo:Man rdf:type owl:Class ;
+        rdfs:subClassOf alo:Gender ;
+        owl:disjointWith alo:Woman ;
+        rdfs:comment "Represents men as the target of abusive speech based on their gender."@en ;
+        rdfs:label "Man"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Metaphor
+alo:Metaphor rdf:type owl:Class ;
+             rdfs:subClassOf alo:RhetoricalFigure ;
+             rdfs:comment "Represents a rhetorical figure in which a word or expression is used to refer to something to which it is not literally applicable, based on an implicit comparison."@en ;
+             rdfs:label "Metaphor"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Misandry
+alo:Misandry rdf:type owl:Class ;
+             rdfs:subClassOf alo:Sexism ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty alo:isDirectedAgainst ;
+                               owl:someValuesFrom alo:Man
+                             ] ;
+             rdfs:comment "Misandry is the dislike of, contempt for, ingrained prejudice against, or hatred of men and boys. It is the parallel concept to misogyny."@en ;
+             rdfs:label "Misandry"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Misogyny
+alo:Misogyny rdf:type owl:Class ;
+             rdfs:subClassOf alo:Sexism ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty alo:isDirectedAgainst ;
+                               owl:someValuesFrom alo:Woman
+                             ] ;
+             rdfs:comment "Misogyny is the dislike of, contempt for, ingrained prejudice against, or hatred of women and girls. It is a specific form of sexism characterized by a hostile and often demeaning attitude towards women."@en ;
+             rdfs:label "Misogyny"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Muslim
+alo:Muslim rdf:type owl:Class ;
+           rdfs:subClassOf alo:ReligiousBeliefs ;
+           rdfs:comment "Represents Muslim affiliation as the basis for abusive speech directed toward an individual or group."@en ;
+           rdfs:label "Muslim"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Nationality
+alo:Nationality rdf:type owl:Class ;
+                rdfs:subClassOf alo:TargetType ;
+                rdfs:comment "Represents national affiliation as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."@en ;
+                rdfs:label "Nationality"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#NewsArticle
+alo:NewsArticle rdf:type owl:Class ;
+                rdfs:subClassOf alo:Context ;
+                rdfs:comment "Represents a news article published by a news organization or media outlet, providing the context in which a text appears."@en ;
+                rdfs:label "NewsArticle"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#NonUrbanPerson
+alo:NonUrbanPerson rdf:type owl:Class ;
+                   rdfs:subClassOf alo:TargetType ;
+                   rdfs:comment "Represents residence in or affiliation with a non-urban area as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."@en ;
+                   rdfs:label "NonUrbanPerson"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Obesity
+alo:Obesity rdf:type owl:Class ;
+            rdfs:subClassOf alo:Weight ;
+            owl:disjointWith alo:Thinness ;
+            rdfs:comment "Represents obesity as the physical characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+            rdfs:label "Obesity"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Occupation
+alo:Occupation rdf:type owl:Class ;
+               rdfs:subClassOf alo:TargetType ;
+               rdfs:comment "Strong negative sentiments, prejudice, discrimination, and generalized negative stereotypes directed towards entire groups of individuals based solely on their chosen job."@en ;
+               rdfs:label "Occupation"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Offense
+alo:Offense rdf:type owl:Class ;
+            rdfs:subClassOf alo:Intention ;
+            rdfs:comment "Represents the intention to offend or cause emotional distress to an individual or group through abusive language."@en ;
+            rdfs:label "Offense"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#OffensiveSpeech
+alo:OffensiveSpeech rdf:type owl:Class ;
+                    rdfs:subClassOf alo:AbuseCategory ;
+                    rdfs:comment "Represents a category of abusive speech that captures offensive content aimed at insulting, offending, or violating norms of acceptable communication, without necessarily involving derogation, profanity, threat, or hate speech."@en ;
+                    rdfs:label "OffensiveSpeech"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#OldPerson
+alo:OldPerson rdf:type owl:Class ;
+              rdfs:subClassOf alo:Age ;
+              owl:disjointWith alo:YoungPerson ;
+              rdfs:comment "Represents older age as a target type in abusive speech."@en ;
+              rdfs:label "OldPerson"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Opinion
+alo:Opinion rdf:type owl:Class ;
+            rdfs:subClassOf alo:TargetType ;
+            rdfs:comment "Represents expressed opinions, views, or statements as characteristics that may serve as the basis for targeting an individual or group with abusive speech."@en ;
+            rdfs:label "Opinion"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Organization
+alo:Organization rdf:type owl:Class ;
+                 rdfs:subClassOf alo:Target ;
+                 rdfs:comment "Represents an organization, institution, company, or other organized entity that is the target of abusive speech."@en ;
+                 rdfs:label "Organization"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Orthodox
+alo:Orthodox rdf:type owl:Class ;
+             rdfs:subClassOf alo:ReligiousBeliefs ;
+             rdfs:comment "Represents Orthodox Christian affiliation as the basis for abusive speech directed toward an individual or group."@en ;
+             rdfs:label "Orthodox"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#OtherTarget
+alo:OtherTarget rdf:type owl:Class ;
+                rdfs:subClassOf alo:Target ;
+                rdfs:comment "Target of abusive speech which is not in other defined categories"@en ;
+                rdfs:label "OtherTarget"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#ParticipantRole
+alo:ParticipantRole rdf:type owl:Class ;
+                    rdfs:subClassOf prov:Role ;
+                    rdfs:comment "Represents the role assigned to a participant in an abusive communication event or interaction."@en ;
+                    rdfs:label "ParticipantRole"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Perpetrator
+alo:Perpetrator rdf:type owl:Class ;
+                rdfs:subClassOf alo:ParticipantRole ;
+                rdfs:comment "Represents a participant who produces, initiates, or carries out abusive behavior toward another individual or group."@en ;
+                rdfs:label "Perpetrator"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Person
+alo:Person rdf:type owl:Class ;
+           rdfs:subClassOf alo:Target ;
+           rdfs:comment "Represents an individual who is the target of abusive speech."@en ;
+           rdfs:label "Person"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#PhysicalAppearance
+alo:PhysicalAppearance rdf:type owl:Class ;
+                       rdfs:subClassOf alo:TargetType ;
+                       rdfs:comment "Represents physical appearance as the characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+                       rdfs:label "PhysicalAppearance"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#PhysicalDisability
+alo:PhysicalDisability rdf:type owl:Class ;
+                       rdfs:subClassOf alo:Disability ;
+                       rdfs:comment "Represents physical disabilities affecting mobility, motor function, or other physical capabilities as the characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+                       rdfs:label "PhysicalDisability"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Plant
+alo:Plant rdf:type owl:Class ;
+          rdfs:subClassOf alo:LexicalSourceConcept ;
+          rdfs:comment "Represents the semantic domain of plants, encompassing abusive lexical expressions derived from or referring to plant concepts."@en ;
+          rdfs:label "Plant"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#PoliticalBeliefs
+alo:PoliticalBeliefs rdf:type owl:Class ;
+                     rdfs:subClassOf alo:TargetType ;
+                     rdfs:comment "Represents political beliefs or political affiliation as the characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+                     rdfs:label "PoliticalBeliefs"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Profanity
+alo:Profanity rdf:type owl:Class ;
+              rdfs:subClassOf alo:AbuseCategory ,
+                              [ rdf:type owl:Class ;
+                                owl:complementOf [ rdf:type owl:Restriction ;
+                                                   owl:onProperty alo:hasTarget ;
+                                                   owl:someValuesFrom alo:Target
+                                                 ]
+                              ] ,
+                              [ rdf:type owl:Class ;
+                                owl:complementOf [ rdf:type owl:Restriction ;
+                                                   owl:onProperty alo:hasTargetGroup ;
+                                                   owl:someValuesFrom alo:TargetGroup
+                                                 ]
+                              ] .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Prostitution
+alo:Prostitution rdf:type owl:Class ;
+                 rdfs:subClassOf alo:Occupation ;
+                 rdfs:comment "Represents individuals engaged in prostitution or sex work as the target of abusive speech based on their occupation."@en ;
+                 rdfs:label "Prostitution"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Race
+alo:Race rdf:type owl:Class ;
+         rdfs:subClassOf alo:TargetType ;
+         rdfs:comment "Represents race as the characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+         rdfs:label "Race"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Racism
+alo:Racism rdf:type owl:Class ;
+           rdfs:subClassOf alo:HateConcept ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty alo:isDirectedAgainst ;
+                             owl:someValuesFrom alo:Race
+                           ] ;
+           rdfs:comment "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their race, ethnicity, or perceived racial or ethnic origin."@en ;
+           rdfs:label "Racism"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Refugee
+alo:Refugee rdf:type owl:Class ;
+            rdfs:subClassOf alo:TargetType ;
+            rdfs:comment "Represents refugee status as the characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+            rdfs:label "Refugee"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#RegionalIdentity
+alo:RegionalIdentity rdf:type owl:Class ;
+                     rdfs:subClassOf alo:TargetType ;
+                     rdfs:comment "Represents regional identity or regional affiliation as the characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+                     rdfs:label "RegionalIdentity"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#ReligiousBeliefs
+alo:ReligiousBeliefs rdf:type owl:Class ;
+                     rdfs:subClassOf alo:TargetType ;
+                     rdfs:comment "Represents religious belief as the characteristic on the basis of which abusive speech is directed toward an individual or group."@en ;
+                     rdfs:label "ReligiousBeliefs"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#ReligiousHatred
+alo:ReligiousHatred rdf:type owl:Class ;
+                    rdfs:subClassOf alo:HateConcept ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty alo:isDirectedAgainst ;
+                                      owl:someValuesFrom alo:ReligiousBeliefs
+                                    ] ;
+                    rdfs:comment "Religious harted refers specifically to intense dislike, animosity, or enmity directed towards individuals or groups on the basis of their religious (or non-religious) affiliation or beliefs."@en ;
+                    rdfs:label "ReligiousHatred"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#RhetoricalFigure
+alo:RhetoricalFigure rdf:type owl:Class ;
+                     rdfs:comment "Represents a rhetorical device or figure of speech that may be used to express abusive or offensive meaning."@en ;
+                     rdfs:label "RhetoricalFigure"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Roma
+alo:Roma rdf:type owl:Class ;
+         rdfs:subClassOf alo:Ethnicity ;
+         rdfs:comment "Represents belonging to Roma or Romani enthnicity as the characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+         rdfs:label "Roma"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Sarcasm
+alo:Sarcasm rdf:type owl:Class ;
+            rdfs:subClassOf alo:RhetoricalFigure ;
+            rdfs:comment "Represents a rhetorical figure that uses irony, ridicule, or mockery to express contempt or criticism."@en ;
+            rdfs:label "Sarcasm"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#SayingsProverbs
+alo:SayingsProverbs rdf:type owl:Class ;
+                    rdfs:subClassOf alo:LexicalUnit ;
+                    rdfs:comment "Represents sayings and proverbs that may convey abusive or offensive meaning."@en ;
+                    rdfs:label "SayingsProverbs"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Segregation
+alo:Segregation rdf:type owl:Class ;
+                rdfs:subClassOf alo:Incitement ;
+                rdfs:comment "Represents incitement encouraging the exclusion or segregation of an individual or group."@en ;
+                rdfs:label "Segregation"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Sentiment
+alo:Sentiment rdf:type owl:Class ;
+              rdfs:comment "Represents the emotional polarity or attitude expressed toward a target, entity, or situation in a textual expression."@en ;
+              rdfs:label "Sentiment"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Serb
+alo:Serb rdf:type owl:Class ;
+         rdfs:subClassOf alo:Nationality ;
+         rdfs:comment "Represents Serbian national affiliation as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."@en ;
+         rdfs:label "Serb"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#SevenDeadlySins
+alo:SevenDeadlySins rdf:type owl:Class ;
+                    rdfs:subClassOf alo:Behaviour ;
+                    rdfs:comment "Represents behaviors or characteristics associated with the traditional seven deadly sins (e.g., pride, greed, envy, wrath, lust, gluttony, and sloth) as the basis for abusive speech directed toward an individual or group."@en ;
+                    rdfs:label "SevenDeadlySins"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Sexism
+alo:Sexism rdf:type owl:Class ;
+           rdfs:subClassOf alo:HateConcept ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty alo:isDirectedAgainst ;
+                             owl:someValuesFrom alo:Gender
+                           ] ;
+           rdfs:comment "Sexism refers to prejudice, stereotyping, or discrimination, typically against women, on the basis of sex or gender."@en ,
+                        "The belief that one sex is superior to or more valuable than another (Britannica)."@en ;
+           rdfs:label "Sexism"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#SexualOrientation
+alo:SexualOrientation rdf:type owl:Class ;
+                      rdfs:subClassOf alo:TargetType .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Shorty
+alo:Shorty rdf:type owl:Class ;
+           rdfs:subClassOf alo:Height ;
+           owl:disjointWith alo:Tallness ;
+           rdfs:comment "Represents short stature as the physical characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+           rdfs:label "Shorty"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Sight
+alo:Sight rdf:type owl:Class ;
+          rdfs:subClassOf alo:PhysicalDisability ;
+          rdfs:comment "Represents visual disabilities or impairments as the characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+          rdfs:label "Sight"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Sizeism
+alo:Sizeism rdf:type owl:Class ;
+            rdfs:subClassOf alo:Lookism ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty alo:isDirectedAgainst ;
+                              owl:someValuesFrom alo:Weight
+                            ] ;
+            rdfs:comment "Prejudice or discrimination on the grounds of a person's body size (e.g., against people who are overweight or underweight)"@en ;
+            rdfs:label "Sizeism"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#SkinColour
+alo:SkinColour rdf:type owl:Class ;
+               rdfs:subClassOf alo:TargetType ;
+               rdfs:comment "Represents skin colour as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."@en ;
+               rdfs:label "SkinColour"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Slur
+alo:Slur rdf:type owl:Class ;
+         rdfs:subClassOf alo:AbuseCategory ;
+         rdfs:comment "A slur is a derogatory or insulting term used to express contempt or prejudice against individuals or groups, typically based on their identity or perceived membership in a particular social group."@en ,
+                      "Uvreda je pogrdni ili uvredljivi izraz koji se koristi za izražavanje prezira ili predrasuda prema pojedincima ili grupama, obično na osnovu njihovog identiteta ili percipirane pripadnosti određenoj društvenoj grupi."@sr ;
+         rdfs:label "Slur"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#SocialMedia
+alo:SocialMedia rdf:type owl:Class ;
+                rdfs:subClassOf alo:Context ;
+                rdfs:comment "Represents a social media platform or post serving as the context in which a text is created, shared, or discussed."@en ;
+                rdfs:label "SocialMedia"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#SocialStatus
+alo:SocialStatus rdf:type owl:Class ;
+                 rdfs:subClassOf alo:TargetType ;
+                 rdfs:comment "Represents social status as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."@en ;
+                 rdfs:label "SocialStatus"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#SpeechIntrusion
+alo:SpeechIntrusion rdf:type owl:Class ;
+                    rdfs:subClassOf alo:Behaviour ;
+                    rdfs:comment "Represents intrusive or disruptive speech behavior as the basis for abusive speech directed toward an individual or group."@en ;
+                    rdfs:label "SpeechIntrusion"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Stigmatization
+alo:Stigmatization rdf:type owl:Class ;
+                   rdfs:subClassOf alo:HateConcept ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty alo:isDirectedAgainst ;
+                                     owl:someValuesFrom alo:Behaviour
+                                   ] ;
+                   rdfs:comment "Stigmatization involves negative attitudes and discriminatory behavior towards individuals based on their specific behaviors or conditions."@en ;
+                   rdfs:label "Stigmatization"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#SwearWord
+alo:SwearWord rdf:type owl:Class ;
+              rdfs:subClassOf alo:Profanity ;
+              rdfs:comment "Profanities are derogatory, offensive, and indecent words used to hold something up to ridicule (Dictionary of Matica Srpska)."@en ,
+                           "Psovke su pogrdne, uvredljive, nepristojne riječi kojima se što izvrgava ruglu (Rečnik Matice srpske)"@sr ;
+              rdfs:label "SwearWord"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Tallness
+alo:Tallness rdf:type owl:Class ;
+             rdfs:subClassOf alo:Height ;
+             rdfs:comment "Represents tall stature as the physical characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+             rdfs:label "Tallness"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Target
+alo:Target rdf:type owl:Class ;
+           rdfs:comment "Target of abusive speech can be person, group or other."@en ;
+           rdfs:label "Target"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#TargetGroup
+alo:TargetGroup rdf:type owl:Class ;
+                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                  owl:onProperty alo:hasTargetType ;
+                                  owl:someValuesFrom alo:TargetType
+                                ] ;
+                rdfs:comment "Target types are usually combined into target group based on some common characteristics."@en ;
+                rdfs:label "TargetGroup"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#TargetType
+alo:TargetType rdf:type owl:Class ;
+               rdfs:comment "Represents the characteristic or social category to which a targeted person or group belongs and on the basis of which abusive speech is directed toward them."@en ;
+               rdfs:label "TargetType"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Thinness
+alo:Thinness rdf:type owl:Class ;
+             rdfs:subClassOf alo:Weight ;
+             rdfs:comment "Represents thinness as the physical characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+             rdfs:label "Thinness"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Threat
+alo:Threat rdf:type owl:Class ;
+           rdfs:subClassOf alo:AbuseCategory ;
+           rdfs:comment "A statement of an intention to inflict pain, injury, damage, or other hostile action on someone in retribution for something done or not done."@en ;
+           rdfs:label "Threat"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Upstander
+alo:Upstander rdf:type owl:Class ;
+              rdfs:subClassOf alo:ParticipantRole ;
+              rdfs:comment "Represents a participant who intervenes in, challenges, reports, or opposes abusive behavior in support of the victim or targeted group."@en ;
+              rdfs:label "Upstander"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Victim
+alo:Victim rdf:type owl:Class ;
+           rdfs:subClassOf alo:ParticipantRole ;
+           rdfs:comment "Represents a participant or target who is subjected to abusive behavior or harmful communication."@en ;
+           rdfs:label "Victim"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Violence
+alo:Violence rdf:type owl:Class ;
+             rdfs:subClassOf alo:Incitement ;
+             rdfs:comment "Represents incitement encouraging or advocating violence against an individual or group."@en ;
+             rdfs:label "Violence"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Walking
+alo:Walking rdf:type owl:Class ;
+            rdfs:subClassOf alo:PhysicalAppearance ;
+            rdfs:comment "Represents walking style or gait as the physical characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+            rdfs:label "Walking"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Weight
+alo:Weight rdf:type owl:Class ;
+           rdfs:subClassOf alo:PhysicalAppearance ;
+           rdfs:comment "Represents body weight as the physical characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+           rdfs:label "Weight"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Woman
+alo:Woman rdf:type owl:Class ;
+          rdfs:subClassOf alo:Gender ;
+          rdfs:comment "Represents women as the target of abusive speech based on their gender."@en ;
+          rdfs:label "Woman"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Wordplay
+alo:Wordplay rdf:type owl:Class ;
+             rdfs:subClassOf alo:RhetoricalFigure ;
+             rdfs:comment "A rhetorical technique or figure of speech characterized by the clever manipulation or exploitation of the sounds, meanings (especially polysemy or ambiguity), or form of words, typically intended to produce a humorous or witty effect."@en ;
+             rdfs:label "Wordplay"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Xenophobia
+alo:Xenophobia rdf:type owl:Class ;
+               rdfs:subClassOf alo:HateConcept ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty alo:isDirectedAgainst ;
+                                 owl:someValuesFrom [ rdf:type owl:Class ;
+                                                      owl:unionOf ( alo:Ethnicity
+                                                                    alo:Immigrant
+                                                                    alo:Nationality
+                                                                    alo:Refugee
+                                                                  )
+                                                    ]
+                               ] ;
+               rdfs:comment "Xenophobia is the dislike of or prejudice against people from other countries or who are perceived as foreign or strange. Since nationality is often tied to a country of origin, xenophobia directly addresses animosity towards individuals based on their national background when they are perceived as \"other\" or \"foreign.\""@en ;
+               rdfs:label "Xenophobia"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#YoungPerson
+alo:YoungPerson rdf:type owl:Class ;
+                rdfs:subClassOf alo:Age ;
+                rdfs:comment "Represents younger age as a target type in abusive speech."@en ;
+                rdfs:label "YoungPerson"@en .
+
+
+###  http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String
+nif:String rdf:type owl:Class ;
+           rdfs:comment "Class for connecting AbusiveText with NIF String class."@en ;
+           rdfs:isDefinedBy "nif:String"@en ;
+           rdfs:label "String"@en .
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing rdfs:subClassOf owl:Thing .
+
+
+###  http://www.w3.org/ns/lemon/ontolex#LexicalEntry
+ontolex:LexicalEntry rdf:type owl:Class ;
+                     rdfs:comment "Represents a LexicalEntry concept reused from the Ontolex ontology"@en ;
+                     rdfs:label "LexicalEntry"@en .
+
+
+###  http://www.w3.org/ns/lemon/ontolex#LexicalSense
+ontolex:LexicalSense rdf:type owl:Class ;
+                     rdfs:comment "Represents a LexicalSense concept reused from the Ontolex ontology"@en ;
+                     rdfs:label "LexicalSense"@en .
+
+
+###  http://www.w3.org/ns/prov#Activity
+prov:Activity rdf:type owl:Class ;
+              owl:disjointWith prov:Entity ;
+              rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+              rdfs:label "Activity" ;
+              prov:category "starting-point" ;
+              prov:component "entities-activities" ;
+              prov:constraints "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig"^^xsd:anyURI ;
+              prov:definition "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities." ;
+              prov:dm "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Activity"^^xsd:anyURI ;
+              prov:n "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Activity"^^xsd:anyURI .
+
+
+###  http://www.w3.org/ns/prov#Agent
+prov:Agent rdf:type owl:Class ;
+           rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+           rdfs:label "Agent" ;
+           prov:category "starting-point" ;
+           prov:component "agents-responsibility" ;
+           prov:definition "An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity. "@en ;
+           prov:dm "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent"^^xsd:anyURI ;
+           prov:n "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Agent"^^xsd:anyURI .
+
+
+###  http://www.w3.org/ns/prov#Entity
+prov:Entity rdf:type owl:Class ;
+            rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+            rdfs:label "Entity" ;
+            prov:constraints "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig"^^xsd:anyURI ;
+            prov:definition "An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary." .
+
+
+###  http://www.w3.org/ns/prov#Role
+prov:Role rdf:type owl:Class ;
+          rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+          rdfs:label "Role" ;
+          rdfs:seeAlso prov:hadRole ;
+          prov:category "qualified" ;
+          prov:component "agents-responsibility" ;
+          prov:definition "A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end."@en ;
+          prov:dm "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-attribute-role"^^xsd:anyURI ;
+          prov:n "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-attribute"^^xsd:anyURI .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444
+alo:AbCoSer2444 rdf:type owl:NamedIndividual ,
+                         alo:DatasetEntry ;
+                alo:hasAbusivenessAnalysis <http://llod.jerteh.rs/alo/alo.owl#2444AbusivenessAnalysis> ,
+                                           <http://llod.jerteh.rs/alo/alo.owl#2444WholeTextAnalysis> ;
+                alo:entryId "175151" ;
+                alo:sourceText "ja obozavam pedere na instagramu koji nam u bio objasne kako oni nemaju drugu drustvenu mrezu da slucajno ne pomislimo kako imaju profil na grinderu i kako se ne daj boze jebu u dupe"@sr .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AbCoSerCorpus
+alo:AbCoSerCorpus rdf:type owl:NamedIndividual ,
+                           alo:Dataset ;
+                  alo:containsEntry alo:AbCoSer2444 .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AbCoSerToxicSpansAnnotation
+alo:AbCoSerToxicSpansAnnotation rdf:type owl:NamedIndividual ,
+                                         alo:Annotation ;
+                                alo:hasAnalysis <http://llod.jerteh.rs/alo/alo.owl#2444AbusivenessAnalysis> ;
+                                alo:hasAnnotationLevel alo:TextSpanLevel .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AbCoSerWholeTextAnnotation
+alo:AbCoSerWholeTextAnnotation rdf:type owl:NamedIndividual ,
+                                        alo:Annotation ;
+                               alo:hasAnalysis <http://llod.jerteh.rs/alo/alo.owl#2444WholeTextAnalysis> ;
+                               alo:hasAnnotationLevel alo:WholeTextLevel .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Action
+alo:Action rdf:type owl:NamedIndividual ,
+                    alo:AbusiveSpeech ;
+           alo:hasAbuseCategory alo:HateSpeech ,
+                                alo:Profanity ;
+           alo:hasTargetType alo:SexualOrientation ;
+           rdfs:label "2444AbusiveSpeechWholeTextSet1"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#HateSpeech
+alo:HateSpeech rdf:type owl:NamedIndividual ,
+                        alo:HateSpeech .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Negative
+alo:Negative rdf:type owl:NamedIndividual ,
+                      alo:Sentiment ;
+             rdfs:comment "Represents negative sentiment associated with a dataset entry."@en ;
+             rdfs:label "Negative"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Neutral
+alo:Neutral rdf:type owl:NamedIndividual ,
+                     alo:Sentiment ;
+            rdfs:comment "epresents neutral sentiment associated with a dataset entry."@en ;
+            rdfs:label "Neutral"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Positive
+alo:Positive rdf:type owl:NamedIndividual ,
+                      alo:Sentiment ;
+             rdfs:comment "Represents positive sentiment associated with a dataset entry"@en ;
+             rdfs:label "Positive"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#Profanity
+alo:Profanity rdf:type owl:NamedIndividual ,
+                       alo:Profanity .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#SentenceLevel
+alo:SentenceLevel rdf:type owl:NamedIndividual .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#SexualOrientation
+alo:SexualOrientation rdf:type owl:NamedIndividual ,
+                               alo:SexualOrientation .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#TextSpanLevel
+alo:TextSpanLevel rdf:type owl:NamedIndividual ,
+                           alo:AnnotationLevel .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#WholeTextLevel
+alo:WholeTextLevel rdf:type owl:NamedIndividual ,
+                            alo:AnnotationLevel .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#2444AbusiveSpeechToxicSpansSet1
+<http://llod.jerteh.rs/alo/alo.owl#2444AbusiveSpeechToxicSpansSet1> rdf:type owl:NamedIndividual ,
+                                                                             alo:AbusiveSpeech ;
+                                                                    alo:hasAbuseCategory alo:HateSpeech ;
+                                                                    alo:hasTargetType alo:SexualOrientation .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#2444AbusiveSpeechToxicSpansSet2
+<http://llod.jerteh.rs/alo/alo.owl#2444AbusiveSpeechToxicSpansSet2> rdf:type owl:NamedIndividual ,
+                                                                             alo:AbusiveSpeech ;
+                                                                    alo:hasAbuseCategory alo:Profanity .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#2444AbusivenessAnalysis
+<http://llod.jerteh.rs/alo/alo.owl#2444AbusivenessAnalysis> rdf:type owl:NamedIndividual ,
+                                                                     alo:AbusiveLanguageAnalysis ;
+                                                            prov:generated <http://llod.jerteh.rs/alo/alo.owl#2444AbusivenessSet> ,
+                                                                           <http://llod.jerteh.rs/alo/alo.owl#2444ToxicSpansSet2> ;
+                                                            rdfs:label "2444ToxicSpansAnalysis"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#2444AbusivenessSet
+<http://llod.jerteh.rs/alo/alo.owl#2444AbusivenessSet> rdf:type owl:NamedIndividual ,
+                                                                alo:AbusivenessSet ;
+                                                       alo:hasAbusiveSpeech <http://llod.jerteh.rs/alo/alo.owl#2444AbusiveSpeechToxicSpansSet1> ;
+                                                       alo:hasAbusiveText <http://llod.jerteh.rs/alo/alo.owl#2444ToxicSpan1> ;
+                                                       alo:abusiveBoolean "true"^^xsd:boolean ;
+                                                       rdfs:label "2444ToxicSpansSet1" .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#2444ToxicSpan1
+<http://llod.jerteh.rs/alo/alo.owl#2444ToxicSpan1> rdf:type owl:NamedIndividual ,
+                                                            alo:AbusiveText ;
+                                                   alo:abusiveText "pedere"@sr .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#2444ToxicSpan2
+<http://llod.jerteh.rs/alo/alo.owl#2444ToxicSpan2> rdf:type owl:NamedIndividual ,
+                                                            alo:AbusiveText ;
+                                                   alo:abusiveText "jebu u dupe"@sr .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#2444ToxicSpansSet2
+<http://llod.jerteh.rs/alo/alo.owl#2444ToxicSpansSet2> rdf:type owl:NamedIndividual ,
+                                                                alo:AbusivenessSet ;
+                                                       alo:hasAbusiveSpeech <http://llod.jerteh.rs/alo/alo.owl#2444AbusiveSpeechToxicSpansSet2> ;
+                                                       alo:hasAbusiveText <http://llod.jerteh.rs/alo/alo.owl#2444ToxicSpan2> ;
+                                                       alo:abusiveBoolean "true"^^xsd:boolean .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#2444WholeAbusiveText
+<http://llod.jerteh.rs/alo/alo.owl#2444WholeAbusiveText> rdf:type owl:NamedIndividual ,
+                                                                  alo:AbusiveText ;
+                                                         alo:abusiveText "ja obozavam pedere na instagramu koji nam u bio objasne kako oni nemaju drugu drustvenu mrezu da slucajno ne pomislimo kako imaju profil na grinderu i kako se ne daj boze jebu u dupe"@sr .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#2444WholeTextAnalysis
+<http://llod.jerteh.rs/alo/alo.owl#2444WholeTextAnalysis> rdf:type owl:NamedIndividual ,
+                                                                   alo:AbusiveLanguageAnalysis ;
+                                                          prov:generated <http://llod.jerteh.rs/alo/alo.owl#2444WholeTextSet1> .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#2444WholeTextSet1
+<http://llod.jerteh.rs/alo/alo.owl#2444WholeTextSet1> rdf:type owl:NamedIndividual ,
+                                                               alo:AbusivenessSet ;
+                                                      alo:hasAbusiveSpeech alo:Action ;
+                                                      alo:hasAbusiveText <http://llod.jerteh.rs/alo/alo.owl#2444WholeAbusiveText> ;
+                                                      alo:abusiveBoolean "true"^^xsd:boolean .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+alo:HateSpeech rdfs:comment "Any communication that disparages a person or a group on the basis of some characteristic such as race, color, ethnicity, gender, sexual orientation, nationality, religion, or other characteristics (Basile et al., 2019)."@en ;
+               rdfs:label "HateSpeech"@en .
+
+
+alo:Profanity rdfs:comment "Profanity: This term encompasses a broader range of offensive language, including swearing, cursing, and other vulgar expressions. Profanity generally refers to language that is disrespectful or irreverent, especially towards sacred thing (Wikipedia)"@en ,
+                           "Untargeted offensive language that is considered socially offensive due to being vulgar, obscene, or irreverent (Caselli et al., 2020, Britanicca)."@en ;
+              rdfs:label "Profanity"@en .
+
+
+alo:SexualOrientation rdfs:comment "Represents sexual orientation as the characteristic on the basis of which an individual or group is targeted by abusive speech."@en ;
+                      rdfs:label "SexualOrientation"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( alo:Adultism
+                alo:Ephebiphobia
+                alo:Gerontophobia
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( alo:Age
+                alo:Behaviour
+                alo:Gender
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( alo:Albanian
+                alo:Croatian
+                alo:German
+                alo:Jew
+                alo:Serb
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( alo:Alcoholism
+                alo:DrugAddiction
+                alo:SpeechIntrusion
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( alo:Animal
+                alo:FemaleGenitalia
+                alo:MaleGenitalia
+                alo:Plant
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( alo:AntiAlbanian
+                alo:AntiCroatian
+                alo:AntiGerman
+                alo:AntiSemitism
+                alo:AntiSerb
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( alo:AntiCatholic
+                alo:AntiMuslim
+                alo:AntiNonMuslim
+                alo:AntiOrthodox
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( alo:Assistant
+                alo:Bystander
+                alo:Perpetrator
+                alo:Upstander
+                alo:Victim
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( alo:Catholic
+                alo:Muslim
+                alo:Orthodox
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( alo:Defamation
+                alo:Derogation
+                alo:Discrimination
+                alo:Disparagement
+                alo:Disrespect
+                alo:Insult
+                alo:Offense
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( alo:Derogatory
+                alo:HateSpeech
+                alo:Profanity
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( alo:Group
+                alo:Organization
+                alo:OtherTarget
+                alo:Person
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( alo:Height
+                alo:Walking
+                alo:Weight
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( alo:Homophobia
+                alo:Misandry
+                alo:Misogyny
+                alo:Racism
+                alo:Xenophobia
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( alo:Hurt
+                alo:Segregation
+                alo:Violence
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( alo:Irony
+                alo:Metaphor
+                alo:Sarcasm
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( alo:Irony
+                alo:Metaphor
+                alo:Sarcasm
+                alo:Wordplay
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
