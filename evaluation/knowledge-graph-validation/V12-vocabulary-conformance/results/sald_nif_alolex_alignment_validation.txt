@@ -1,0 +1,26 @@
+====================================
+ALO GRAPH VALIDATION REPORT
+====================================
+Ontology file: alo_13072026.ttl
+Target file:   sald_nif_alolex_alignment_02092026.ttl
+------------------------------------
+Defined ALO classes:      148
+Defined ALO properties:   44
+Defined ALO individuals:  24
+Used ALO terms in target: 0
+------------------------------------
+Missing ALO terms:        0
+------------------------------------
+Missing ALO properties:   0
+------------------------------------
+Undefined ALO classes in rdf:type: 0
+------------------------------------
+Class used as property: 0
+------------------------------------
+Property used as object: 0
+------------------------------------
+ALO classes/properties without rdfs:label: 0
+------------------------------------
+ALO classes/properties without rdfs:comment: 0
+====================================
+Done.

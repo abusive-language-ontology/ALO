@@ -1,0 +1,58 @@
+SPARQL 1: number of abusive spans in SALD
+
+PREFIX alo: <http://llod.jerteh.rs/alo/alo.owl#>
+
+SELECT (COUNT(DISTINCT ?span) AS ?saldSpans)
+WHERE {
+    GRAPH <http://llod.jerteh.rs/graph/sald> {
+        ?span a alo:AbusiveText ;
+              alo:hasAnnotationLevel alo:TextSpanLevel .
+    }
+}
+
+SPARQL 2: number of spans modelled using NIF
+
+PREFIX nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>
+
+SELECT (COUNT(DISTINCT ?span) AS ?nifSpans)
+WHERE {
+    GRAPH <http://llod.jerteh.rs/graph/sald> {
+        VALUES ?type { nif:Word nif:Phrase }
+        ?span a ?type .
+    }
+}
+
+SPARQL 3: is there any abusive span without NIF anchor id
+
+PREFIX alo: <http://llod.jerteh.rs/alo/alo.owl#>
+
+SELECT ?span
+WHERE {
+    GRAPH <http://llod.jerteh.rs/graph/sald> {
+        ?span a alo:AbusiveText ;
+              alo:hasAnnotationLevel alo:TextSpanLevel .
+
+        FILTER NOT EXISTS {
+            ?span alo:hasNIFAnchor ?nifSpan .
+        }
+    }
+}
+
+SPARQL 4: is there NIF span without abusive span
+
+PREFIX alo: <http://llod.jerteh.rs/alo/alo.owl#>
+PREFIX nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>
+
+SELECT ?nifSpan
+WHERE {
+    GRAPH <http://llod.jerteh.rs/graph/sald> {
+        VALUES ?type { nif:Word nif:Phrase }
+        ?nifSpan a ?type .
+
+        FILTER NOT EXISTS {
+            ?abusiveText a alo:AbusiveText ;
+                         alo:hasAnnotationLevel alo:TextSpanLevel ;
+                         alo:hasNIFAnchor ?nifSpan .
+        }
+    }
+}

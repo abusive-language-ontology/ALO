@@ -1,0 +1,65 @@
+PREFIX alo:     <http://llod.jerteh.rs/alo/alo.owl#>
+PREFIX prov:    <http://www.w3.org/ns/prov#>
+PREFIX nif:     <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>
+PREFIX itsrdf:  <http://www.w3.org/2005/11/its/rdf#>
+PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+PREFIX skos:    <http://www.w3.org/2004/02/skos/core#>
+
+SELECT
+    (COUNT(DISTINCT ?lexicalEntry) AS ?lexicalEntries)
+    (COUNT(DISTINCT ?nifSpan) AS ?saldSpans)
+    (COUNT(DISTINCT ?syntheticEntry) AS ?syntheticEntries)
+WHERE {
+
+    GRAPH <http://llod.jerteh.rs/graph/alolex> {
+        ?lexicalEntry
+            a ontolex:LexicalEntry ;
+            ontolex:canonicalForm ?form .
+
+        ?form ontolex:writtenRep ?canonicalForm .
+    }
+
+    OPTIONAL {
+        GRAPH <http://llod.jerteh.rs/graph/sald> {
+            ?saldEntry
+                a alo:DatasetEntry ;
+                alo:sourceText ?saldText ;
+                alo:hasAbusivenessAnalysis ?analysis .
+
+            ?analysis
+                a alo:AbusiveLanguageAnalysis ;
+                prov:generated ?abusivenessSet .
+
+            ?abusivenessSet
+                a alo:AbusivenessSet ;
+                alo:hasAbusiveText ?abusiveText .
+
+            ?abusiveText
+                a alo:AbusiveText ;
+                alo:hasNIFAnchor ?nifSpan .
+
+            ?nifSpan
+                nif:anchorOf ?spanText ;
+                itsrdf:taIdentRef ?lexicalEntry .
+        }
+    }
+
+    {
+        GRAPH <http://llod.jerteh.rs/graph/synthetic> {
+            ?syntheticEntry
+                a alo:DatasetEntry ;
+                alo:sourceText ?syntheticText ;
+                alo:refersToLexicalEntry ?lexicalEntry ;
+                alo:refersToLexicalSense ?lexicalSense .
+        }
+
+        GRAPH <http://llod.jerteh.rs/graph/alolex> {
+            ?lexicalSense
+                a ontolex:LexicalSense .
+
+            {
+                ?lexicalSense skos:definition ?definition .
+            }
+        }
+    }
+}

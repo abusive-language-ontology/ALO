@@ -1,0 +1,52 @@
+PREFIX alo:     <http://llod.jerteh.rs/alo/alo.owl#>
+PREFIX prov:    <http://www.w3.org/ns/prov#>
+PREFIX nif:     <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>
+PREFIX itsrdf:  <http://www.w3.org/2005/11/its/rdf#>
+PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+
+SELECT DISTINCT
+    ?datasetEntry
+    ?sourceText
+    ?spanText
+    ?lexicalEntry
+    ?canonicalForm
+WHERE {
+    GRAPH <http://llod.jerteh.rs/graph/sald> {
+
+        ?datasetEntry
+            a alo:DatasetEntry ;
+            alo:sourceText ?sourceText ;
+            alo:hasAbusivenessAnalysis ?analysis .
+
+        ?analysis
+            a alo:AbusiveLanguageAnalysis ;
+            prov:generated ?abusivenessSet .
+
+        ?abusivenessSet
+            a alo:AbusivenessSet ;
+            alo:hasAbusiveText ?abusiveText .
+
+        ?abusiveText
+            a alo:AbusiveText ;
+            alo:hasNIFAnchor ?nifSpan .
+
+        VALUES ?spanType { nif:Word nif:Phrase }
+
+        ?nifSpan
+            a ?spanType ;
+            nif:anchorOf ?spanText ;
+            itsrdf:taIdentRef ?lexicalEntry .
+    }
+
+    GRAPH <http://llod.jerteh.rs/graph/alolex> {
+
+        ?lexicalEntry
+            a ontolex:LexicalEntry ;
+            ontolex:canonicalForm ?form .
+
+        ?form
+            a ontolex:Form ;
+            ontolex:writtenRep ?canonicalForm .
+    }
+}
+LIMIT 20

@@ -1,0 +1,14 @@
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>
+
+SELECT ?span ?begin ?end
+WHERE {
+    GRAPH <http://llod.jerteh.rs/graph/sald> {
+        VALUES ?type { nif:Word nif:Phrase }
+        ?span a ?type ;
+              nif:beginIndex ?begin ;
+              nif:endIndex ?end .
+
+        FILTER(xsd:integer(?begin) >= xsd:integer(?end))
+    }
+}

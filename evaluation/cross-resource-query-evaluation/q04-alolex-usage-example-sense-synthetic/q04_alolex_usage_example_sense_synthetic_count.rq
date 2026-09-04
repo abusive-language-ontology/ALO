@@ -1,0 +1,48 @@
+PREFIX alo:     <http://llod.jerteh.rs/alo/alo.owl#>
+PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+PREFIX lexicog: <http://www.w3.org/ns/lemon/lexicog#>
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos:    <http://www.w3.org/2004/02/skos/core#>
+
+SELECT 
+	(COUNT(DISTINCT ?lexicalEntry) AS ?lexicalEntries)
+    (COUNT(DISTINCT ?lexicalSense) AS ?lexicalSenses)
+    (COUNT(DISTINCT ?originalExample) AS ?originalExamples)
+    (COUNT(DISTINCT ?syntheticExample) AS ?syntheticExamples)
+WHERE {
+
+    GRAPH <http://llod.jerteh.rs/graph/alolex> {
+
+        ?lexicalEntry
+            a ontolex:LexicalEntry ;
+            ontolex:canonicalForm ?form ;
+            ontolex:sense ?lexicalSense .
+
+        ?form ontolex:writtenRep ?canonicalForm .
+
+        ?lexicalSense
+            a ontolex:LexicalSense ;
+            lexicog:usageExample ?originalExample .
+
+        ?originalExample
+            a lexicog:UsageExample ;
+            rdf:value ?originalExampleText .
+
+        OPTIONAL {
+            ?lexicalSense skos:definition ?definition .
+        }
+    }
+
+    GRAPH <http://llod.jerteh.rs/graph/synthetic> {
+
+        ?lexicalSense
+            lexicog:usageExample ?syntheticExample .
+
+        ?syntheticExample
+            a alo:DatasetEntry,
+              lexicog:UsageExample ;
+            rdf:value ?syntheticExampleText ;
+            alo:refersToLexicalEntry ?lexicalEntry ;
+            alo:refersToLexicalSense ?lexicalSense .
+    }
+}

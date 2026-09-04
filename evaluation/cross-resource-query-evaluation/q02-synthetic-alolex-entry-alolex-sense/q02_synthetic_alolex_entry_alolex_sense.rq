@@ -1,0 +1,36 @@
+PREFIX alo:     <http://llod.jerteh.rs/alo/alo.owl#>
+PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+PREFIX skos:    <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT
+    ?datasetEntry
+    ?sourceText
+    ?lexicalEntry
+    ?canonicalForm
+    ?lexicalSense
+    ?definition
+WHERE {
+    GRAPH <http://llod.jerteh.rs/graph/synthetic> {
+
+        ?datasetEntry
+            a alo:DatasetEntry ;
+            alo:sourceText ?sourceText ;
+            alo:refersToLexicalEntry ?lexicalEntry ;
+            alo:refersToLexicalSense ?lexicalSense .
+    }
+
+    GRAPH <http://llod.jerteh.rs/graph/alolex> {
+
+        ?lexicalEntry
+            a ontolex:LexicalEntry ;
+            ontolex:canonicalForm ?form .
+
+        ?form
+            ontolex:writtenRep ?canonicalForm .
+
+        ?lexicalSense
+            a ontolex:LexicalSense ;
+            skos:definition ?definition .
+    }
+}
+LIMIT 20

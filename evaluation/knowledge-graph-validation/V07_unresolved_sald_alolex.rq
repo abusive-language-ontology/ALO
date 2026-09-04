@@ -1,0 +1,35 @@
+SPARQL 1 - Is there any unreseolved SALD reference to lexical entry
+
+PREFIX alo:     <http://llod.jerteh.rs/alo/alo.owl#>
+PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+
+SELECT ?source ?entry
+WHERE {
+    GRAPH <http://llod.jerteh.rs/graph/sald> {
+        ?source alo:refersToLexicalEntry ?entry .
+    }
+
+    FILTER NOT EXISTS {
+        GRAPH <http://llod.jerteh.rs/graph/alolex> {
+            ?entry a ontolex:LexicalEntry .
+        }
+    }
+}
+
+SPARQL 2 - count of connected lexical entries
+
+PREFIX alo:     <http://llod.jerteh.rs/alo/alo.owl#>
+PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+
+SELECT (COUNT(*) AS ?count)
+WHERE {
+    GRAPH <http://llod.jerteh.rs/graph/sald> {
+        ?source alo:refersToLexicalEntry ?entry .
+    }
+
+    FILTER EXISTS {
+        GRAPH <http://llod.jerteh.rs/graph/alolex> {
+            ?entry a ontolex:LexicalEntry .
+        }
+    }
+}

@@ -1,0 +1,15 @@
+PREFIX nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>
+
+SELECT ?span
+WHERE {
+    GRAPH <http://llod.jerteh.rs/graph/sald> {
+        VALUES ?type { nif:Word nif:Phrase }
+        ?span a ?type .
+
+        FILTER (
+            NOT EXISTS { ?span nif:anchorOf ?anchor } ||
+            NOT EXISTS { ?span nif:beginIndex ?begin } ||
+            NOT EXISTS { ?span nif:endIndex ?end }
+        )
+    }
+}

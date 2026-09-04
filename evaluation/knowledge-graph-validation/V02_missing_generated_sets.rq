@@ -1,0 +1,14 @@
+PREFIX alo:  <http://llod.jerteh.rs/alo/alo.owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+
+SELECT ?analysis
+WHERE {
+    GRAPH <http://llod.jerteh.rs/graph/sald> {
+        ?analysis a alo:AbusiveLanguageAnalysis .
+
+        FILTER NOT EXISTS {
+            ?analysis prov:generated ?set .
+            ?set a alo:AbusivenessSet .
+        }
+    }
+}

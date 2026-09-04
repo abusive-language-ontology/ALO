@@ -1,0 +1,34 @@
+SPARQL 1:
+
+PREFIX nif:     <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>
+PREFIX itsrdf:  <http://www.w3.org/2005/11/its/rdf#>
+PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+
+SELECT ?span ?entry
+WHERE {
+    GRAPH <http://llod.jerteh.rs/graph/sald> {
+        VALUES ?type { nif:Word nif:Phrase }
+        ?span a ?type ;
+              itsrdf:taIdentRef ?entry .
+    }
+
+    FILTER NOT EXISTS {
+        GRAPH <http://llod.jerteh.rs/graph/alolex> {
+            ?entry a ontolex:LexicalEntry .
+        }
+    }
+}
+
+SPARQL 2: count of connected spans to lexical entries
+
+PREFIX nif:    <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>
+PREFIX itsrdf: <http://www.w3.org/2005/11/its/rdf#>
+
+SELECT (COUNT(DISTINCT ?span) AS ?linkedSpans)
+WHERE {
+    GRAPH <http://llod.jerteh.rs/graph/sald> {
+        VALUES ?type { nif:Word nif:Phrase }
+        ?span a ?type ;
+              itsrdf:taIdentRef ?entry .
+    }
+}

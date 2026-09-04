@@ -1,0 +1,29 @@
+SPARTQL 1: unresolved lexical senses from Synthtetic to AloLex graph
+
+PREFIX alo:     <http://llod.jerteh.rs/alo/alo.owl#>
+PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+
+SELECT ?source ?sense
+WHERE {
+    GRAPH <http://llod.jerteh.rs/graph/synthetic> {
+        ?source alo:refersToLexicalSense ?sense .
+    }
+
+    FILTER NOT EXISTS {
+        GRAPH <http://llod.jerteh.rs/graph/alolex> {
+            ?sense a ontolex:LexicalSense .
+        }
+    }
+}
+
+
+SPARQL 2: connections from synthetic to AloLex sense
+
+PREFIX alo: <http://llod.jerteh.rs/alo/alo.owl#>
+
+SELECT (COUNT(*) AS ?count)
+WHERE {
+    GRAPH <http://llod.jerteh.rs/graph/synthetic> {
+        ?source alo:refersToLexicalSense ?sense .
+    }
+}

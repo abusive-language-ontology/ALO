@@ -1,0 +1,38 @@
+SPARQL 1
+
+
+PREFIX alo:     <http://llod.jerteh.rs/alo/alo.owl#>
+PREFIX itsrdf:  <http://www.w3.org/2005/11/its/rdf#>
+
+SELECT ?abusiveText ?nifSpan ?aloEntry ?nifEntry
+WHERE {
+    GRAPH <http://llod.jerteh.rs/graph/sald> {
+        ?abusiveText
+            a alo:AbusiveText ;
+            alo:refersToLexicalEntry ?aloEntry ;
+            alo:hasNIFAnchor ?nifSpan .
+
+        ?nifSpan itsrdf:taIdentRef ?nifEntry .
+
+        FILTER (?aloEntry != ?nifEntry)
+    }
+}
+
+SPARQL 2: number of equivalent links
+
+PREFIX alo:     <http://llod.jerteh.rs/alo/alo.owl#>
+PREFIX itsrdf:  <http://www.w3.org/2005/11/its/rdf#>
+
+SELECT (COUNT(*) as ?count)
+WHERE {
+    GRAPH <http://llod.jerteh.rs/graph/sald> {
+        ?abusiveText
+            a alo:AbusiveText ;
+            alo:refersToLexicalEntry ?aloEntry ;
+            alo:hasNIFAnchor ?nifSpan .
+
+        ?nifSpan itsrdf:taIdentRef ?nifEntry .
+
+        FILTER (?aloEntry = ?nifEntry)
+    }
+}

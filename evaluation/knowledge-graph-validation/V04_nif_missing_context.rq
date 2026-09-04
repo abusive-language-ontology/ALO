@@ -1,0 +1,15 @@
+PREFIX nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>
+
+SELECT ?span (COUNT(?context) AS ?numberOfContexts)
+WHERE {
+    GRAPH <http://llod.jerteh.rs/graph/sald> {
+        ?span a ?type .
+        VALUES ?type { nif:Word nif:Phrase }
+
+        OPTIONAL {
+            ?span nif:referenceContext ?context .
+        }
+    }
+}
+GROUP BY ?span
+HAVING (COUNT(?context) != 1)

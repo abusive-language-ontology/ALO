@@ -1,0 +1,8 @@
+PREFIX alo: <http://llod.jerteh.rs/alo/alo.owl#>
+
+SELECT (COUNT(DISTINCT ?entry) AS ?count)
+WHERE {
+  GRAPH <http://llod.jerteh.rs/graph/sald> {
+    ?entry a alo:DatasetEntry .
+  }
+}

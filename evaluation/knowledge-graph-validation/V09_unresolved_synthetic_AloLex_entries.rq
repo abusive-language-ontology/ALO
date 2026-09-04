@@ -1,0 +1,29 @@
+SPARQL 1: Is there any unresolved references from synthetic graph to AloLex
+
+PREFIX alo:     <http://llod.jerteh.rs/alo/alo.owl#>
+PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+
+SELECT ?source ?entry
+WHERE {
+    GRAPH <http://llod.jerteh.rs/graph/synthetic> {
+        ?source alo:refersToLexicalEntry ?entry .
+    }
+
+    FILTER NOT EXISTS {
+        GRAPH <http://llod.jerteh.rs/graph/alolex> {
+            ?entry a ontolex:LexicalEntry .
+        }
+    }
+}
+
+SPARQL 2: count of connected synthetic entries to AloLex
+
+
+PREFIX alo: <http://llod.jerteh.rs/alo/alo.owl#>
+
+SELECT (COUNT(DISTINCT ?source) AS ?linkedResources)
+WHERE {
+    GRAPH <http://llod.jerteh.rs/graph/synthetic> {
+        ?source alo:refersToLexicalEntry ?entry .
+    }
+}

@@ -1,0 +1,22 @@
+#Retrieve AloLex lexical entries associated with abusive spans represented in SALD through their NIF representations.
+
+PREFIX nif:     <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>
+PREFIX itsrdf:  <http://www.w3.org/2005/11/its/rdf#>
+PREFIX ontolex: <http://www.w3.org/ns/lemon/ontolex#>
+
+SELECT DISTINCT ?span ?text ?lexicalEntry
+WHERE {
+    GRAPH <http://llod.jerteh.rs/graph/sald> {
+        VALUES ?spanType { nif:Word nif:Phrase }
+
+        ?span a ?spanType ;
+              nif:anchorOf ?text ;
+              itsrdf:taIdentRef ?lexicalEntry .
+    }
+
+    GRAPH <http://llod.jerteh.rs/graph/alolex> {
+        ?lexicalEntry a ontolex:LexicalEntry .
+    }
+}
+LIMIT 20
+
