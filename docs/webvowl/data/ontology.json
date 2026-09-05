@@ -1,0 +1,6447 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined", "sr" ],
+    "baseIris" : [ "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://www.w3.org/2001/XMLSchema", "http://llod.jerteh.rs/alo/alo.owl", "http://www.w3.org/ns/lemon/ontolex" ],
+    "title" : {
+      "en" : "Abusive Language Ontology (Alo)"
+    },
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "version" : "1.0.0",
+    "author" : [ "Danka Jokic, University of Belgrade" ],
+    "description" : {
+      "en" : "The ontology of abusive speech is designed for publishing results of the abusive language annotation process in a structured form. The goal is to have a placeholder for different dataset formats, to support diverse abusive language detection methodologies and content providers."
+    },
+    "comments" : {
+      "en" : "The ontology of abusive speech is designed for publishing results of the abusive language annotation process in a structured form. The goal is to have a placeholder for different dataset formats, to support diverse abusive language detection methodologies and content providers."
+    },
+    "other" : {
+      "rightsHolder" : [ {
+        "identifier" : "rightsHolder",
+        "language" : "en",
+        "value" : "Danka Jokic",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Danka Jokic, University of Belgrade",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "en",
+        "value" : "2025-03-01",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "en",
+        "value" : "http://llod.jerteh.rs/alo/alo.owl#",
+        "type" : "label"
+      }, {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "en",
+        "value" : "alo",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "en",
+        "value" : "University of Belgrade",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "en",
+        "value" : "02-07-2026",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "en",
+        "value" : "The ontology of abusive speech is designed for publishing results of the abusive language annotation process in a structured form. The goal is to have a placeholder for different dataset formats, to support diverse abusive language detection methodologies and content providers.",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Abusive Language Ontology (Alo)",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://github.com/danka-jokic/ALO",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "126",
+    "type" : "owl:Class"
+  }, {
+    "id" : "130",
+    "type" : "owl:Class"
+  }, {
+    "id" : "137",
+    "type" : "owl:Class"
+  }, {
+    "id" : "142",
+    "type" : "owl:Class"
+  }, {
+    "id" : "144",
+    "type" : "owl:Class"
+  }, {
+    "id" : "120",
+    "type" : "owl:Class"
+  }, {
+    "id" : "132",
+    "type" : "owl:Class"
+  }, {
+    "id" : "169",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "174",
+    "type" : "owl:Class"
+  }, {
+    "id" : "157",
+    "type" : "owl:Class"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "181",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "185",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "153",
+    "type" : "owl:Class"
+  }, {
+    "id" : "186",
+    "type" : "owl:Class"
+  }, {
+    "id" : "192",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "205",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "208",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "211",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "122",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "218",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "220",
+    "type" : "owl:Class"
+  }, {
+    "id" : "234",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "236",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "258",
+    "type" : "owl:Class"
+  }, {
+    "id" : "259",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "264",
+    "type" : "owl:Class"
+  }, {
+    "id" : "159",
+    "type" : "owl:Class"
+  }, {
+    "id" : "231",
+    "type" : "owl:Class"
+  }, {
+    "id" : "277",
+    "type" : "owl:Class"
+  }, {
+    "id" : "232",
+    "type" : "owl:Class"
+  }, {
+    "id" : "312",
+    "type" : "owl:Class"
+  }, {
+    "id" : "272",
+    "type" : "owl:Class"
+  }, {
+    "id" : "253",
+    "type" : "owl:Class"
+  }, {
+    "id" : "323",
+    "type" : "owl:Class"
+  }, {
+    "id" : "152",
+    "type" : "owl:Class"
+  }, {
+    "id" : "299",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "242",
+    "type" : "owl:Class"
+  }, {
+    "id" : "222",
+    "type" : "owl:Class"
+  }, {
+    "id" : "339",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "289",
+    "type" : "owl:Class"
+  }, {
+    "id" : "210",
+    "type" : "owl:Class"
+  }, {
+    "id" : "266",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "182",
+    "type" : "owl:Class"
+  }, {
+    "id" : "282",
+    "type" : "owl:Class"
+  }, {
+    "id" : "170",
+    "type" : "owl:Class"
+  }, {
+    "id" : "197",
+    "type" : "owl:Class"
+  }, {
+    "id" : "207",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "284",
+    "type" : "owl:Class"
+  }, {
+    "id" : "245",
+    "type" : "owl:Class"
+  }, {
+    "id" : "380",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "125",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "215",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "134",
+    "type" : "owl:Class"
+  }, {
+    "id" : "341",
+    "type" : "owl:Class"
+  }, {
+    "id" : "274",
+    "type" : "owl:Class"
+  }, {
+    "id" : "194",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "407",
+    "type" : "owl:Class"
+  }, {
+    "id" : "413",
+    "type" : "owl:Class"
+  }, {
+    "id" : "345",
+    "type" : "owl:Class"
+  }, {
+    "id" : "306",
+    "type" : "owl:Class"
+  }, {
+    "id" : "415",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "254",
+    "type" : "owl:Class"
+  }, {
+    "id" : "113",
+    "type" : "owl:Class"
+  }, {
+    "id" : "178",
+    "type" : "owl:Class"
+  }, {
+    "id" : "184",
+    "type" : "owl:Class"
+  }, {
+    "id" : "225",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "396",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "417",
+    "type" : "owl:Class"
+  }, {
+    "id" : "148",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "269",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "136",
+    "type" : "owl:Class"
+  }, {
+    "id" : "115",
+    "type" : "owl:Class"
+  }, {
+    "id" : "146",
+    "type" : "owl:Class"
+  }, {
+    "id" : "191",
+    "type" : "owl:Class"
+  }, {
+    "id" : "250",
+    "type" : "owl:Class"
+  }, {
+    "id" : "213",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "280",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "302",
+    "type" : "owl:Class"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "155",
+    "type" : "owl:Class"
+  }, {
+    "id" : "141",
+    "type" : "owl:Class"
+  }, {
+    "id" : "364",
+    "type" : "owl:Class"
+  }, {
+    "id" : "303",
+    "type" : "owl:Class"
+  }, {
+    "id" : "150",
+    "type" : "owl:Class"
+  }, {
+    "id" : "257",
+    "type" : "owl:Class"
+  }, {
+    "id" : "217",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "166",
+    "type" : "owl:Class"
+  }, {
+    "id" : "162",
+    "type" : "owl:Class"
+  }, {
+    "id" : "240",
+    "type" : "owl:Class"
+  }, {
+    "id" : "128",
+    "type" : "owl:Class"
+  }, {
+    "id" : "453",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "204",
+    "type" : "owl:Class"
+  }, {
+    "id" : "297",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "279",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "172",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "261",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "219",
+    "type" : "owl:Class"
+  }, {
+    "id" : "139",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "229",
+    "type" : "owl:Class"
+  }, {
+    "id" : "251",
+    "type" : "owl:Class"
+  }, {
+    "id" : "175",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "201",
+    "type" : "owl:Class"
+  }, {
+    "id" : "168",
+    "type" : "owl:Class"
+  }, {
+    "id" : "263",
+    "type" : "owl:Class"
+  }, {
+    "id" : "275",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "422",
+    "type" : "owl:Class"
+  }, {
+    "id" : "423",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "238",
+    "type" : "owl:Class"
+  }, {
+    "id" : "189",
+    "type" : "owl:Class"
+  }, {
+    "id" : "143",
+    "type" : "owl:Class"
+  }, {
+    "id" : "357",
+    "type" : "owl:Class"
+  }, {
+    "id" : "319",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "320",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#DatasetEntry",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DatasetEntry",
+      "en" : "DatasetEntry"
+    },
+    "individuals" : [ {
+      "iri" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444",
+      "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+      "labels" : {
+        "IRI-based" : "AbCoSer2444"
+      }
+    } ],
+    "comment" : {
+      "en" : "Class DatasetEntry represents a data record in dataset."
+    },
+    "id" : "28"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Sexism",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sexism",
+      "en" : "Sexism"
+    },
+    "subClasses" : [ "11", "12" ],
+    "comment" : {
+      "en" : "The belief that one sex is superior to or more valuable than another (Britannica)."
+    },
+    "id" : "51",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#RegionalIdentity",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegionalIdentity",
+      "en" : "RegionalIdentity"
+    },
+    "comment" : {
+      "en" : "Represents regional identity or regional affiliation as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "75",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#HateConcept",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HateConcept",
+      "en" : "HateConcept"
+    },
+    "subClasses" : [ "80", "81", "2", "82", "83", "51", "7", "84", "85", "86" ],
+    "comment" : {
+      "en" : "A class which represents a conceptual category of hate or prejudice directed toward individuals or groups based on shared protected or social characteristics, such as race, ethnicity, gender, age, disability, religion, or sexual orientation."
+    },
+    "id" : "52"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#HomosexualPerson",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HomosexualPerson",
+      "en" : "HomosexualPerson"
+    },
+    "comment" : {
+      "en" : "Represents homosexual individuals or groups as the targets of abusive speech based on their sexual orientation."
+    },
+    "id" : "95",
+    "superClasses" : [ "74" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Dataset",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dataset",
+      "en" : "Dataset"
+    },
+    "individuals" : [ {
+      "iri" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSerCorpus",
+      "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+      "labels" : {
+        "IRI-based" : "AbCoSerCorpus"
+      }
+    } ],
+    "comment" : {
+      "en" : "A dataset which contains examples of abusive speech."
+    },
+    "id" : "99"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#AntiNonMuslim",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AntiNonMuslim",
+      "en" : "AntiNonMuslim"
+    },
+    "comment" : {
+      "en" : "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups who do not profess the Muslim faith."
+    },
+    "id" : "106",
+    "superClasses" : [ "86" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Race",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Race",
+      "en" : "Race"
+    },
+    "comment" : {
+      "en" : "Represents race as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "69",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Incitement",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Incitement",
+      "en" : "Incitement"
+    },
+    "subClasses" : [ "111", "112", "113" ],
+    "comment" : {
+      "en" : "The aim of abusive speech."
+    },
+    "id" : "110"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#German",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "German",
+      "en" : "German"
+    },
+    "comment" : {
+      "en" : "Represents German national affiliation as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."
+    },
+    "id" : "126",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Ephebiphobia",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ephebiphobia",
+      "en" : "Ephebiphobia"
+    },
+    "comment" : {
+      "en" : "Ephebiphobia specifically denotes the fear, dislike, or irrational hatred of youth or adolescents. It describes a distinct negative attitude towards teenagers and young adults."
+    },
+    "id" : "130",
+    "superClasses" : [ "81" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Antigypsysm",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Antigypsysm",
+      "en" : "Antigypsysm"
+    },
+    "comment" : {
+      "en" : "Antigypsyism is a historically constructed, persistent complex of stereotyped perceptions, prejudice, and discrimination that leads to social exclusion and violence against Romani people. It includes hostility, prejudice, and the assignment of collective negative traits to people identified as \"Gypsies.\"   \nAnti-gypsyism is recognized by international bodies like the Council of Europe, the European Union, and the OSCE as a specific type of racism."
+    },
+    "id" : "137",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Slur",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Slur",
+      "en" : "Slur"
+    },
+    "comment" : {
+      "en" : "A slur is a derogatory or insulting term used to express contempt or prejudice against individuals or groups, typically based on their identity or perceived membership in a particular social group.",
+      "sr" : "Uvreda je pogrdni ili uvredljivi izraz koji se koristi za izražavanje prezira ili predrasuda prema pojedincima ili grupama, obi?no na osnovu njihovog identiteta ili percipirane pripadnosti odre?enoj društvenoj grupi."
+    },
+    "id" : "142",
+    "superClasses" : [ "143" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/lemon/ontolex#LexicalSense",
+    "baseIri" : "http://www.w3.org/ns/lemon/ontolex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LexicalSense",
+      "en" : "LexicalSense"
+    },
+    "comment" : {
+      "en" : "Represents a LexicalSense concept reused from the Ontolex ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "144"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Desease",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Desease",
+      "en" : "Desease"
+    },
+    "comment" : {
+      "en" : "Represents disease or medical conditions as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "120",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#PoliticalBeliefs",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PoliticalBeliefs",
+      "en" : "PoliticalBeliefs"
+    },
+    "comment" : {
+      "en" : "Represents political beliefs or political affiliation as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "132",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#YoungPerson",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "YoungPerson",
+      "en" : "YoungPerson"
+    },
+    "comment" : {
+      "en" : "Represents younger age as a target type in abusive speech."
+    },
+    "id" : "169",
+    "superClasses" : [ "115" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#AntiLGBTQPlus",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AntiLGBTQPlus",
+      "en" : "AntiLGBTQPlus"
+    },
+    "subClasses" : [ "170", "1" ],
+    "comment" : {
+      "en" : "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their sexual orientation, gender identity, or gender expression."
+    },
+    "id" : "82",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Discrimination",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Discrimination",
+      "en" : "Discrimination"
+    },
+    "comment" : {
+      "en" : "Represents the intention to promote or justify discriminatory treatment of an individual or group based on protected or social characteristics."
+    },
+    "id" : "174",
+    "superClasses" : [ "175" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Jew",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Jew",
+      "en" : "Jew"
+    },
+    "comment" : {
+      "en" : "Represents affiliation with the Jewish people as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."
+    },
+    "id" : "157",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "176",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "179",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "182", "28" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "181"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Ageism",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ageism",
+      "en" : "Ageism"
+    },
+    "subClasses" : [ "130", "148", "150" ],
+    "comment" : {
+      "en" : "Ageism refers to stereotyping, prejudice, and/or discrimination against individuals or groups on the basis of their age."
+    },
+    "id" : "81",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "id" : "185",
+    "label" : {
+      "IRI-based" : "langString"
+    }
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Profanity",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 1,
+    "label" : {
+      "IRI-based" : "Profanity",
+      "en" : "Profanity"
+    },
+    "subClasses" : [ "152" ],
+    "comment" : {
+      "en" : "Untargeted offensive language that is considered socially offensive due to being vulgar, obscene, or irreverent (Caselli et al., 2020, Britanicca)."
+    },
+    "id" : "153",
+    "superClasses" : [ "143" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Disrespect",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Disrespect",
+      "en" : "Disrespect"
+    },
+    "comment" : {
+      "en" : "Represents the intention to express a lack of respect or regard toward an individual or group through abusive language."
+    },
+    "id" : "186",
+    "superClasses" : [ "175" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "192",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "195",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "109",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "id" : "199",
+    "label" : {
+      "IRI-based" : "langString"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "202",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "182", "28" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "205"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "208",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "id" : "211",
+    "label" : {
+      "IRI-based" : "langString"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "108", "31" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "164",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "104",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Disparagement",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Disparagement",
+      "en" : "Disparagement"
+    },
+    "comment" : {
+      "en" : "Represents the intention to express contempt or disrespect toward an individual or group through belittling or offensive language."
+    },
+    "id" : "218",
+    "superClasses" : [ "175" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Occupation",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Occupation",
+      "en" : "Occupation"
+    },
+    "subClasses" : [ "155" ],
+    "comment" : {
+      "en" : "Strong negative sentiments, prejudice, discrimination, and generalized negative stereotypes directed towards entire groups of individuals based solely on their chosen job."
+    },
+    "id" : "91",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Alcoholism",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Alcoholism",
+      "en" : "Alcoholism"
+    },
+    "comment" : {
+      "en" : "Represents alcohol dependence as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "220",
+    "superClasses" : [ "136" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "182", "28" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "234"
+  }, {
+    "instances" : 0,
+    "union" : [ "182", "28" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "236"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#BisexualPerson",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BisexualPerson",
+      "en" : "BisexualPerson"
+    },
+    "comment" : {
+      "en" : "Represents bisexual individuals or groups as the targets of abusive speech based on their sexual orientation."
+    },
+    "id" : "258",
+    "superClasses" : [ "74" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Group",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Group",
+      "en" : "Group"
+    },
+    "comment" : {
+      "en" : "Represents a social, demographic, cultural, religious, ethnic, or other identifiable group targeted by abusive speech."
+    },
+    "id" : "259",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#NonUrbanPerson",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NonUrbanPerson",
+      "en" : "NonUrbanPerson"
+    },
+    "comment" : {
+      "en" : "Represents residence in or affiliation with a non-urban area as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."
+    },
+    "id" : "98",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#HateSpeech",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 1,
+    "label" : {
+      "IRI-based" : "HateSpeech",
+      "en" : "HateSpeech"
+    },
+    "comment" : {
+      "en" : "Any communication that disparages a person or a group on the basis of some characteristic such as race, color, ethnicity, gender, sexual orientation, nationality, religion, or other characteristics (Basile et al., 2019)."
+    },
+    "id" : "71",
+    "superClasses" : [ "143" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Violence",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Violence",
+      "en" : "Violence"
+    },
+    "comment" : {
+      "en" : "Represents incitement encouraging or advocating violence against an individual or group."
+    },
+    "id" : "112",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Woman",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Woman",
+      "en" : "Woman"
+    },
+    "comment" : {
+      "en" : "Represents women as the target of abusive speech based on their gender."
+    },
+    "id" : "264",
+    "superClasses" : [ "102" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Serb",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Serb",
+      "en" : "Serb"
+    },
+    "comment" : {
+      "en" : "Represents Serbian national affiliation as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."
+    },
+    "id" : "159",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Activity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "annotations" : {
+      "component" : [ {
+        "identifier" : "component",
+        "language" : "undefined",
+        "value" : "entities-activities",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      } ],
+      "dm" : [ {
+        "identifier" : "dm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Activity",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "starting-point",
+        "type" : "label"
+      } ],
+      "constraints" : [ {
+        "identifier" : "constraints",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig",
+        "type" : "label"
+      } ],
+      "n" : [ {
+        "identifier" : "n",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Activity",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Activity",
+      "undefined" : "Activity"
+    },
+    "subClasses" : [ "299" ],
+    "attributes" : [ "external" ],
+    "id" : "231"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Victim",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Victim",
+      "en" : "Victim"
+    },
+    "comment" : {
+      "en" : "Represents a participant or target who is subjected to abusive behavior or harmful communication."
+    },
+    "id" : "277",
+    "superClasses" : [ "219" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Entity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary.",
+        "type" : "label"
+      } ],
+      "constraints" : [ {
+        "identifier" : "constraints",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Entity",
+      "undefined" : "Entity"
+    },
+    "subClasses" : [ "108" ],
+    "attributes" : [ "external" ],
+    "id" : "232"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Derogatory",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Derogatory",
+      "en" : "Derogatory"
+    },
+    "comment" : {
+      "en" : "Derogatory speech (DS), a tweet is used to attack or humiliate an individual or group in a general sense, not in a way hate speech does."
+    },
+    "id" : "312",
+    "superClasses" : [ "143" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Assistant",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Assistant",
+      "en" : "Assistant"
+    },
+    "comment" : {
+      "en" : "Represents a participant who supports, encourages, or helps the perpetrator in carrying out or amplifying abusive behavior."
+    },
+    "id" : "272",
+    "superClasses" : [ "219" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Shorty",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Shorty",
+      "en" : "Shorty"
+    },
+    "comment" : {
+      "en" : "Represents short stature as the physical characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "253",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Orthodox",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Orthodox",
+      "en" : "Orthodox"
+    },
+    "comment" : {
+      "en" : "Represents Orthodox Christian affiliation as the basis for abusive speech directed toward an individual or group."
+    },
+    "id" : "323",
+    "superClasses" : [ "134" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#SwearWord",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SwearWord",
+      "en" : "SwearWord"
+    },
+    "comment" : {
+      "en" : "Profanities are derogatory, offensive, and indecent words used to hold something up to ridicule (Dictionary of Matica Srpska).",
+      "sr" : "Psovke su pogrdne, uvredljive, nepristojne rije?i kojima se što izvrgava ruglu (Re?nik Matice srpske)"
+    },
+    "id" : "152",
+    "superClasses" : [ "153" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveLanguageAnalysis",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AbusiveLanguageAnalysis",
+      "en" : "AbusiveLanguageAnalysis"
+    },
+    "individuals" : [ {
+      "iri" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444WholeTextAnalysis",
+      "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+      "labels" : {
+        "IRI-based" : "AbCoSer2444WholeTextAnalysis"
+      }
+    }, {
+      "iri" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444AbusivenessAnalysis",
+      "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+      "labels" : {
+        "IRI-based" : "AbCoSer2444AbusivenessAnalysis",
+        "en" : "2444ToxicSpansAnalysis"
+      }
+    } ],
+    "comment" : {
+      "en" : "Abusive language analysis is an activity performed on a text in order to detect if the text contains abusive language."
+    },
+    "id" : "299",
+    "superClasses" : [ "231" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#FemaleGenitalia",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FemaleGenitalia",
+      "en" : "FemaleGenitalia"
+    },
+    "comment" : {
+      "en" : "Represents the semantic domain of female genital anatomy, encompassing abusive lexical expressions derived from or referring to female genital concepts."
+    },
+    "id" : "27",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Upstander",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Upstander",
+      "en" : "Upstander"
+    },
+    "comment" : {
+      "en" : "Represents a participant who intervenes in, challenges, reports, or opposes abusive behavior in support of the victim or targeted group."
+    },
+    "id" : "242",
+    "superClasses" : [ "219" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Defamation",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Defamation",
+      "en" : "Defamation"
+    },
+    "comment" : {
+      "en" : "Represents the intention to damage the reputation of an individual or group through false or harmful statements."
+    },
+    "id" : "222",
+    "superClasses" : [ "175" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/lemon/ontolex#LexicalEntry",
+    "baseIri" : "http://www.w3.org/ns/lemon/ontolex",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LexicalEntry",
+      "en" : "LexicalEntry"
+    },
+    "comment" : {
+      "en" : "Represents a LexicalEntry concept reused from the Ontolex ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "339"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Plant",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Plant",
+      "en" : "Plant"
+    },
+    "comment" : {
+      "en" : "Represents the semantic domain of plants, encompassing abusive lexical expressions derived from or referring to plant concepts."
+    },
+    "id" : "21",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Wordplay",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Wordplay",
+      "en" : "Wordplay"
+    },
+    "comment" : {
+      "en" : "A rhetorical technique or figure of speech characterized by the clever manipulation or exploitation of the sounds, meanings (especially polysemy or ambiguity), or form of words, typically intended to produce a humorous or witty effect."
+    },
+    "id" : "289",
+    "superClasses" : [ "341" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#NewsArticle",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NewsArticle",
+      "en" : "NewsArticle"
+    },
+    "comment" : {
+      "en" : "Represents a news article published by a news organization or media outlet, providing the context in which a text appears."
+    },
+    "id" : "210",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Perpetrator",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Perpetrator",
+      "en" : "Perpetrator"
+    },
+    "comment" : {
+      "en" : "Represents a participant who produces, initiates, or carries out abusive behavior toward another individual or group."
+    },
+    "id" : "266",
+    "superClasses" : [ "219" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#GenderIdentity",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GenderIdentity",
+      "en" : "GenderIdentity"
+    },
+    "comment" : {
+      "en" : "Represents gender identity as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "65",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveText",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AbusiveText",
+      "en" : "AbusiveText"
+    },
+    "individuals" : [ {
+      "iri" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444WholeAbusiveText",
+      "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+      "labels" : {
+        "IRI-based" : "AbCoSer2444WholeAbusiveText"
+      }
+    }, {
+      "iri" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444ToxicSpan2",
+      "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+      "labels" : {
+        "IRI-based" : "AbCoSer2444ToxicSpan2"
+      }
+    }, {
+      "iri" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444ToxicSpan1",
+      "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+      "labels" : {
+        "IRI-based" : "AbCoSer2444ToxicSpan1"
+      }
+    } ],
+    "comment" : {
+      "en" : "AbusiveText represents a textual resource that has been annotated as containing abusive language, regardless of the specific linguistic realization, target, or abusive category."
+    },
+    "id" : "182"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#FemaleImmigrant",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FemaleImmigrant",
+      "en" : "FemaleImmigrant"
+    },
+    "comment" : {
+      "en" : "Represents female immigrants as the target of abusive speech based on their immigrant status and gender."
+    },
+    "id" : "282",
+    "superClasses" : [ "94" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Biphobia",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Biphobia",
+      "en" : "Biphobia"
+    },
+    "comment" : {
+      "en" : "Biphobia is the fear, hatred, discomfort, prejudice, discrimination, or aversion directed towards bisexual people or bisexuality."
+    },
+    "id" : "170",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#AntiRefugee",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AntiRefugee",
+      "en" : "AntiRefugee"
+    },
+    "comment" : {
+      "en" : "Represents prejudice, discrimination, hostility, or hatred directed toward refugees or individuals perceived to be refugees."
+    },
+    "id" : "197",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#AntiMuslim",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AntiMuslim",
+      "en" : "AntiMuslim"
+    },
+    "comment" : {
+      "en" : "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Muslim faith or affiliation"
+    },
+    "id" : "207",
+    "superClasses" : [ "86" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Walking",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Walking",
+      "en" : "Walking"
+    },
+    "comment" : {
+      "en" : "Represents walking style or gait as the physical characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "9",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Sarcasm",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sarcasm",
+      "en" : "Sarcasm"
+    },
+    "comment" : {
+      "en" : "Represents a rhetorical figure that uses irony, ridicule, or mockery to express contempt or criticism."
+    },
+    "id" : "284",
+    "superClasses" : [ "341" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Role",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "annotations" : {
+      "component" : [ {
+        "identifier" : "component",
+        "language" : "undefined",
+        "value" : "agents-responsibility",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      } ],
+      "dm" : [ {
+        "identifier" : "dm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-attribute-role",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end.",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "qualified",
+        "type" : "label"
+      } ],
+      "n" : [ {
+        "identifier" : "n",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-attribute",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#hadRole",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Role",
+      "undefined" : "Role"
+    },
+    "subClasses" : [ "219" ],
+    "attributes" : [ "external" ],
+    "id" : "245"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#AnnotationLevel",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AnnotationLevel",
+      "en" : "AnnotationLevel"
+    },
+    "individuals" : [ {
+      "iri" : "http://llod.jerteh.rs/alo/alo.owl#TextSpanLevel",
+      "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+      "labels" : {
+        "IRI-based" : "TextSpanLevel"
+      }
+    }, {
+      "iri" : "http://llod.jerteh.rs/alo/alo.owl#WholeTextLevel",
+      "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+      "labels" : {
+        "IRI-based" : "WholeTextLevel"
+      }
+    } ],
+    "comment" : {
+      "en" : "Annotation Level class represents different types of annotation on a text."
+    },
+    "id" : "380"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Misogyny",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Misogyny",
+      "en" : "Misogyny"
+    },
+    "comment" : {
+      "en" : "Misogyny is the dislike of, contempt for, ingrained prejudice against, or hatred of women and girls. It is a specific form of sexism characterized by a hostile and often demeaning attitude towards women."
+    },
+    "id" : "12",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Xenophobia",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Xenophobia",
+      "en" : "Xenophobia"
+    },
+    "subClasses" : [ "215", "217", "191", "194", "197", "184", "201" ],
+    "comment" : {
+      "en" : "Xenophobia is the dislike of or prejudice against people from other countries or who are perceived as foreign or strange. Since nationality is often tied to a country of origin, xenophobia directly addresses animosity towards individuals based on their national background when they are perceived as \"other\" or \"foreign.\""
+    },
+    "id" : "7",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AbusiveSpeech",
+      "en" : "AbusiveSpeech"
+    },
+    "individuals" : [ {
+      "iri" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444AbusiveSpeechToxicSpansSet2",
+      "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+      "labels" : {
+        "IRI-based" : "AbCoSer2444AbusiveSpeechToxicSpansSet2"
+      }
+    }, {
+      "iri" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444AbusiveSpeechToxicSpansSet1",
+      "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+      "labels" : {
+        "IRI-based" : "AbCoSer2444AbusiveSpeechToxicSpansSet1"
+      }
+    }, {
+      "iri" : "http://llod.jerteh.rs/alo/alo.owl#Action",
+      "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+      "labels" : {
+        "IRI-based" : "Action",
+        "en" : "2444AbusiveSpeechWholeTextSet1"
+      }
+    } ],
+    "comment" : {
+      "en" : "Class that represents Abusive Speech concept."
+    },
+    "id" : "31"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#ReligiousHatred",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReligiousHatred",
+      "en" : "ReligiousHatred"
+    },
+    "subClasses" : [ "204", "207", "178", "106", "184" ],
+    "comment" : {
+      "en" : "Religious harted refers specifically to intense dislike, animosity, or enmity directed towards individuals or groups on the basis of their religious (or non-religious) affiliation or beliefs."
+    },
+    "id" : "86",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Opinion",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Opinion",
+      "en" : "Opinion"
+    },
+    "comment" : {
+      "en" : "Represents expressed opinions, views, or statements as characteristics that may serve as the basis for targeting an individual or group with abusive speech."
+    },
+    "id" : "125",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#OtherTarget",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OtherTarget",
+      "en" : "OtherTarget"
+    },
+    "comment" : {
+      "en" : "Target of abusive speech which is not in other defined categories"
+    },
+    "id" : "67",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#AntiGerman",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AntiGerman",
+      "en" : "AntiGerman"
+    },
+    "comment" : {
+      "en" : "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their German ethnic or national identity."
+    },
+    "id" : "215",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Language",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Language",
+      "en" : "Language"
+    },
+    "comment" : {
+      "en" : "Represents language as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "118",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Disability",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Disability",
+      "en" : "Disability"
+    },
+    "subClasses" : [ "261", "251" ],
+    "comment" : {
+      "en" : "Represents disability as a characteristic on the basis of which a person or group may be targeted by abusive speech."
+    },
+    "id" : "79",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#ReligiousBeliefs",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReligiousBeliefs",
+      "en" : "ReligiousBeliefs"
+    },
+    "subClasses" : [ "345", "357", "323" ],
+    "comment" : {
+      "en" : "Represents religious belief as the characteristic on the basis of which abusive speech is directed toward an individual or group."
+    },
+    "id" : "134",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#RhetoricalFigure",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RhetoricalFigure",
+      "en" : "RhetoricalFigure"
+    },
+    "subClasses" : [ "284", "289", "279", "280" ],
+    "comment" : {
+      "en" : "Represents a rhetorical device or figure of speech that may be used to express abusive or offensive meaning."
+    },
+    "id" : "341"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Obesity",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Obesity",
+      "en" : "Obesity"
+    },
+    "comment" : {
+      "en" : "Represents obesity as the physical characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "274",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#AntiAlbanian",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AntiAlbanian",
+      "en" : "AntiAlbanian"
+    },
+    "comment" : {
+      "en" : "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Albanian ethnic or national identity."
+    },
+    "id" : "194",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Animal",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Animal",
+      "en" : "Animal"
+    },
+    "comment" : {
+      "en" : "Represents the semantic domain of animals from which abusive lexical expressions may be derived through metaphorical or pejorative usage."
+    },
+    "id" : "17",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#CriminalActivity",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CriminalActivity",
+      "en" : "CriminalActivity"
+    },
+    "comment" : {
+      "en" : "Represents actual or perceived involvement in criminal activity as the basis for abusive speech directed toward an individual or group."
+    },
+    "id" : "407",
+    "superClasses" : [ "136" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#OffensiveSpeech",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OffensiveSpeech",
+      "en" : "OffensiveSpeech"
+    },
+    "comment" : {
+      "en" : "Represents a category of abusive speech that captures offensive content aimed at insulting, offending, or violating norms of acceptable communication, without necessarily involving derogation, profanity, threat, or hate speech."
+    },
+    "id" : "413",
+    "superClasses" : [ "143" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Muslim",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Muslim",
+      "en" : "Muslim"
+    },
+    "comment" : {
+      "en" : "Represents Muslim affiliation as the basis for abusive speech directed toward an individual or group."
+    },
+    "id" : "345",
+    "superClasses" : [ "134" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#CatchphraseFillerIdiom",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CatchphraseFillerIdiom",
+      "en" : "CatchphraseFillerIdiom"
+    },
+    "comment" : {
+      "en" : "Represents linguistic expressions catchphrase, filler and idiom."
+    },
+    "id" : "306",
+    "superClasses" : [ "303" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Threat",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Threat",
+      "en" : "Threat"
+    },
+    "comment" : {
+      "en" : "A statement of an intention to inflict pain, injury, damage, or other hostile action on someone in retribution for something done or not done."
+    },
+    "id" : "415",
+    "superClasses" : [ "143" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Ableism",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ableism",
+      "en" : "Ableism"
+    },
+    "comment" : {
+      "en" : "Ableism is discrimination and social prejudice against people with disabilities based on the belief that typical abilities (those of non-disabled people) are superior. It is a system of beliefs, practices, and societal structures that devalues and discriminates against people with physical, intellectual, sensory, mental, or developmental disabilities."
+    },
+    "id" : "85",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#SexualOrientation",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 1,
+    "label" : {
+      "IRI-based" : "SexualOrientation",
+      "en" : "SexualOrientation"
+    },
+    "subClasses" : [ "95", "258" ],
+    "comment" : {
+      "en" : "Represents sexual orientation as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "74",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Tallness",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tallness",
+      "en" : "Tallness"
+    },
+    "comment" : {
+      "en" : "Represents tall stature as the physical characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "254",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Segregation",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Segregation",
+      "en" : "Segregation"
+    },
+    "comment" : {
+      "en" : "Represents incitement encouraging the exclusion or segregation of an individual or group."
+    },
+    "id" : "113",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#AntiCatholic",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AntiCatholic",
+      "en" : "AntiCatholic"
+    },
+    "comment" : {
+      "en" : "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Catholic faith or affiliation"
+    },
+    "id" : "178",
+    "superClasses" : [ "86" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#AntiSemitism",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AntiSemitism",
+      "en" : "AntiSemitism"
+    },
+    "comment" : {
+      "en" : "Represents prejudice, discrimination, hostility, or hatred directed toward Jewish individuals or communities based on their Jewish identity, ethnicity, religion, or heritage."
+    },
+    "id" : "184",
+    "superClasses" : [ "7", "86" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Derogation",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Derogation",
+      "en" : "Derogation"
+    },
+    "comment" : {
+      "en" : "Represents the intention to demean, belittle, or diminish the perceived value or dignity of an individual or group."
+    },
+    "id" : "225",
+    "superClasses" : [ "175" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#MaleGenitalia",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaleGenitalia",
+      "en" : "MaleGenitalia"
+    },
+    "comment" : {
+      "en" : "Represents the semantic domain of male genital anatomy, encompassing abusive lexical expressions derived from or referring to male genital concepts."
+    },
+    "id" : "24",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String",
+    "baseIri" : "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "nif:String",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "String",
+      "en" : "String"
+    },
+    "comment" : {
+      "en" : "Class for connecting AbusiveText with NIF String class."
+    },
+    "attributes" : [ "external" ],
+    "id" : "396"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Target",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Target",
+      "en" : "Target"
+    },
+    "subClasses" : [ "67", "62", "259", "63" ],
+    "comment" : {
+      "en" : "Target of abusive speech can be person, group or other."
+    },
+    "id" : "72"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Agent",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "annotations" : {
+      "component" : [ {
+        "identifier" : "component",
+        "language" : "undefined",
+        "value" : "agents-responsibility",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      } ],
+      "dm" : [ {
+        "identifier" : "dm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity. ",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "starting-point",
+        "type" : "label"
+      } ],
+      "n" : [ {
+        "identifier" : "n",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Agent",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Agent",
+      "undefined" : "Agent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "417"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Adultism",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Adultism",
+      "en" : "Adultism"
+    },
+    "comment" : {
+      "en" : "Adultism is a term used to describe the systemic bias, prejudice, and discrimination that adults (particularly those in positions of power) may hold or exhibit against young people."
+    },
+    "id" : "148",
+    "superClasses" : [ "81" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Person",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person",
+      "en" : "Person"
+    },
+    "comment" : {
+      "en" : "Represents an individual who is the target of abusive speech."
+    },
+    "id" : "63",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Bystander",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bystander",
+      "en" : "Bystander"
+    },
+    "comment" : {
+      "en" : "Represents a participant who observes an abusive interaction without directly participating in, supporting, or opposing the abusive behavior."
+    },
+    "id" : "269",
+    "superClasses" : [ "219" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Height",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Height",
+      "en" : "Height"
+    },
+    "subClasses" : [ "254", "253" ],
+    "comment" : {
+      "en" : "Represents height as the physical characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Behaviour",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Behaviour",
+      "en" : "Behaviour"
+    },
+    "subClasses" : [ "319", "407", "320", "220", "422" ],
+    "comment" : {
+      "en" : "Represents behaviour or conduct as a characteristic on the basis of which a person or group may be targeted by abusive speech."
+    },
+    "id" : "136",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Age",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Age",
+      "en" : "Age"
+    },
+    "subClasses" : [ "169", "240" ],
+    "comment" : {
+      "en" : "Represents age as a characteristic on the basis of which an individual or group may be targeted by abusive speech."
+    },
+    "id" : "115",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Roma",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Roma",
+      "en" : "Roma"
+    },
+    "comment" : {
+      "en" : "Represents belonging to Roma or Romani enthnicity as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "146",
+    "superClasses" : [ "54" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#AntiImmigrant",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AntiImmigrant",
+      "en" : "AntiImmigrant"
+    },
+    "comment" : {
+      "en" : "Represents prejudice, discrimination, hostility, or hatred directed toward immigrants or individuals perceived to be immigrants."
+    },
+    "id" : "191",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Intelligence",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Intelligence",
+      "en" : "Intelligence"
+    },
+    "comment" : {
+      "en" : "Represents intelligence as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "250",
+    "superClasses" : [ "251" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#SocialMedia",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SocialMedia",
+      "en" : "SocialMedia"
+    },
+    "comment" : {
+      "en" : "Represents a social media platform or post serving as the context in which a text is created, shared, or discussed."
+    },
+    "id" : "213",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Homophobia",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Homophobia",
+      "en" : "Homophobia"
+    },
+    "comment" : {
+      "en" : "Homophobia is the fear, hatred, discomfort, prejudice, discrimination, or aversion directed towards homosexual people (gay men and lesbians) or homosexuality itself."
+    },
+    "id" : "1",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Nationality",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Nationality",
+      "en" : "Nationality"
+    },
+    "subClasses" : [ "157", "159", "126", "162", "166", "168" ],
+    "comment" : {
+      "en" : "Represents national affiliation as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."
+    },
+    "id" : "58",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Ethnicity",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ethnicity",
+      "en" : "Ethnicity"
+    },
+    "subClasses" : [ "146" ],
+    "comment" : {
+      "en" : "Represents ethnicity as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "54",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Metaphor",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Metaphor",
+      "en" : "Metaphor"
+    },
+    "comment" : {
+      "en" : "Represents a rhetorical figure in which a word or expression is used to refer to something to which it is not literally applicable, based on an implicit comparison."
+    },
+    "id" : "280",
+    "superClasses" : [ "341" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Sight",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sight",
+      "en" : "Sight"
+    },
+    "comment" : {
+      "en" : "Represents visual disabilities or impairments as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "89",
+    "superClasses" : [ "261" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#TargetType",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TargetType",
+      "en" : "TargetType"
+    },
+    "subClasses" : [ "120", "125", "128", "75", "132", "134", "136", "139", "141", "115", "118", "65", "69", "74", "79", "91", "94", "98", "102", "54", "58", "5" ],
+    "comment" : {
+      "en" : "Represents the characteristic or social category to which a targeted person or group belongs and on the basis of which abusive speech is directed toward them."
+    },
+    "id" : "55"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#PhysicalAppearance",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PhysicalAppearance",
+      "en" : "PhysicalAppearance"
+    },
+    "subClasses" : [ "4", "9", "14" ],
+    "comment" : {
+      "en" : "Represents physical appearance as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "5",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#AbusivenessSet",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AbusivenessSet",
+      "en" : "AbusivenessSet"
+    },
+    "individuals" : [ {
+      "iri" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444AbusivenessSet",
+      "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+      "labels" : {
+        "IRI-based" : "AbCoSer2444AbusivenessSet",
+        "undefined" : "2444ToxicSpansSet1"
+      }
+    }, {
+      "iri" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444WholeTextSet1",
+      "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+      "labels" : {
+        "IRI-based" : "AbCoSer2444WholeTextSet1"
+      }
+    }, {
+      "iri" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444ToxicSpansSet2",
+      "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+      "labels" : {
+        "IRI-based" : "AbCoSer2444ToxicSpansSet2"
+      }
+    } ],
+    "comment" : {
+      "en" : "A class that holds results of abusive language analysis performed on a text."
+    },
+    "id" : "108",
+    "superClasses" : [ "232" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#SayingsProverbs",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SayingsProverbs",
+      "en" : "SayingsProverbs"
+    },
+    "comment" : {
+      "en" : "Represents sayings and proverbs that may convey abusive or offensive meaning."
+    },
+    "id" : "302",
+    "superClasses" : [ "303" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Hurt",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hurt",
+      "en" : "Hurt"
+    },
+    "comment" : {
+      "en" : "Represents incitement encouraging or advocating hurted against an individual or group."
+    },
+    "id" : "111",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#LexicalSourceConcept",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LexicalSourceConcept",
+      "en" : "LexicalSourceConcept"
+    },
+    "subClasses" : [ "17", "21", "24", "27" ],
+    "comment" : {
+      "en" : "Represents the semantic domain of an abusive lexical expression, corresponding to the conceptual category from which the expression originates (e.g., animals, plants, professions, or diseases)."
+    },
+    "id" : "18"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Prostitution",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Prostitution",
+      "en" : "Prostitution"
+    },
+    "comment" : {
+      "en" : "Represents individuals engaged in prostitution or sex work as the target of abusive speech based on their occupation."
+    },
+    "id" : "155",
+    "superClasses" : [ "91" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#SocialStatus",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SocialStatus",
+      "en" : "SocialStatus"
+    },
+    "comment" : {
+      "en" : "Represents social status as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."
+    },
+    "id" : "141",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Colorism",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Colorism",
+      "en" : "Colorism"
+    },
+    "comment" : {
+      "en" : "Prejudice or discrimination against individuals with a darker skin tone, typically among people of the same ethnic or racial group.1 While related to physical appearance, it's a specific form of prejudice based on skin shade, often linked to internalized racism."
+    },
+    "id" : "364",
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#LexicalUnit",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LexicalUnit",
+      "en" : "LexicalUnit"
+    },
+    "subClasses" : [ "302", "306" ],
+    "comment" : {
+      "en" : "Represents a classification of lexical entries according to their lexical realization or conventional linguistic form, such as a single word, multiword expression, idiom, catchphrase, proverb, or similar lexical unit types."
+    },
+    "id" : "303"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Gerontophobia",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Gerontophobia",
+      "en" : "Gerontophobia"
+    },
+    "comment" : {
+      "en" : "Gerontophobia refers to the fear, dislike, or irrational hatred of elderly people or of the process of aging itself."
+    },
+    "id" : "150",
+    "superClasses" : [ "81" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Sizeism",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sizeism",
+      "en" : "Sizeism"
+    },
+    "comment" : {
+      "en" : "Prejudice or discrimination on the grounds of a person's body size (e.g., against people who are overweight or underweight)"
+    },
+    "id" : "257",
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#AntiCroatian",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AntiCroatian",
+      "en" : "AntiCroatian"
+    },
+    "comment" : {
+      "en" : "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Croatian ethnic or national identity."
+    },
+    "id" : "217",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Stigmatization",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Stigmatization",
+      "en" : "Stigmatization"
+    },
+    "comment" : {
+      "en" : "Stigmatization involves negative attitudes and discriminatory behavior towards individuals based on their specific behaviors or conditions."
+    },
+    "id" : "84",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Croatian",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Croatian",
+      "en" : "Croatian"
+    },
+    "comment" : {
+      "en" : "Represents Croatian national affiliation as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."
+    },
+    "id" : "166",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Albanian",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Albanian",
+      "en" : "Albanian"
+    },
+    "comment" : {
+      "en" : "Represents Albanian national affiliation as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."
+    },
+    "id" : "162",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#OldPerson",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OldPerson",
+      "en" : "OldPerson"
+    },
+    "comment" : {
+      "en" : "Represents older age as a target type in abusive speech."
+    },
+    "id" : "240",
+    "superClasses" : [ "115" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Refugee",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Refugee",
+      "en" : "Refugee"
+    },
+    "comment" : {
+      "en" : "Represents refugee status as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "128",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Malediction",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Malediction",
+      "en" : "Malediction"
+    },
+    "comment" : {
+      "en" : "Malediction (curse) is a solemn utterance or expressed wish intended to invoke a supernatural power to inflict harm, punishment, evil, or misfortune upon someone or something.",
+      "sr" : "Kletva je sve?ana izjava, želja ili prizivanje natprirodne sile sa namerom da se nekome ili ne?emu nanese zlo, kazna ili nesre?a; ?in proklinjanja. Ovo odgovara engleskom zna?enju \"invocation of harm / malediction\". (\"Dabogda crk'o\" je primer kletve)."
+    },
+    "id" : "453",
+    "superClasses" : [ "143" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Immigrant",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Immigrant",
+      "en" : "Immigrant"
+    },
+    "subClasses" : [ "282" ],
+    "comment" : {
+      "en" : "Represents real or perceived immigrant status as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "94",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#AntiOrthodox",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AntiOrthodox",
+      "en" : "AntiOrthodox"
+    },
+    "comment" : {
+      "en" : "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Orthodox faith or affiliation"
+    },
+    "id" : "204",
+    "superClasses" : [ "86" ]
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "id" : "297",
+    "label" : {
+      "IRI-based" : "langString"
+    }
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Irony",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Irony",
+      "en" : "Irony"
+    },
+    "comment" : {
+      "en" : "Represents a rhetorical figure in which the intended meaning differs from, or is opposite to, the literal meaning of the expression."
+    },
+    "id" : "279",
+    "superClasses" : [ "341" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Gender",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Gender",
+      "en" : "Gender"
+    },
+    "subClasses" : [ "263", "264" ],
+    "comment" : {
+      "en" : "Represents gender as the characteristic on the basis of which abusive speech is directed toward an individual or group."
+    },
+    "id" : "102",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "123",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "172",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Weight",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Weight",
+      "en" : "Weight"
+    },
+    "subClasses" : [ "275", "274" ],
+    "comment" : {
+      "en" : "Represents body weight as the physical characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "14",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "173",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#PhysicalDisability",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PhysicalDisability",
+      "en" : "PhysicalDisability"
+    },
+    "subClasses" : [ "89", "88" ],
+    "comment" : {
+      "en" : "Represents physical disabilities affecting mobility, motor function, or other physical capabilities as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "261",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#TargetGroup",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TargetGroup",
+      "en" : "TargetGroup"
+    },
+    "comment" : {
+      "en" : "Target types are usually combined into target group based on some common characteristics."
+    },
+    "id" : "77"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#ParticipantRole",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ParticipantRole",
+      "en" : "ParticipantRole"
+    },
+    "subClasses" : [ "266", "269", "272", "277", "242" ],
+    "comment" : {
+      "en" : "Represents the role assigned to a participant in an abusive communication event or interaction."
+    },
+    "id" : "219",
+    "superClasses" : [ "245" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#SkinColour",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SkinColour",
+      "en" : "SkinColour"
+    },
+    "comment" : {
+      "en" : "Represents skin colour as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."
+    },
+    "id" : "139",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Hearing",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hearing",
+      "en" : "Hearing"
+    },
+    "comment" : {
+      "en" : "Represents hearing disabilities or impairments as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "88",
+    "superClasses" : [ "261" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Racism",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Racism",
+      "en" : "Racism"
+    },
+    "subClasses" : [ "137" ],
+    "comment" : {
+      "en" : "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their race, ethnicity, or perceived racial or ethnic origin."
+    },
+    "id" : "2",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Misandry",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Misandry",
+      "en" : "Misandry"
+    },
+    "comment" : {
+      "en" : "Misandry is the dislike of, contempt for, ingrained prejudice against, or hatred of men and boys. It is the parallel concept to misogyny."
+    },
+    "id" : "11",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Insult",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Insult",
+      "en" : "Insult"
+    },
+    "comment" : {
+      "en" : "Represents the intention to insult, demean, or humiliate an individual or group through abusive language."
+    },
+    "id" : "229",
+    "superClasses" : [ "175" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#CognitiveDisability",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CognitiveDisability",
+      "en" : "CognitiveDisability"
+    },
+    "subClasses" : [ "250" ],
+    "comment" : {
+      "en" : "Represents cognitive, intellectual, developmental, or learning disabilities as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "251",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Intention",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Intention",
+      "en" : "Intention"
+    },
+    "subClasses" : [ "218", "222", "225", "229", "174", "186", "238" ],
+    "comment" : {
+      "en" : "Represents the communicative purpose or intended effect of abusive speech, describing what the speaker aims to achieve through the abusive expression."
+    },
+    "id" : "175"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Context",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Context",
+      "en" : "Context"
+    },
+    "subClasses" : [ "210", "213" ],
+    "comment" : {
+      "en" : "Represents the communication context or source in which a text is published or distributed, such as social media platforms or news articles."
+    },
+    "id" : "32"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#AntiSerb",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AntiSerb",
+      "en" : "AntiSerb"
+    },
+    "comment" : {
+      "en" : "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Serbian ethnic or national identity."
+    },
+    "id" : "201",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Bosniac",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bosniac",
+      "en" : "Bosniac"
+    },
+    "comment" : {
+      "en" : "Represents Bosniac national affiliation as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."
+    },
+    "id" : "168",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Man",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Man",
+      "en" : "Man"
+    },
+    "comment" : {
+      "en" : "Represents men as the target of abusive speech based on their gender."
+    },
+    "id" : "263",
+    "superClasses" : [ "102" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Thinness",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Thinness",
+      "en" : "Thinness"
+    },
+    "comment" : {
+      "en" : "Represents thinness as the physical characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "275",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Organization",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization",
+      "en" : "Organization"
+    },
+    "comment" : {
+      "en" : "Represents an organization, institution, company, or other organized entity that is the target of abusive speech."
+    },
+    "id" : "62",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#SevenDeadlySins",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SevenDeadlySins",
+      "en" : "SevenDeadlySins"
+    },
+    "comment" : {
+      "en" : "Represents behaviors or characteristics associated with the traditional seven deadly sins (e.g., pride, greed, envy, wrath, lust, gluttony, and sloth) as the basis for abusive speech directed toward an individual or group."
+    },
+    "id" : "422",
+    "superClasses" : [ "136" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Annotation",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Annotation",
+      "en" : "Annotation"
+    },
+    "individuals" : [ {
+      "iri" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSerWholeTextAnnotation",
+      "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+      "labels" : {
+        "IRI-based" : "AbCoSerWholeTextAnnotation"
+      }
+    }, {
+      "iri" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSerToxicSpansAnnotation",
+      "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+      "labels" : {
+        "IRI-based" : "AbCoSerToxicSpansAnnotation"
+      }
+    } ],
+    "comment" : {
+      "en" : "A class that contains high level details of annotation performed on a dataset."
+    },
+    "id" : "423"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Lookism",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Lookism",
+      "en" : "Lookism"
+    },
+    "subClasses" : [ "257", "364" ],
+    "comment" : {
+      "en" : "Lookism refers to prejudice or discrimination based on physical appearance and especially physical appearance believed to fall short of societal notions of beauty."
+    },
+    "id" : "83",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Offense",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Offense",
+      "en" : "Offense"
+    },
+    "comment" : {
+      "en" : "Represents the intention to offend or cause emotional distress to an individual or group through abusive language."
+    },
+    "id" : "238",
+    "superClasses" : [ "175" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Sentiment",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sentiment",
+      "en" : "Sentiment"
+    },
+    "individuals" : [ {
+      "iri" : "http://llod.jerteh.rs/alo/alo.owl#Positive",
+      "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+      "comment" : {
+        "en" : "Represents positive sentiment associated with a dataset entry"
+      },
+      "labels" : {
+        "IRI-based" : "Positive",
+        "en" : "Positive"
+      }
+    }, {
+      "iri" : "http://llod.jerteh.rs/alo/alo.owl#Negative",
+      "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+      "comment" : {
+        "en" : "Represents negative sentiment associated with a dataset entry."
+      },
+      "labels" : {
+        "IRI-based" : "Negative",
+        "en" : "Negative"
+      }
+    }, {
+      "iri" : "http://llod.jerteh.rs/alo/alo.owl#Neutral",
+      "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+      "comment" : {
+        "en" : "epresents neutral sentiment associated with a dataset entry."
+      },
+      "labels" : {
+        "IRI-based" : "Neutral",
+        "en" : "Neutral"
+      }
+    } ],
+    "comment" : {
+      "en" : "Represents the emotional polarity or attitude expressed toward a target, entity, or situation in a textual expression."
+    },
+    "id" : "189"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#AbuseCategory",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AbuseCategory",
+      "en" : "AbuseCategory"
+    },
+    "subClasses" : [ "71", "312", "153", "415", "142", "453", "413" ],
+    "comment" : {
+      "en" : "Abusive language is hurtful language that a speaker uses to insult or offend another individual or a group of individuals based on their personal qualities, appearance, social status, opinions, statements, or actions (Casseli, 2020)."
+    },
+    "id" : "143"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Catholic",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Catholic",
+      "en" : "Catholic"
+    },
+    "comment" : {
+      "en" : "Represents Catholic affiliation as the basis for abusive speech directed toward an individual or group."
+    },
+    "id" : "357",
+    "superClasses" : [ "134" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#DrugAddiction",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DrugAddiction",
+      "en" : "DrugAddiction"
+    },
+    "comment" : {
+      "en" : "Represents drug addiction or substance dependence as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+    },
+    "id" : "319",
+    "superClasses" : [ "136" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Classism",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Classism",
+      "en" : "Classism"
+    },
+    "comment" : {
+      "en" : "A form of social prejudice and discrimination involving negative attitudes, stereotyping, discriminatory actions, or institutional practices directed against individuals or groups based on their actual or perceived social class."
+    },
+    "id" : "80",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#SpeechIntrusion",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpeechIntrusion",
+      "en" : "SpeechIntrusion"
+    },
+    "comment" : {
+      "en" : "Represents intrusive or disruptive speech behavior as the basis for abusive speech directed toward an individual or group."
+    },
+    "id" : "320",
+    "superClasses" : [ "136" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "92",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "116",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "121",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "163",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "171",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "187",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "188",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "190",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "193",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "196",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "198",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "200",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "209",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "212",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "214",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "216",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "221",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "223",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "224",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "226",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "228",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "230",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "233",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "235",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "237",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "239",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "241",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "243",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "244",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "246",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "247",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "248",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "249",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "252",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "255",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "256",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "260",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "262",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "265",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "267",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "268",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "270",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "271",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "273",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "276",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "278",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "281",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "283",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "285",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "286",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "287",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "288",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "290",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "291",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "292",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "293",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "294",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "295",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "296",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "298",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "300",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "301",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "304",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "305",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "307",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "308",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "309",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "310",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "311",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "313",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "314",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "315",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "316",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "317",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "318",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "321",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "322",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "324",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "325",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "326",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "327",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "328",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "329",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "330",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "331",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "332",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "333",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "334",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "335",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "336",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "337",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "338",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "340",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "342",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "343",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "344",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "346",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "347",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "348",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "349",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "350",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "351",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "352",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "353",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "354",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "355",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "356",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "358",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "359",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "360",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "361",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "362",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "363",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "365",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "366",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "367",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "368",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "369",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "370",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "371",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "372",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "373",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "374",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "375",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "376",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "377",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "378",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "379",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "381",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "382",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "383",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "384",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "385",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "386",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "387",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "388",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "389",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "390",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "391",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "392",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "393",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "394",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "395",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "397",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "398",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "399",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "400",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "401",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "402",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "403",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "404",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "405",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "406",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "408",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "409",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "410",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "411",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "412",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "414",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "416",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "418",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "419",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "420",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "421",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "424",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "425",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "426",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "227",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "427",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "428",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "429",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "430",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "431",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "432",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "433",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "434",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "435",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "436",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "437",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "438",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "439",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "440",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "441",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "442",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "443",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "444",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "445",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "446",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "447",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "448",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "449",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "450",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "451",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "454",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "455",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "456",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "457",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "458",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "459",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "460",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "461",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "462",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "463",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "464",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "465",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "466",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "467",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "468",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "469",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "470",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "471",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "472",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "473",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "474",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "475",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "476",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "477",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "478",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "479",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "480",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "481",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "482",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "483",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "484",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "485",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "486",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "487",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "488",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "489",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "452",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "490",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "491",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "492",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "493",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "494",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "495",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "496",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "497",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "498",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "499",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "500",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "range" : "7",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "6"
+  }, {
+    "range" : "5",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "8"
+  }, {
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "10"
+  }, {
+    "range" : "5",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "13"
+  }, {
+    "range" : "2",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "range" : "18",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
+  }, {
+    "range" : "7",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "range" : "18",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "range" : "2",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "18",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "range" : "7",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "range" : "18",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "7",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "31",
+    "subproperty" : [ "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "55",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "11",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "range" : "55",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "range" : "12",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "range" : "55",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "63",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "range" : "55",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "range" : "63",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
+  }, {
+    "range" : "55",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasTarget",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "hasTarget",
+      "en" : "hasTarget"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "71",
+    "comment" : {
+      "en" : "Relates abusive speech to the individual, group, or entity targeted by it."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "70"
+  }, {
+    "range" : "55",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasTargetGroup",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "hasTargetGroup",
+      "en" : "hasTargetGroup"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "71",
+    "comment" : {
+      "en" : "Relates abusive speech to the group targeted by it."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "76"
+  }, {
+    "range" : "55",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "range" : "89",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87"
+  }, {
+    "range" : "55",
+    "domain" : "91",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "range" : "9",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92"
+  }, {
+    "range" : "55",
+    "domain" : "94",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "93"
+  }, {
+    "range" : "14",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "96"
+  }, {
+    "range" : "55",
+    "domain" : "98",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "97"
+  }, {
+    "range" : "14",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "range" : "55",
+    "domain" : "102",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#datasetSource",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "104",
+    "label" : {
+      "IRI-based" : "datasetSource",
+      "en" : "datasetSource"
+    },
+    "domain" : "99",
+    "comment" : {
+      "en" : "A string placeholder containing a link or short description of dataset provenance (e.g. Twitter, reference to paper, link to github etc.)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#explicitness",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "109",
+    "label" : {
+      "IRI-based" : "explicitness",
+      "en" : "explicitness"
+    },
+    "domain" : "108",
+    "comment" : {
+      "en" : "Abusive speech can be explicit or implicit (vailed). Explicit abusive speech has value 1, implicit has value 0."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "107"
+  }, {
+    "range" : "55",
+    "domain" : "115",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "114"
+  }, {
+    "range" : "67",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "116"
+  }, {
+    "range" : "55",
+    "domain" : "118",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "range" : "55",
+    "domain" : "120",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#abusivenessScore",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "123",
+    "label" : {
+      "IRI-based" : "abusivenessScore",
+      "en" : "abusivenessScore"
+    },
+    "domain" : "122",
+    "comment" : {
+      "en" : "Abusiveness expressed as number between 0 and 1."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "121"
+  }, {
+    "range" : "55",
+    "domain" : "125",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "range" : "55",
+    "domain" : "128",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
+  }, {
+    "range" : "55",
+    "domain" : "75",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "129"
+  }, {
+    "range" : "55",
+    "domain" : "132",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "131"
+  }, {
+    "range" : "55",
+    "domain" : "134",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
+  }, {
+    "range" : "55",
+    "domain" : "136",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "135"
+  }, {
+    "range" : "55",
+    "domain" : "139",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "138"
+  }, {
+    "range" : "55",
+    "domain" : "141",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#triggersIncitement",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "110",
+    "label" : {
+      "IRI-based" : "triggersIncitement",
+      "en" : "triggersIncitement"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "31",
+    "comment" : {
+      "en" : "Relates abusive speech to incitement that it may provoke, encourage, or trigger."
+    },
+    "attributes" : [ "object" ],
+    "id" : "46"
+  }, {
+    "range" : "54",
+    "domain" : "146",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "145"
+  }, {
+    "range" : "81",
+    "domain" : "148",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "147"
+  }, {
+    "range" : "81",
+    "domain" : "150",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "149"
+  }, {
+    "range" : "153",
+    "domain" : "152",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "151"
+  }, {
+    "range" : "91",
+    "domain" : "155",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "154"
+  }, {
+    "range" : "58",
+    "domain" : "157",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "156"
+  }, {
+    "range" : "58",
+    "domain" : "159",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "158"
+  }, {
+    "range" : "58",
+    "domain" : "126",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "160"
+  }, {
+    "range" : "58",
+    "domain" : "162",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "161"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#awareness",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "164",
+    "label" : {
+      "IRI-based" : "awareness",
+      "en" : "awareness"
+    },
+    "domain" : "108",
+    "comment" : {
+      "en" : "Intentional abusive speech has value 1, unintentional has value 0."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "163"
+  }, {
+    "range" : "58",
+    "domain" : "166",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "165"
+  }, {
+    "range" : "58",
+    "domain" : "168",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "167"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "173",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "172",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "171"
+  }, {
+    "range" : "86",
+    "domain" : "178",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "177"
+  }, {
+    "range" : "86",
+    "domain" : "106",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "180"
+  }, {
+    "range" : "86",
+    "domain" : "184",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "183"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "52",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "object" ],
+    "id" : "187"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasSentiment",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "189",
+    "label" : {
+      "IRI-based" : "hasSentiment",
+      "en" : "hasSentiment"
+    },
+    "domain" : "28",
+    "comment" : {
+      "en" : "Relates sentiment to the dataset entry where the sentiment annotation was found or perfrmed."
+    },
+    "attributes" : [ "object" ],
+    "id" : "188"
+  }, {
+    "range" : "7",
+    "domain" : "191",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "190"
+  }, {
+    "range" : "7",
+    "domain" : "194",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "193"
+  }, {
+    "range" : "7",
+    "domain" : "197",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "196"
+  }, {
+    "range" : "7",
+    "domain" : "184",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "198"
+  }, {
+    "range" : "7",
+    "domain" : "201",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "200"
+  }, {
+    "range" : "86",
+    "domain" : "204",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "203"
+  }, {
+    "range" : "86",
+    "domain" : "207",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "206"
+  }, {
+    "range" : "32",
+    "domain" : "210",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "209"
+  }, {
+    "range" : "32",
+    "domain" : "213",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "212"
+  }, {
+    "range" : "7",
+    "domain" : "215",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "214"
+  }, {
+    "range" : "7",
+    "domain" : "217",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "216"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#involvesRole",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "219",
+    "label" : {
+      "IRI-based" : "involvesRole",
+      "en" : "involvesRole"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "31",
+    "comment" : {
+      "en" : "Relates an abusive speech instance or interaction to the participant role involved in it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "range" : "175",
+    "domain" : "222",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "221"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "136",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "84",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "223"
+  }, {
+    "range" : "175",
+    "domain" : "225",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "224"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasTargetType",
+    "inverse" : "227",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "hasTargetType",
+      "en" : "hasTargetType"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "77",
+    "comment" : {
+      "en" : "Relates abusive speech to the target type on the basis of which it is directed toward an individual or group."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "226"
+  }, {
+    "range" : "175",
+    "domain" : "229",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "228"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#belongsToTargetGroup",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "belongsToTargetGroup",
+      "en" : "belongsToTargetGroup"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "55",
+    "comment" : {
+      "en" : "Targets can belong to Target Groups for course grained annotation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "range" : "232",
+    "domain" : "231",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "230"
+  }, {
+    "range" : "175",
+    "domain" : "174",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "233"
+  }, {
+    "range" : "175",
+    "domain" : "186",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "235"
+  }, {
+    "range" : "175",
+    "domain" : "238",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "237"
+  }, {
+    "range" : "169",
+    "domain" : "240",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "239"
+  }, {
+    "range" : "219",
+    "domain" : "242",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "241"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "243"
+  }, {
+    "range" : "245",
+    "domain" : "219",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "244"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "134",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "86",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "246"
+  }, {
+    "range" : "2",
+    "domain" : "137",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "247"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "51",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "248"
+  }, {
+    "range" : "251",
+    "domain" : "250",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "249"
+  }, {
+    "range" : "254",
+    "domain" : "253",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "252"
+  }, {
+    "range" : "175",
+    "domain" : "218",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "255"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "257",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "256"
+  }, {
+    "range" : "261",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "260"
+  }, {
+    "range" : "264",
+    "domain" : "263",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "262"
+  }, {
+    "range" : "219",
+    "domain" : "266",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "265"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "263",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "267"
+  }, {
+    "range" : "219",
+    "domain" : "269",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "268"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "264",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "270"
+  }, {
+    "range" : "219",
+    "domain" : "272",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "271"
+  }, {
+    "range" : "275",
+    "domain" : "274",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "273"
+  }, {
+    "range" : "219",
+    "domain" : "277",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "276"
+  }, {
+    "range" : "280",
+    "domain" : "279",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "278"
+  }, {
+    "range" : "94",
+    "domain" : "282",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "281"
+  }, {
+    "range" : "284",
+    "domain" : "279",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "283"
+  }, {
+    "range" : "102",
+    "domain" : "263",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "285"
+  }, {
+    "range" : "284",
+    "domain" : "280",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "286"
+  }, {
+    "range" : "102",
+    "domain" : "264",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "287"
+  }, {
+    "range" : "289",
+    "domain" : "279",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "288"
+  }, {
+    "range" : "14",
+    "domain" : "275",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "290"
+  }, {
+    "range" : "289",
+    "domain" : "280",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "291"
+  }, {
+    "range" : "14",
+    "domain" : "274",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "292"
+  }, {
+    "range" : "289",
+    "domain" : "284",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "293"
+  }, {
+    "range" : "261",
+    "domain" : "89",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "294"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "83",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "295"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#containsEntry",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "containsEntry",
+      "en" : "containsEntry"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "99",
+    "comment" : {
+      "en" : "A dataset contains dataset entries."
+    },
+    "attributes" : [ "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#stereotype",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "297",
+    "label" : {
+      "IRI-based" : "stereotype",
+      "en" : "stereotype"
+    },
+    "domain" : "144",
+    "comment" : {
+      "en" : "Indicates whether the lexical entry may be used in a stereotypical meaning or context"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "296"
+  }, {
+    "range" : "231",
+    "domain" : "299",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "298"
+  }, {
+    "range" : "113",
+    "domain" : "111",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "300"
+  }, {
+    "range" : "303",
+    "domain" : "302",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "301"
+  }, {
+    "range" : "112",
+    "domain" : "111",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "304"
+  }, {
+    "range" : "303",
+    "domain" : "306",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "305"
+  }, {
+    "range" : "112",
+    "domain" : "113",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "307"
+  }, {
+    "range" : "232",
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "308"
+  }, {
+    "range" : "184",
+    "domain" : "194",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "309"
+  }, {
+    "range" : "215",
+    "domain" : "194",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "310"
+  }, {
+    "range" : "217",
+    "domain" : "194",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "311"
+  }, {
+    "range" : "21",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "313"
+  }, {
+    "range" : "24",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "314"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "162",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "194",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "315"
+  }, {
+    "range" : "21",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "316"
+  }, {
+    "range" : "27",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "317"
+  }, {
+    "range" : "320",
+    "domain" : "319",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "318"
+  }, {
+    "range" : "21",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "321"
+  }, {
+    "range" : "24",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "322"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasAbusiveText",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "182",
+    "label" : {
+      "IRI-based" : "hasAbusiveText",
+      "en" : "hasAbusiveText"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "108",
+    "comment" : {
+      "en" : "Relates an abusiveness set to abusive text that contains abusive content."
+    },
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "range" : "319",
+    "domain" : "220",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "324"
+  }, {
+    "range" : "159",
+    "domain" : "157",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "325"
+  }, {
+    "range" : "320",
+    "domain" : "220",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "326"
+  }, {
+    "range" : "159",
+    "domain" : "166",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "327"
+  }, {
+    "range" : "157",
+    "domain" : "166",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "328"
+  }, {
+    "range" : "159",
+    "domain" : "126",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "329"
+  }, {
+    "range" : "157",
+    "domain" : "126",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "330"
+  }, {
+    "range" : "157",
+    "domain" : "162",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "331"
+  }, {
+    "range" : "126",
+    "domain" : "166",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "332"
+  }, {
+    "range" : "159",
+    "domain" : "162",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "333"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "323",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "204",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "334"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isHateConceptOf",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "isHateConceptOf",
+      "en" : "isHateConceptOf"
+    },
+    "domain" : "52",
+    "comment" : {
+      "en" : "Relates hate concept to abusive speech where it was detected."
+    },
+    "attributes" : [ "object" ],
+    "id" : "335"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "157",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "184",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "336"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "128",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "197",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "337"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#refersToLexicalEntry",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "339",
+    "label" : {
+      "IRI-based" : "refersToLexicalEntry",
+      "en" : "refersToLexicalEntry"
+    },
+    "domain" : "234",
+    "comment" : {
+      "en" : "Connects AbusiveText to Lexical Entry in an Ontolex Dictionary"
+    },
+    "attributes" : [ "object" ],
+    "id" : "338"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#refersToLexicalSense",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "144",
+    "label" : {
+      "IRI-based" : "refersToLexicalSense",
+      "en" : "refersToLexicalSense"
+    },
+    "domain" : "236",
+    "comment" : {
+      "en" : "Connects AbusiveText to lexical sense of an entry in an Ontolex dictionary."
+    },
+    "attributes" : [ "object" ],
+    "id" : "340"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "191",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "342"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "126",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "215",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "343"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "345",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "207",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "344"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "82",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "346"
+  }, {
+    "range" : "204",
+    "domain" : "207",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "347"
+  }, {
+    "range" : "106",
+    "domain" : "207",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "348"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "166",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "217",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "349"
+  }, {
+    "range" : "204",
+    "domain" : "106",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "350"
+  }, {
+    "range" : "204",
+    "domain" : "178",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "351"
+  }, {
+    "range" : "106",
+    "domain" : "178",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "352"
+  }, {
+    "range" : "207",
+    "domain" : "178",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "353"
+  }, {
+    "range" : "201",
+    "domain" : "215",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "354"
+  }, {
+    "range" : "184",
+    "domain" : "215",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "355"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "357",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "178",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "356"
+  }, {
+    "range" : "201",
+    "domain" : "184",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "358"
+  }, {
+    "range" : "215",
+    "domain" : "217",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "359"
+  }, {
+    "range" : "201",
+    "domain" : "194",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "360"
+  }, {
+    "range" : "201",
+    "domain" : "217",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "361"
+  }, {
+    "range" : "184",
+    "domain" : "217",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "362"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "139",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "364",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "363"
+  }, {
+    "range" : "261",
+    "domain" : "251",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "365"
+  }, {
+    "range" : "174",
+    "domain" : "222",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "366"
+  }, {
+    "range" : "225",
+    "domain" : "222",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "367"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "141",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "80",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "368"
+  }, {
+    "range" : "323",
+    "domain" : "345",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "369"
+  }, {
+    "range" : "323",
+    "domain" : "357",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "370"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "258",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "170",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "371"
+  }, {
+    "range" : "277",
+    "domain" : "242",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "372"
+  }, {
+    "range" : "345",
+    "domain" : "357",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "373"
+  }, {
+    "range" : "95",
+    "domain" : "258",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "374"
+  }, {
+    "range" : "277",
+    "domain" : "269",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "375"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#expression",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "199",
+    "label" : {
+      "IRI-based" : "expression",
+      "en" : "expression"
+    },
+    "domain" : "144",
+    "comment" : {
+      "en" : "A typical expression or phrase associated with a lexical sense."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "376"
+  }, {
+    "range" : "242",
+    "domain" : "269",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "377"
+  }, {
+    "range" : "277",
+    "domain" : "266",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "378"
+  }, {
+    "range" : "242",
+    "domain" : "266",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "379"
+  }, {
+    "range" : "277",
+    "domain" : "272",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "381"
+  }, {
+    "range" : "242",
+    "domain" : "272",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "382"
+  }, {
+    "range" : "266",
+    "domain" : "269",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "383"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "146",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "137",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "384"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "159",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "201",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "385"
+  }, {
+    "range" : "266",
+    "domain" : "272",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "386"
+  }, {
+    "range" : "269",
+    "domain" : "272",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "387"
+  }, {
+    "range" : "71",
+    "domain" : "312",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "388"
+  }, {
+    "range" : "238",
+    "domain" : "229",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "389"
+  }, {
+    "range" : "153",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "390"
+  }, {
+    "range" : "153",
+    "domain" : "312",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "391"
+  }, {
+    "range" : "238",
+    "domain" : "218",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "392"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasAbuseCategory",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "143",
+    "label" : {
+      "IRI-based" : "hasAbuseCategory",
+      "en" : "hasAbuseCategory"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "31",
+    "comment" : {
+      "en" : "Relates abusive speech to the category of abuse it expresses."
+    },
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "range" : "238",
+    "domain" : "186",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "393"
+  }, {
+    "range" : "229",
+    "domain" : "186",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "394"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasNIFAnchor",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "396",
+    "label" : {
+      "IRI-based" : "hasNIFAnchor",
+      "en" : "hasNIFAnchor"
+    },
+    "domain" : "182",
+    "comment" : {
+      "en" : "Relates an abusive text to its NIF anchor string."
+    },
+    "attributes" : [ "object" ],
+    "id" : "395"
+  }, {
+    "range" : "238",
+    "domain" : "174",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "397"
+  }, {
+    "range" : "229",
+    "domain" : "174",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "398"
+  }, {
+    "range" : "229",
+    "domain" : "218",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "399"
+  }, {
+    "range" : "186",
+    "domain" : "218",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "400"
+  }, {
+    "range" : "238",
+    "domain" : "225",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "401"
+  }, {
+    "range" : "229",
+    "domain" : "225",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "402"
+  }, {
+    "range" : "186",
+    "domain" : "174",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "403"
+  }, {
+    "range" : "218",
+    "domain" : "174",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "404"
+  }, {
+    "range" : "186",
+    "domain" : "225",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "405"
+  }, {
+    "range" : "218",
+    "domain" : "225",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "406"
+  }, {
+    "range" : "174",
+    "domain" : "225",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "408"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#occursInContext",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "occursInContext",
+      "en" : "occursInContext"
+    },
+    "domain" : "99",
+    "comment" : {
+      "en" : "Relates fataset to the communicative, social, or textual context in which it occurs."
+    },
+    "attributes" : [ "object" ],
+    "id" : "409"
+  }, {
+    "range" : "186",
+    "domain" : "222",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "410"
+  }, {
+    "range" : "218",
+    "domain" : "222",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "411"
+  }, {
+    "range" : "238",
+    "domain" : "222",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "412"
+  }, {
+    "range" : "229",
+    "domain" : "222",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "414"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#abusiveText",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "211",
+    "label" : {
+      "IRI-based" : "abusiveText",
+      "en" : "abusiveText"
+    },
+    "domain" : "182",
+    "comment" : {
+      "en" : "Text that is result or scope of annotation process. It could be same text as in data entry or part of that text either a sentence or text span."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "416"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasIntenton",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "175",
+    "label" : {
+      "IRI-based" : "hasIntenton",
+      "en" : "hasIntenton"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "31",
+    "comment" : {
+      "en" : "Relates abusive speech to the intention or communicative purpose behind it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "49"
+  }, {
+    "range" : "67",
+    "domain" : "259",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "418"
+  }, {
+    "range" : "62",
+    "domain" : "259",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "419"
+  }, {
+    "range" : "63",
+    "domain" : "259",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "420"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#abusiveBoolean",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "208",
+    "label" : {
+      "IRI-based" : "abusiveBoolean",
+      "en" : "abusiveBoolean"
+    },
+    "domain" : "108",
+    "comment" : {
+      "en" : "Boolean, if 0 not abusive language, if 1 abusive language."
+    },
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "421"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#promotesAbusiveLanguage",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "promotesAbusiveLanguage",
+      "en" : "promotesAbusiveLanguage"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "110",
+    "comment" : {
+      "en" : "Relates incitement to the abusive language or harmful expression it promotes."
+    },
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasAnalysis",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "299",
+    "label" : {
+      "IRI-based" : "hasAnalysis",
+      "en" : "hasAnalysis"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "423",
+    "comment" : {
+      "en" : "Annotation activity is performed by analyzing data entries for abusive speech detection."
+    },
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasTargetType",
+    "inverse" : "227",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "hasTargetType",
+      "en" : "hasTargetType"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "31",
+    "comment" : {
+      "en" : "Relates abusive speech to the target type on the basis of which it is directed toward an individual or group."
+    },
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasAnnotationLevel",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "380",
+    "label" : {
+      "IRI-based" : "hasAnnotationLevel",
+      "en" : "hasAnnotationLevel"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "423",
+    "comment" : {
+      "en" : "A class defines if annotation is performed on the whole text, sentence level or text spans."
+    },
+    "attributes" : [ "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasAnnotation",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "423",
+    "label" : {
+      "IRI-based" : "hasAnnotation",
+      "en" : "hasAnnotation"
+    },
+    "domain" : "99",
+    "comment" : {
+      "en" : "A dataset can have one or more annotations performed on the dataset."
+    },
+    "attributes" : [ "object" ],
+    "id" : "424"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasThreat",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "202",
+    "label" : {
+      "IRI-based" : "hasThreat",
+      "en" : "hasThreat"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "Indicates whether the content contains a threat."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "425"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#annotationPerformedBy",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "417",
+    "label" : {
+      "IRI-based" : "annotationPerformedBy",
+      "en" : "annotationPerformedBy"
+    },
+    "domain" : "423",
+    "comment" : {
+      "en" : "Relates an annotation to the annotator, agent, or system that created it (class Agent)."
+    },
+    "attributes" : [ "object" ],
+    "id" : "426"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasAbusivenessAnalysis",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "299",
+    "label" : {
+      "IRI-based" : "hasAbusivenessAnalysis",
+      "en" : "hasAbusivenessAnalysis"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "28",
+    "comment" : {
+      "en" : "Relates a dataset entry to abusive language analysis perfomed on it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isTargetTypeOf",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "isTargetTypeOf",
+      "en" : "isTargetTypeOf"
+    },
+    "domain" : "55",
+    "comment" : {
+      "en" : "Relates terget type to abusive speech is it detected in."
+    },
+    "attributes" : [ "object" ],
+    "id" : "227"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#entryId",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "195",
+    "label" : {
+      "IRI-based" : "entryId",
+      "en" : "entryId"
+    },
+    "domain" : "28",
+    "comment" : {
+      "en" : "EntryId contains reference number to external source of data entry."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "427"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasHateConcept",
+    "inverse" : "335",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "hasHateConcept",
+      "en" : "hasHateConcept"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "31",
+    "comment" : {
+      "en" : "Relates abusive speech to the hate-related concept expressed or targeted in it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "range" : "136",
+    "domain" : "319",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "428"
+  }, {
+    "range" : "136",
+    "domain" : "407",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "429"
+  }, {
+    "range" : "136",
+    "domain" : "320",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "430"
+  }, {
+    "range" : "136",
+    "domain" : "220",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "431"
+  }, {
+    "range" : "136",
+    "domain" : "422",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "432"
+  }, {
+    "range" : "115",
+    "domain" : "169",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "433"
+  }, {
+    "range" : "115",
+    "domain" : "240",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "434"
+  }, {
+    "range" : "82",
+    "domain" : "170",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "435"
+  }, {
+    "range" : "82",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "436"
+  }, {
+    "range" : "81",
+    "domain" : "130",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "437"
+  }, {
+    "range" : "4",
+    "domain" : "253",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "438"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasLexicalUnitType",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "303",
+    "label" : {
+      "IRI-based" : "hasLexicalUnitType",
+      "en" : "hasLexicalUnitType"
+    },
+    "domain" : "339",
+    "comment" : {
+      "en" : "Associates a lexical entry with its lexical unit type, indicating whether it represents a word, multiword expression, idiom, catchphrase, filler, proverb, or another lexical unit category."
+    },
+    "attributes" : [ "object" ],
+    "id" : "439"
+  }, {
+    "range" : "52",
+    "domain" : "86",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "440"
+  }, {
+    "range" : "110",
+    "domain" : "111",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "441"
+  }, {
+    "range" : "110",
+    "domain" : "112",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "442"
+  }, {
+    "range" : "110",
+    "domain" : "113",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "443"
+  }, {
+    "range" : "72",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "444"
+  }, {
+    "range" : "72",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "445"
+  }, {
+    "range" : "72",
+    "domain" : "259",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "446"
+  }, {
+    "range" : "72",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "447"
+  }, {
+    "range" : "4",
+    "domain" : "254",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "448"
+  }, {
+    "range" : "52",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "449"
+  }, {
+    "range" : "52",
+    "domain" : "85",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "450"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#influenced",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "172",
+    "label" : {
+      "IRI-based" : "influenced"
+    },
+    "domain" : "172",
+    "subproperty" : [ "452" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "451"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#sourceText",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "185",
+    "label" : {
+      "IRI-based" : "sourceText",
+      "en" : "sourceText"
+    },
+    "domain" : "181",
+    "comment" : {
+      "en" : "Data entry contains text that is subject of annotation."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "454"
+  }, {
+    "range" : "143",
+    "domain" : "413",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "455"
+  }, {
+    "range" : "51",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "456"
+  }, {
+    "range" : "134",
+    "domain" : "345",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "457"
+  }, {
+    "range" : "52",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "458"
+  }, {
+    "range" : "134",
+    "domain" : "357",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "459"
+  }, {
+    "range" : "52",
+    "domain" : "81",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "460"
+  }, {
+    "range" : "134",
+    "domain" : "323",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "461"
+  }, {
+    "range" : "52",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "462"
+  }, {
+    "range" : "341",
+    "domain" : "284",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "463"
+  }, {
+    "range" : "52",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "464"
+  }, {
+    "range" : "341",
+    "domain" : "289",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "465"
+  }, {
+    "range" : "52",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "466"
+  }, {
+    "range" : "341",
+    "domain" : "279",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "467"
+  }, {
+    "range" : "52",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "468"
+  }, {
+    "range" : "341",
+    "domain" : "280",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "469"
+  }, {
+    "range" : "52",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "470"
+  }, {
+    "range" : "74",
+    "domain" : "95",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "471"
+  }, {
+    "range" : "143",
+    "domain" : "142",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "472"
+  }, {
+    "range" : "74",
+    "domain" : "258",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "473"
+  }, {
+    "range" : "143",
+    "domain" : "453",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "474"
+  }, {
+    "range" : "51",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "475"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#disturbingContentBoolean",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "192",
+    "label" : {
+      "IRI-based" : "disturbingContentBoolean",
+      "en" : "disturbingContentBoolean"
+    },
+    "domain" : "108",
+    "comment" : {
+      "en" : "Indicates whether the content is considered disturbing."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "476"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasTargetGroup",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "hasTargetGroup",
+      "en" : "hasTargetGroup"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "31",
+    "comment" : {
+      "en" : "Relates abusive speech to the group targeted by it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "44"
+  }, {
+    "range" : "79",
+    "domain" : "261",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "477"
+  }, {
+    "range" : "79",
+    "domain" : "251",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "478"
+  }, {
+    "domain" : "71",
+    "range" : "71",
+    "id" : "479",
+    "label" : {
+      "IRI-based" : "161",
+      "undefined" : "is a"
+    }
+  }, {
+    "range" : "83",
+    "domain" : "257",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "480"
+  }, {
+    "domain" : "153",
+    "range" : "153",
+    "id" : "481",
+    "label" : {
+      "IRI-based" : "162",
+      "undefined" : "is a"
+    }
+  }, {
+    "range" : "83",
+    "domain" : "364",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "482"
+  }, {
+    "domain" : "74",
+    "range" : "74",
+    "id" : "483",
+    "label" : {
+      "IRI-based" : "163",
+      "undefined" : "is a"
+    }
+  }, {
+    "range" : "143",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "484"
+  }, {
+    "range" : "143",
+    "domain" : "312",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "485"
+  }, {
+    "range" : "143",
+    "domain" : "153",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "486"
+  }, {
+    "range" : "143",
+    "domain" : "415",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "487"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#analysisPerformedBy",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "417",
+    "label" : {
+      "IRI-based" : "analysisPerformedBy",
+      "en" : "analysisPerformedBy"
+    },
+    "domain" : "299",
+    "comment" : {
+      "en" : "Relates an abusive speech analysis to the agent, system, or annotator that performed it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "488"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#negativeConnotation",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "179",
+    "label" : {
+      "IRI-based" : "negativeConnotation",
+      "en" : "negativeConnotation"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "Indicates whether the content has negative connotation."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "489"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#generated",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "108",
+    "annotations" : {
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "en",
+        "value" : "prov:generated is one of few inverse property defined, to allow Activity-oriented assertions in addition to Entity-oriented assertions.",
+        "type" : "label"
+      } ],
+      "inverse" : [ {
+        "identifier" : "inverse",
+        "language" : "undefined",
+        "value" : "wasGeneratedBy",
+        "type" : "label"
+      } ],
+      "sharesDefinitionWith" : [ {
+        "identifier" : "sharesDefinitionWith",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#Generation",
+        "type" : "iri"
+      } ],
+      "component" : [ {
+        "identifier" : "component",
+        "language" : "undefined",
+        "value" : "entities-activities",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "type" : "iri"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "expanded",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "generated",
+      "undefined" : "generated"
+    },
+    "superproperty" : [ "451" ],
+    "domain" : "299",
+    "attributes" : [ "external", "object" ],
+    "id" : "452"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasAbusiveSpeech",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasAbusiveSpeech",
+      "en" : "hasAbusiveSpeech"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "108",
+    "comment" : {
+      "en" : "Relates an abusiveness set to abusive speech."
+    },
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "range" : "150",
+    "domain" : "148",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "490"
+  }, {
+    "range" : "150",
+    "domain" : "130",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "491"
+  }, {
+    "range" : "136",
+    "domain" : "115",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "492"
+  }, {
+    "range" : "102",
+    "domain" : "115",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "493"
+  }, {
+    "range" : "102",
+    "domain" : "136",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "494"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "115",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "81",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "495"
+  }, {
+    "range" : "166",
+    "domain" : "162",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "496"
+  }, {
+    "range" : "126",
+    "domain" : "162",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "497"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#usesRethoricalFigure",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "341",
+    "label" : {
+      "IRI-based" : "usesRethoricalFigure",
+      "en" : "usesRethoricalFigure"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "31",
+    "comment" : {
+      "en" : "Relates abusive speech to the rhetorical figure or stylistic device used in it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "isDirectedAgainst",
+      "en" : "isDirectedAgainst"
+    },
+    "domain" : "85",
+    "comment" : {
+      "en" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "498"
+  }, {
+    "range" : "130",
+    "domain" : "148",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "499"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasLexicalRootIn",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hasLexicalRootIn",
+      "en" : "hasLexicalRootIn"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "31",
+    "comment" : {
+      "en" : "Relates abusive speech to the lexical source concept which it is derived from."
+    },
+    "attributes" : [ "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasTarget",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "hasTarget",
+      "en" : "hasTarget"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "31",
+    "comment" : {
+      "en" : "Relates abusive speech to the individual, group, or entity targeted by it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#labeledTextEmbedding",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "range" : "176",
+    "label" : {
+      "IRI-based" : "labeledTextEmbedding",
+      "en" : "embeddingVector"
+    },
+    "domain" : "205",
+    "comment" : {
+      "en" : "The embedding vector of the texcual data."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "500"
+  } ]
+}

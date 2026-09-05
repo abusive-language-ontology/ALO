@@ -1,0 +1,12 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<http://llod.jerteh.rs/alo/alo.owl/1.0.0> a prov:Entity;
+	 dc:title "Abusive Language Ontology (Alo)";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:specializationOf <http://llod.jerteh.rs/alo/alo.owl>;
+	 prov:wasGeneratedAt "2025-03-01";
+.
+:agent0 a prov:Agent; foaf:name "Danka Jokic, University of Belgrade".

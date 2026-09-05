@@ -1,0 +1,4280 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveText"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#DatasetEntry"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid14"
+    }, {
+      "@id" : "_:genid12"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid105",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#AntiCatholic"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#AntiMuslim"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#AntiNonMuslim"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#AntiOrthodox"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid110",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Assistant"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Bystander"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Perpetrator"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Upstander"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Victim"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid116",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Catholic"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Muslim"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Orthodox"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "_:genid120",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Defamation"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Derogation"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Discrimination"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Disparagement"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Disrespect"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Insult"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Offense"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid128",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Derogatory"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#HateSpeech"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Profanity"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid132",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Group"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Organization"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#OtherTarget"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Person"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid137",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Height"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Walking"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Weight"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "0.0"
+  } ]
+}, {
+  "@id" : "_:genid141",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Homophobia"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Misandry"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Misogyny"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Racism"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Xenophobia"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid147",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Hurt"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Segregation"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Violence"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveText"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#DatasetEntry"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid151",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Irony"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Metaphor"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Sarcasm"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid155",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Irony"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Metaphor"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Sarcasm"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Wordplay"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveText"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#DatasetEntry"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Disability"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#abusivenessScore"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid23"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid27"
+    }, {
+      "@id" : "_:genid25"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "0.0"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#abusivenessScore"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid29"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid33"
+    }, {
+      "@id" : "_:genid31"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "0.0"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Age"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Albanian"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Catholic"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Croatian"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#German"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Immigrant"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveText"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#DatasetEntry"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#SexualOrientation"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Muslim"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid43"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Catholic"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Orthodox"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Orthodox"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Refugee"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Jew"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Serb"
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Roma"
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#BisexualPerson"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#SocialStatus"
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#SkinColour"
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#hasTarget"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Target"
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#hasTargetGroup"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetGroup"
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#HomosexualPerson"
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#PhysicalAppearance"
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Man"
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Woman"
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#complementOf" : [ {
+    "@id" : "_:genid61"
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#hasTarget"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Target"
+  } ]
+}, {
+  "@id" : "_:genid62",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#complementOf" : [ {
+    "@id" : "_:genid63"
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#hasTargetGroup"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetGroup"
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Race"
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#ReligiousBeliefs"
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Gender"
+  } ]
+}, {
+  "@id" : "_:genid67",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Weight"
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Behaviour"
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#hasTargetType"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusivenessSet"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid70",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid71"
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Ethnicity"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Immigrant"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Nationality"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Refugee"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid76",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Adultism"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Ephebiphobia"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Gerontophobia"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid80",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Age"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Behaviour"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Gender"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid84",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Albanian"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Croatian"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#German"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Jew"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Serb"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid90",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Alcoholism"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#DrugAddiction"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#SpeechIntrusion"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid94",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Animal"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#FemaleGenitalia"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#MaleGenitalia"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#Plant"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid99",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#AntiAlbanian"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#AntiCroatian"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#AntiGerman"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#AntiSemitism"
+    }, {
+      "@id" : "http://llod.jerteh.rs/alo/alo.owl#AntiSerb"
+    } ]
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@language" : "en",
+    "@value" : "The ontology of abusive speech is designed for publishing results of the abusive language annotation process in a structured form. The goal is to have a placeholder for different dataset formats, to support diverse abusive language detection methodologies and content providers."
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@language" : "en",
+    "@value" : "2025-03-01"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@language" : "en",
+    "@value" : "Danka Jokic, University of Belgrade"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The ontology of abusive speech is designed for publishing results of the abusive language annotation process in a structured form. The goal is to have a placeholder for different dataset formats, to support diverse abusive language detection methodologies and content providers."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@language" : "en",
+    "@value" : "02-07-2026"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@language" : "en",
+    "@value" : "University of Belgrade"
+  } ],
+  "http://purl.org/dc/terms/rightsHolder" : [ {
+    "@language" : "en",
+    "@value" : "Danka Jokic"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Abusive Language Ontology (Alo)"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@language" : "en",
+    "@value" : "alo"
+  }, {
+    "@language" : "en",
+    "@value" : "http://llod.jerteh.rs/alo/alo.owl#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The ontology of abusive speech is designed for publishing results of the abusive language annotation process in a structured form. The goal is to have a placeholder for different dataset formats, to support diverse abusive language detection methodologies and content providers."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://github.com/danka-jokic/ALO"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl/1.0.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "en",
+    "@value" : "1.0.0"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://llod.jerteh.rs/alo/alo.owl#entryId" : [ {
+    "@value" : "175151"
+  } ],
+  "http://llod.jerteh.rs/alo/alo.owl#hasAbusivenessAnalysis" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444AbusivenessAnalysis"
+  }, {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444WholeTextAnalysis"
+  } ],
+  "http://llod.jerteh.rs/alo/alo.owl#sourceText" : [ {
+    "@language" : "sr",
+    "@value" : "ja obozavam pedere na instagramu koji nam u bio objasne kako oni nemaju drugu drustvenu mrezu da slucajno ne pomislimo kako imaju profil na grinderu i kako se ne daj boze jebu u dupe"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#DatasetEntry"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444AbusiveSpeechToxicSpansSet1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://llod.jerteh.rs/alo/alo.owl#hasAbuseCategory" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#HateSpeech"
+  } ],
+  "http://llod.jerteh.rs/alo/alo.owl#hasTargetType" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#SexualOrientation"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444AbusiveSpeechToxicSpansSet2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://llod.jerteh.rs/alo/alo.owl#hasAbuseCategory" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Profanity"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444AbusivenessAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveLanguageAnalysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "2444ToxicSpansAnalysis"
+  } ],
+  "http://www.w3.org/ns/prov#generated" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444AbusivenessSet"
+  }, {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444ToxicSpansSet2"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444AbusivenessSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://llod.jerteh.rs/alo/alo.owl#abusiveBoolean" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://llod.jerteh.rs/alo/alo.owl#hasAbusiveSpeech" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444AbusiveSpeechToxicSpansSet1"
+  } ],
+  "http://llod.jerteh.rs/alo/alo.owl#hasAbusiveText" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444ToxicSpan1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusivenessSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "2444ToxicSpansSet1"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444ToxicSpan1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://llod.jerteh.rs/alo/alo.owl#abusiveText" : [ {
+    "@language" : "sr",
+    "@value" : "pedere"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveText"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444ToxicSpan2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://llod.jerteh.rs/alo/alo.owl#abusiveText" : [ {
+    "@language" : "sr",
+    "@value" : "jebu u dupe"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveText"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444ToxicSpansSet2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://llod.jerteh.rs/alo/alo.owl#abusiveBoolean" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://llod.jerteh.rs/alo/alo.owl#hasAbusiveSpeech" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444AbusiveSpeechToxicSpansSet2"
+  } ],
+  "http://llod.jerteh.rs/alo/alo.owl#hasAbusiveText" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444ToxicSpan2"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusivenessSet"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444WholeAbusiveText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://llod.jerteh.rs/alo/alo.owl#abusiveText" : [ {
+    "@language" : "sr",
+    "@value" : "ja obozavam pedere na instagramu koji nam u bio objasne kako oni nemaju drugu drustvenu mrezu da slucajno ne pomislimo kako imaju profil na grinderu i kako se ne daj boze jebu u dupe"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveText"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444WholeTextAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveLanguageAnalysis"
+  } ],
+  "http://www.w3.org/ns/prov#generated" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444WholeTextSet1"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444WholeTextSet1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://llod.jerteh.rs/alo/alo.owl#abusiveBoolean" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://llod.jerteh.rs/alo/alo.owl#hasAbusiveSpeech" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Action"
+  } ],
+  "http://llod.jerteh.rs/alo/alo.owl#hasAbusiveText" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444WholeAbusiveText"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusivenessSet"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSerCorpus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://llod.jerteh.rs/alo/alo.owl#containsEntry" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Dataset"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSerToxicSpansAnnotation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://llod.jerteh.rs/alo/alo.owl#hasAnalysis" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444AbusivenessAnalysis"
+  } ],
+  "http://llod.jerteh.rs/alo/alo.owl#hasAnnotationLevel" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TextSpanLevel"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Annotation"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSerWholeTextAnnotation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://llod.jerteh.rs/alo/alo.owl#hasAnalysis" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444WholeTextAnalysis"
+  } ],
+  "http://llod.jerteh.rs/alo/alo.owl#hasAnnotationLevel" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#WholeTextLevel"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Annotation"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Ableism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Ableism is discrimination and social prejudice against people with disabilities based on the belief that typical abilities (those of non-disabled people) are superior. It is a system of beliefs, practices, and societal structures that devalues and discriminates against people with physical, intellectual, sensory, mental, or developmental disabilities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ableism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#HateConcept"
+  }, {
+    "@id" : "_:genid21"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbuseCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Abusive language is hurtful language that a speaker uses to insult or offend another individual or a group of individuals based on their personal qualities, appearance, social status, opinions, statements, or actions (Casseli, 2020)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AbuseCategory"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveLanguageAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Abusive language analysis is an activity performed on a text in order to detect if the text contains abusive language."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AbusiveLanguageAnalysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Activity"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Class that represents Abusive Speech concept."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AbusiveSpeech"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid22"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "AbusiveText represents a textual resource that has been annotated as containing abusive language, regardless of the specific linguistic realization, target, or abusive category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AbusiveText"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusivenessSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A class that holds results of abusive language analysis performed on a text."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AbusivenessSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  }, {
+    "@id" : "_:genid28"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Action",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://llod.jerteh.rs/alo/alo.owl#hasAbuseCategory" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#HateSpeech"
+  }, {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Profanity"
+  } ],
+  "http://llod.jerteh.rs/alo/alo.owl#hasTargetType" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#SexualOrientation"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "2444AbusiveSpeechWholeTextSet1"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Adultism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Adultism is a term used to describe the systemic bias, prejudice, and discrimination that adults (particularly those in positions of power) may hold or exhibit against young people."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Adultism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Ageism"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Age",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents age as a characteristic on the basis of which an individual or group may be targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Age"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Ageism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Ageism refers to stereotyping, prejudice, and/or discrimination against individuals or groups on the basis of their age."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ageism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#HateConcept"
+  }, {
+    "@id" : "_:genid34"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Albanian",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents Albanian national affiliation as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Albanian"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Nationality"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Alcoholism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents alcohol dependence as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Alcoholism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Behaviour"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Animal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the semantic domain of animals from which abusive lexical expressions may be derived through metaphorical or pejorative usage."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Animal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#LexicalSourceConcept"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Annotation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A class that contains high level details of annotation performed on a dataset."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Annotation"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AnnotationLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Annotation Level class represents different types of annotation on a text."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AnnotationLevel"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AntiAlbanian",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Albanian ethnic or national identity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AntiAlbanian"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Xenophobia"
+  }, {
+    "@id" : "_:genid35"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AntiCatholic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Catholic faith or affiliation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AntiCatholic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#ReligiousHatred"
+  }, {
+    "@id" : "_:genid36"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AntiCroatian",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Croatian ethnic or national identity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AntiCroatian"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Xenophobia"
+  }, {
+    "@id" : "_:genid37"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AntiGerman",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their German ethnic or national identity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AntiGerman"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Xenophobia"
+  }, {
+    "@id" : "_:genid38"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AntiImmigrant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents prejudice, discrimination, hostility, or hatred directed toward immigrants or individuals perceived to be immigrants."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AntiImmigrant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Xenophobia"
+  }, {
+    "@id" : "_:genid39"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AntiLGBTQPlus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their sexual orientation, gender identity, or gender expression."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AntiLGBTQPlus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#HateConcept"
+  }, {
+    "@id" : "_:genid40"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AntiMuslim",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Muslim faith or affiliation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AntiMuslim"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#ReligiousHatred"
+  }, {
+    "@id" : "_:genid41"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AntiNonMuslim"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AntiNonMuslim",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups who do not profess the Muslim faith."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AntiNonMuslim"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#ReligiousHatred"
+  }, {
+    "@id" : "_:genid42"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AntiOrthodox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Orthodox faith or affiliation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AntiOrthodox"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#ReligiousHatred"
+  }, {
+    "@id" : "_:genid46"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AntiRefugee",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents prejudice, discrimination, hostility, or hatred directed toward refugees or individuals perceived to be refugees."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AntiRefugee"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Xenophobia"
+  }, {
+    "@id" : "_:genid47"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AntiSemitism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents prejudice, discrimination, hostility, or hatred directed toward Jewish individuals or communities based on their Jewish identity, ethnicity, religion, or heritage."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AntiSemitism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#ReligiousHatred"
+  }, {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Xenophobia"
+  }, {
+    "@id" : "_:genid48"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#AntiSerb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Serbian ethnic or national identity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AntiSerb"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Xenophobia"
+  }, {
+    "@id" : "_:genid49"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Antigypsysm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Antigypsyism is a historically constructed, persistent complex of stereotyped perceptions, prejudice, and discrimination that leads to social exclusion and violence against Romani people. It includes hostility, prejudice, and the assignment of collective negative traits to people identified as \"Gypsies.\"   \nAnti-gypsyism is recognized by international bodies like the Council of Europe, the European Union, and the OSCE as a specific type of racism."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Antigypsysm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Racism"
+  }, {
+    "@id" : "_:genid50"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Assistant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a participant who supports, encourages, or helps the perpetrator in carrying out or amplifying abusive behavior."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Assistant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#ParticipantRole"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Behaviour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents behaviour or conduct as a characteristic on the basis of which a person or group may be targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Behaviour"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Biphobia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Biphobia is the fear, hatred, discomfort, prejudice, discrimination, or aversion directed towards bisexual people or bisexuality."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Biphobia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AntiLGBTQPlus"
+  }, {
+    "@id" : "_:genid51"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#BisexualPerson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents bisexual individuals or groups as the targets of abusive speech based on their sexual orientation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BisexualPerson"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#SexualOrientation"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#HomosexualPerson"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Bosniac",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents Bosniac national affiliation as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bosniac"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Nationality"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Bystander",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a participant who observes an abusive interaction without directly participating in, supporting, or opposing the abusive behavior."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bystander"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#ParticipantRole"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#CatchphraseFillerIdiom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents linguistic expressions catchphrase, filler and idiom."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CatchphraseFillerIdiom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#LexicalUnit"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Catholic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents Catholic affiliation as the basis for abusive speech directed toward an individual or group."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Catholic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#ReligiousBeliefs"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Classism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A form of social prejudice and discrimination involving negative attitudes, stereotyping, discriminatory actions, or institutional practices directed against individuals or groups based on their actual or perceived social class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Classism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#HateConcept"
+  }, {
+    "@id" : "_:genid52"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#CognitiveDisability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents cognitive, intellectual, developmental, or learning disabilities as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CognitiveDisability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Disability"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#PhysicalDisability"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Colorism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Prejudice or discrimination against individuals with a darker skin tone, typically among people of the same ethnic or racial group.1 While related to physical appearance, it's a specific form of prejudice based on skin shade, often linked to internalized racism."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Colorism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Lookism"
+  }, {
+    "@id" : "_:genid53"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Context",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the communication context or source in which a text is published or distributed, such as social media platforms or news articles."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Context"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#CriminalActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents actual or perceived involvement in criminal activity as the basis for abusive speech directed toward an individual or group."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CriminalActivity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Behaviour"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Croatian",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents Croatian national affiliation as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Croatian"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Nationality"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Dataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A dataset which contains examples of abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dataset"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#DatasetEntry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Class DatasetEntry represents a data record in dataset."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DatasetEntry"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Defamation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the intention to damage the reputation of an individual or group through false or harmful statements."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Defamation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Intention"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Derogation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the intention to demean, belittle, or diminish the perceived value or dignity of an individual or group."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Derogation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Intention"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Derogatory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Derogatory speech (DS), a tweet is used to attack or humiliate an individual or group in a general sense, not in a way hate speech does."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Derogatory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbuseCategory"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Desease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents disease or medical conditions as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Desease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Disability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents disability as a characteristic on the basis of which a person or group may be targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Disability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Discrimination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the intention to promote or justify discriminatory treatment of an individual or group based on protected or social characteristics."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Discrimination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Intention"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Disparagement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the intention to express contempt or disrespect toward an individual or group through belittling or offensive language."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Disparagement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Intention"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Disrespect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the intention to express a lack of respect or regard toward an individual or group through abusive language."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Disrespect"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Intention"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#DrugAddiction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents drug addiction or substance dependence as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DrugAddiction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Behaviour"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Ephebiphobia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Ephebiphobia specifically denotes the fear, dislike, or irrational hatred of youth or adolescents. It describes a distinct negative attitude towards teenagers and young adults."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ephebiphobia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Ageism"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Ethnicity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents ethnicity as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ethnicity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#FemaleGenitalia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the semantic domain of female genital anatomy, encompassing abusive lexical expressions derived from or referring to female genital concepts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "FemaleGenitalia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#LexicalSourceConcept"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#FemaleImmigrant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents female immigrants as the target of abusive speech based on their immigrant status and gender."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "FemaleImmigrant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Immigrant"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Gender",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents gender as the characteristic on the basis of which abusive speech is directed toward an individual or group."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Gender"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#GenderIdentity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents gender identity as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GenderIdentity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#German",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents German national affiliation as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "German"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Nationality"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Gerontophobia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Gerontophobia refers to the fear, dislike, or irrational hatred of elderly people or of the process of aging itself."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Gerontophobia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Ageism"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Group",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a social, demographic, cultural, religious, ethnic, or other identifiable group targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Target"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#HateConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A class which represents a conceptual category of hate or prejudice directed toward individuals or groups based on shared protected or social characteristics, such as race, ethnicity, gender, age, disability, religion, or sexual orientation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "HateConcept"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#HateSpeech",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#HateSpeech"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Any communication that disparages a person or a group on the basis of some characteristic such as race, color, ethnicity, gender, sexual orientation, nationality, religion, or other characteristics (Basile et al., 2019)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "HateSpeech"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbuseCategory"
+  }, {
+    "@id" : "_:genid54"
+  }, {
+    "@id" : "_:genid55"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Hearing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents hearing disabilities or impairments as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hearing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#PhysicalDisability"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Sight"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Height",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents height as the physical characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Height"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#PhysicalAppearance"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Homophobia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Homophobia is the fear, hatred, discomfort, prejudice, discrimination, or aversion directed towards homosexual people (gay men and lesbians) or homosexuality itself."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Homophobia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AntiLGBTQPlus"
+  }, {
+    "@id" : "_:genid56"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#HomosexualPerson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents homosexual individuals or groups as the targets of abusive speech based on their sexual orientation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "HomosexualPerson"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#SexualOrientation"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Hurt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents incitement encouraging or advocating hurted against an individual or group."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hurt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Incitement"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Immigrant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents real or perceived immigrant status as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Immigrant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Incitement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a characteristic of abusive speech that encourages, advocates, or calls for harmful actions, such as discrimination, segregation, or violence, against an individual or group."
+  }, {
+    "@language" : "en",
+    "@value" : "The aim of abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Incitement"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Insult",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the intention to insult, demean, or humiliate an individual or group through abusive language."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Insult"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Intention"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Intelligence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents intelligence as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Intelligence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#CognitiveDisability"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Intention",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the communicative purpose or intended effect of abusive speech, describing what the speaker aims to achieve through the abusive expression."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Intention"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Irony",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a rhetorical figure in which the intended meaning differs from, or is opposite to, the literal meaning of the expression."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Irony"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#RhetoricalFigure"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Jew",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents affiliation with the Jewish people as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jew"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Nationality"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents language as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Language"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#LexicalSourceConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the semantic domain of an abusive lexical expression, corresponding to the conceptual category from which the expression originates (e.g., animals, plants, professions, or diseases)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "LexicalSourceConcept"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#LexicalUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a classification of lexical entries according to their lexical realization or conventional linguistic form, such as a single word, multiword expression, idiom, catchphrase, proverb, or similar lexical unit types."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "LexicalUnit"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Lookism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Lookism refers to prejudice or discrimination based on physical appearance and especially physical appearance believed to fall short of societal notions of beauty."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Lookism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#HateConcept"
+  }, {
+    "@id" : "_:genid57"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#MaleGenitalia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the semantic domain of male genital anatomy, encompassing abusive lexical expressions derived from or referring to male genital concepts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MaleGenitalia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#LexicalSourceConcept"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Malediction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "sr",
+    "@value" : "Kletva je svečana izjava, želja ili prizivanje natprirodne sile sa namerom da se nekome ili nečemu nanese zlo, kazna ili nesreća; čin proklinjanja. Ovo odgovara engleskom značenju \"invocation of harm / malediction\". (\"Dabogda crk'o\" je primer kletve)."
+  }, {
+    "@language" : "en",
+    "@value" : "Malediction (curse) is a solemn utterance or expressed wish intended to invoke a supernatural power to inflict harm, punishment, evil, or misfortune upon someone or something."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Malediction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbuseCategory"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Man",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents men as the target of abusive speech based on their gender."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Man"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Gender"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Woman"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Metaphor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a rhetorical figure in which a word or expression is used to refer to something to which it is not literally applicable, based on an implicit comparison."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Metaphor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#RhetoricalFigure"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Misandry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Misandry is the dislike of, contempt for, ingrained prejudice against, or hatred of men and boys. It is the parallel concept to misogyny."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Misandry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Sexism"
+  }, {
+    "@id" : "_:genid58"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Misogyny",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Misogyny is the dislike of, contempt for, ingrained prejudice against, or hatred of women and girls. It is a specific form of sexism characterized by a hostile and often demeaning attitude towards women."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Misogyny"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Sexism"
+  }, {
+    "@id" : "_:genid59"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Muslim",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents Muslim affiliation as the basis for abusive speech directed toward an individual or group."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Muslim"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#ReligiousBeliefs"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Nationality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents national affiliation as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Nationality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Negative",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Sentiment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents negative sentiment associated with a dataset entry."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Negative"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Neutral",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Sentiment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "epresents neutral sentiment associated with a dataset entry."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Neutral"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#NewsArticle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a news article published by a news organization or media outlet, providing the context in which a text appears."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "NewsArticle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Context"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#NonUrbanPerson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents residence in or affiliation with a non-urban area as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "NonUrbanPerson"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Obesity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents obesity as the physical characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Obesity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Weight"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Thinness"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Occupation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Strong negative sentiments, prejudice, discrimination, and generalized negative stereotypes directed towards entire groups of individuals based solely on their chosen job."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Occupation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Offense",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the intention to offend or cause emotional distress to an individual or group through abusive language."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Offense"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Intention"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#OffensiveSpeech",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a category of abusive speech that captures offensive content aimed at insulting, offending, or violating norms of acceptable communication, without necessarily involving derogation, profanity, threat, or hate speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OffensiveSpeech"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbuseCategory"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#OldPerson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents older age as a target type in abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OldPerson"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Age"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#YoungPerson"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Opinion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents expressed opinions, views, or statements as characteristics that may serve as the basis for targeting an individual or group with abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Opinion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents an organization, institution, company, or other organized entity that is the target of abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Target"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Orthodox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents Orthodox Christian affiliation as the basis for abusive speech directed toward an individual or group."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Orthodox"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#ReligiousBeliefs"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#OtherTarget",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Target of abusive speech which is not in other defined categories"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OtherTarget"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Target"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#ParticipantRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the role assigned to a participant in an abusive communication event or interaction."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ParticipantRole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Role"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Perpetrator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a participant who produces, initiates, or carries out abusive behavior toward another individual or group."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Perpetrator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#ParticipantRole"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents an individual who is the target of abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Target"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#PhysicalAppearance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents physical appearance as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PhysicalAppearance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#PhysicalDisability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents physical disabilities affecting mobility, motor function, or other physical capabilities as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PhysicalDisability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Disability"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Plant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the semantic domain of plants, encompassing abusive lexical expressions derived from or referring to plant concepts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Plant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#LexicalSourceConcept"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#PoliticalBeliefs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents political beliefs or political affiliation as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PoliticalBeliefs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Positive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Sentiment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents positive sentiment associated with a dataset entry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Positive"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Profanity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Profanity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Profanity: This term encompasses a broader range of offensive language, including swearing, cursing, and other vulgar expressions. Profanity generally refers to language that is disrespectful or irreverent, especially towards sacred thing (Wikipedia)"
+  }, {
+    "@language" : "en",
+    "@value" : "Untargeted offensive language that is considered socially offensive due to being vulgar, obscene, or irreverent (Caselli et al., 2020, Britanicca)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Profanity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbuseCategory"
+  }, {
+    "@id" : "_:genid60"
+  }, {
+    "@id" : "_:genid62"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Prostitution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents individuals engaged in prostitution or sex work as the target of abusive speech based on their occupation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Prostitution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Occupation"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Race",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents race as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Race"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Racism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their race, ethnicity, or perceived racial or ethnic origin."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Racism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#HateConcept"
+  }, {
+    "@id" : "_:genid64"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Refugee",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents refugee status as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Refugee"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#RegionalIdentity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents regional identity or regional affiliation as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "RegionalIdentity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#ReligiousBeliefs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents religious belief as the characteristic on the basis of which abusive speech is directed toward an individual or group."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ReligiousBeliefs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#ReligiousHatred",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Religious harted refers specifically to intense dislike, animosity, or enmity directed towards individuals or groups on the basis of their religious (or non-religious) affiliation or beliefs."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ReligiousHatred"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#HateConcept"
+  }, {
+    "@id" : "_:genid65"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#RhetoricalFigure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a rhetorical device or figure of speech that may be used to express abusive or offensive meaning."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "RhetoricalFigure"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Roma",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents belonging to Roma or Romani enthnicity as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Roma"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Ethnicity"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Sarcasm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a rhetorical figure that uses irony, ridicule, or mockery to express contempt or criticism."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sarcasm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#RhetoricalFigure"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#SayingsProverbs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents sayings and proverbs that may convey abusive or offensive meaning."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SayingsProverbs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#LexicalUnit"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Segregation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents incitement encouraging the exclusion or segregation of an individual or group."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Segregation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Incitement"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#SentenceLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Sentiment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the emotional polarity or attitude expressed toward a target, entity, or situation in a textual expression."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sentiment"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Serb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents Serbian national affiliation as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Serb"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Nationality"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#SevenDeadlySins",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents behaviors or characteristics associated with the traditional seven deadly sins (e.g., pride, greed, envy, wrath, lust, gluttony, and sloth) as the basis for abusive speech directed toward an individual or group."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SevenDeadlySins"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Behaviour"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Sexism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Sexism refers to prejudice, stereotyping, or discrimination, typically against women, on the basis of sex or gender."
+  }, {
+    "@language" : "en",
+    "@value" : "The belief that one sex is superior to or more valuable than another (Britannica)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sexism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#HateConcept"
+  }, {
+    "@id" : "_:genid66"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#SexualOrientation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#SexualOrientation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents sexual orientation as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SexualOrientation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Shorty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents short stature as the physical characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Shorty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Height"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Tallness"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Sight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents visual disabilities or impairments as the characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#PhysicalDisability"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Sizeism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Prejudice or discrimination on the grounds of a person's body size (e.g., against people who are overweight or underweight)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sizeism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Lookism"
+  }, {
+    "@id" : "_:genid67"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#SkinColour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents skin colour as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SkinColour"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Slur",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A slur is a derogatory or insulting term used to express contempt or prejudice against individuals or groups, typically based on their identity or perceived membership in a particular social group."
+  }, {
+    "@language" : "sr",
+    "@value" : "Uvreda je pogrdni ili uvredljivi izraz koji se koristi za izražavanje prezira ili predrasuda prema pojedincima ili grupama, obično na osnovu njihovog identiteta ili percipirane pripadnosti određenoj društvenoj grupi."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Slur"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbuseCategory"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#SocialMedia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a social media platform or post serving as the context in which a text is created, shared, or discussed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SocialMedia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Context"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#SocialStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents social status as a characteristic that may serve as the basis for targeting an individual or group with abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SocialStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#SpeechIntrusion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents intrusive or disruptive speech behavior as the basis for abusive speech directed toward an individual or group."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SpeechIntrusion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Behaviour"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Stigmatization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Stigmatization involves negative attitudes and discriminatory behavior towards individuals based on their specific behaviors or conditions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Stigmatization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#HateConcept"
+  }, {
+    "@id" : "_:genid68"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#SwearWord",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Profanities are derogatory, offensive, and indecent words used to hold something up to ridicule (Dictionary of Matica Srpska)."
+  }, {
+    "@language" : "sr",
+    "@value" : "Psovke su pogrdne, uvredljive, nepristojne riječi kojima se što izvrgava ruglu (Rečnik Matice srpske)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SwearWord"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Profanity"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Tallness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents tall stature as the physical characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tallness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Height"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Target",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Target of abusive speech can be person, group or other."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Target"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Target types are usually combined into target group based on some common characteristics."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "TargetGroup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid69"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the characteristic or social category to which a targeted person or group belongs and on the basis of which abusive speech is directed toward them."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "TargetType"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#TextSpanLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AnnotationLevel"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Thinness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents thinness as the physical characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Thinness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Weight"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Threat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A statement of an intention to inflict pain, injury, damage, or other hostile action on someone in retribution for something done or not done."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Threat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbuseCategory"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Upstander",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a participant who intervenes in, challenges, reports, or opposes abusive behavior in support of the victim or targeted group."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Upstander"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#ParticipantRole"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Victim",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a participant or target who is subjected to abusive behavior or harmful communication."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Victim"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#ParticipantRole"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Violence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents incitement encouraging or advocating violence against an individual or group."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Violence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Incitement"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Walking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents walking style or gait as the physical characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Walking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#PhysicalAppearance"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Weight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents body weight as the physical characteristic on the basis of which an individual or group is targeted by abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Weight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#PhysicalAppearance"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#WholeTextLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AnnotationLevel"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Woman",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents women as the target of abusive speech based on their gender."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Woman"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Gender"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Wordplay",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A rhetorical technique or figure of speech characterized by the clever manipulation or exploitation of the sounds, meanings (especially polysemy or ambiguity), or form of words, typically intended to produce a humorous or witty effect."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Wordplay"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#RhetoricalFigure"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#Xenophobia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Xenophobia is the dislike of or prejudice against people from other countries or who are perceived as foreign or strange. Since nationality is often tied to a country of origin, xenophobia directly addresses animosity towards individuals based on their national background when they are perceived as \"other\" or \"foreign.\""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Xenophobia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#HateConcept"
+  }, {
+    "@id" : "_:genid70"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#YoungPerson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents younger age as a target type in abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "YoungPerson"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Age"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#abusiveBoolean",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Boolean, if 0 not abusive language, if 1 abusive language."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusivenessSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "abusiveBoolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#abusiveText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Text that is result or scope of annotation process. It could be same text as in data entry or part of that text either a sentence or text span."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveText"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "abusiveText"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#abusivenessScore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Abusiveness expressed as number between 0 and 1."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid7"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "abusivenessScore"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid10"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#analysisPerformedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an abusive speech analysis to the agent, system, or annotator that performed it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveLanguageAnalysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "analysisPerformedBy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Agent"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#annotationPerformedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an annotation to the annotator, agent, or system that created it (class Agent)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Annotation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "annotationPerformedBy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Agent"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#awareness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Intentional abusive speech has value 1, unintentional has value 0."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusivenessSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "awareness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#belongsToTargetGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Targets can belong to Target Groups for course grained annotation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "belongsToTargetGroup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetGroup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#containsEntry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A dataset contains dataset entries."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Dataset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "containsEntry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#DatasetEntry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#datasetSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A string placeholder containing a link or short description of dataset provenance (e.g. Twitter, reference to paper, link to github etc.)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Dataset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "datasetSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#disturbingContentBoolean",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates whether the content is considered disturbing."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusivenessSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "disturbingContentBoolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#entryId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "EntryId contains reference number to external source of data entry."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#DatasetEntry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "entryId"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#explicitness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Abusive speech can be explicit or implicit (vailed). Explicit abusive speech has value 1, implicit has value 0."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusivenessSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "explicitness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#expression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A typical expression or phrase associated with a lexical sense."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/lemon/ontolex#LexicalSense"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "expression"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#hasAbuseCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates abusive speech to the category of abuse it expresses."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasAbuseCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbuseCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#hasAbusiveSpeech",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an abusiveness set to abusive speech."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusivenessSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasAbusiveSpeech"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#hasAbusiveText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an abusiveness set to abusive text that contains abusive content."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusivenessSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasAbusiveText"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveText"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#hasAbusivenessAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a dataset entry to abusive language analysis perfomed on it"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#DatasetEntry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasAbusivenessAnalysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveLanguageAnalysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#hasAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Annotation activity is performed by analyzing data entries for abusive speech detection."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Annotation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasAnalysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveLanguageAnalysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#hasAnnotation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A dataset can have one or more annotations performed on the dataset."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Dataset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasAnnotation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Annotation"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#hasAnnotationLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A class defines if annotation is performed on the whole text, sentence level or text spans."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Annotation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasAnnotationLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AnnotationLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#hasHateConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates abusive speech to the hate-related concept expressed or targeted in it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasHateConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#HateConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isHateConceptOf"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#hasIntenton",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates abusive speech to the intention or communicative purpose behind it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasIntenton"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Intention"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#hasLexicalRootIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates abusive speech to the lexical source concept which it is derived from."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasLexicalRootIn"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#LexicalSourceConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#hasLexicalUnitType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates a lexical entry with its lexical unit type, indicating whether it represents a word, multiword expression, idiom, catchphrase, filler, proverb, or another lexical unit category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/lemon/ontolex#LexicalEntry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasLexicalUnitType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#LexicalUnit"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#hasNIFAnchor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an abusive text to its NIF anchor string."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveText"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasNIFAnchor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#hasSentiment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates sentiment to the dataset entry where the sentiment annotation was found or perfrmed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#DatasetEntry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasSentiment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Sentiment"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#hasTarget",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates abusive speech to the individual, group, or entity targeted by it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasTarget"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Target"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#hasTargetGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates abusive speech to the group targeted by it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasTargetGroup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetGroup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#hasTargetType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates abusive speech to the target type on the basis of which it is directed toward an individual or group."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasTargetType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#isTargetTypeOf"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#hasThreat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates whether the content contains a threat."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasThreat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#involvesRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an abusive speech instance or interaction to the participant role involved in it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "involvesRole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#ParticipantRole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#isDirectedAgainst",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates a hate concept to the target type on the basis of which an individual or group is targeted."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#HateConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isDirectedAgainst"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#isHateConceptOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates hate concept to abusive speech where it was detected."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#HateConcept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isHateConceptOf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#isTargetTypeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates terget type to abusive speech is it detected in."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#TargetType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isTargetTypeOf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#labeledTextEmbedding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The embedding vector of the texcual data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid15"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "embeddingVector"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#negativeConnotation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates whether the content has negative connotation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "negativeConnotation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#occursInContext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates fataset to the communicative, social, or textual context in which it occurs."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Dataset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "occursInContext"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Context"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#promotesAbusiveLanguage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates incitement to the abusive language or harmful expression it promotes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Incitement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "promotesAbusiveLanguage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#refersToLexicalEntry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects AbusiveText to Lexical Entry in an Ontolex Dictionary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "refersToLexicalEntry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/lemon/ontolex#LexicalEntry"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#refersToLexicalSense",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects AbusiveText to lexical sense of an entry in an Ontolex dictionary."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "refersToLexicalSense"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/lemon/ontolex#LexicalSense"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#sourceText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Data entry contains text that is subject of annotation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid18"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "sourceText"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#stereotype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates whether the lexical entry may be used in a stereotypical meaning or context"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/lemon/ontolex#LexicalSense"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "stereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#triggersIncitement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates abusive speech to incitement that it may provoke, encourage, or trigger."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "triggersIncitement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Incitement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#usesRethoricalFigure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates abusive speech to the rhetorical figure or stylistic device used in it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "usesRethoricalFigure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#RhetoricalFigure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#String",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Class for connecting AbusiveText with NIF String class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "nif:String"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "String"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/rightsHolder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#Thing",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#imports",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#Context"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/lemon/ontolex#LexicalEntry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a LexicalEntry concept reused from the Ontolex ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "LexicalEntry"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/lemon/ontolex#LexicalSense",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a LexicalSense concept reused from the Ontolex ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "LexicalSense"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Activity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/prov-o#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Activity"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ],
+  "http://www.w3.org/ns/prov#category" : [ {
+    "@value" : "starting-point"
+  } ],
+  "http://www.w3.org/ns/prov#component" : [ {
+    "@value" : "entities-activities"
+  } ],
+  "http://www.w3.org/ns/prov#constraints" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig"
+  } ],
+  "http://www.w3.org/ns/prov#definition" : [ {
+    "@value" : "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities."
+  } ],
+  "http://www.w3.org/ns/prov#dm" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Activity"
+  } ],
+  "http://www.w3.org/ns/prov#n" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Activity"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/prov-o#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Agent"
+  } ],
+  "http://www.w3.org/ns/prov#category" : [ {
+    "@value" : "starting-point"
+  } ],
+  "http://www.w3.org/ns/prov#component" : [ {
+    "@value" : "agents-responsibility"
+  } ],
+  "http://www.w3.org/ns/prov#definition" : [ {
+    "@language" : "en",
+    "@value" : "An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity. "
+  } ],
+  "http://www.w3.org/ns/prov#dm" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent"
+  } ],
+  "http://www.w3.org/ns/prov#n" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Agent"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/prov-o#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Entity"
+  } ],
+  "http://www.w3.org/ns/prov#constraints" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig"
+  } ],
+  "http://www.w3.org/ns/prov#definition" : [ {
+    "@value" : "An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Role",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/prov-o#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.w3.org/ns/prov#hadRole"
+  } ],
+  "http://www.w3.org/ns/prov#category" : [ {
+    "@value" : "qualified"
+  } ],
+  "http://www.w3.org/ns/prov#component" : [ {
+    "@value" : "agents-responsibility"
+  } ],
+  "http://www.w3.org/ns/prov#definition" : [ {
+    "@language" : "en",
+    "@value" : "A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end."
+  } ],
+  "http://www.w3.org/ns/prov#dm" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-attribute-role"
+  } ],
+  "http://www.w3.org/ns/prov#n" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-attribute"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#component",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#constraints",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#dm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#editorialNote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#generated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusiveLanguageAnalysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/prov#"
+  }, {
+    "@id" : "http://www.w3.org/ns/prov-o#"
+  }, {
+    "@id" : "http://www.w3.org/ns/prov-o-inverses#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "generated"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://llod.jerteh.rs/alo/alo.owl#AbusivenessSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#influenced"
+  } ],
+  "http://www.w3.org/ns/prov#category" : [ {
+    "@value" : "expanded"
+  } ],
+  "http://www.w3.org/ns/prov#component" : [ {
+    "@value" : "entities-activities"
+  } ],
+  "http://www.w3.org/ns/prov#editorialNote" : [ {
+    "@language" : "en",
+    "@value" : "prov:generated is one of few inverse property defined, to allow Activity-oriented assertions in addition to Entity-oriented assertions."
+  } ],
+  "http://www.w3.org/ns/prov#inverse" : [ {
+    "@value" : "wasGeneratedBy"
+  } ],
+  "http://www.w3.org/ns/prov#sharesDefinitionWith" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Generation"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#influenced",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#inverse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#n",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#sharesDefinitionWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]
