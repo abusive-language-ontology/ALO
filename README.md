@@ -25,7 +25,7 @@ paper.
   knowledge graph and its conformance with the ALO ontology vocabulary.
 - `evaluation/cross-resource-query-evaluation/` — representative
   cross-resource SPARQL queries and their corresponding results.
-- `scripts/` — scripts used for knowledge graph construction and validation.
+%- `scripts/` — scripts used for knowledge graph construction and validation.
 - `docs/` — WIDOCO-generated human-readable ontology documentation used for
   the GitHub Pages deployment.
 
