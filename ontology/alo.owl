@@ -682,6 +682,36 @@
         <NamedIndividual IRI="#AbCoSer2444"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#AbCoSer2444AbusiveSpeechToxicSpansSet1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbCoSer2444AbusiveSpeechToxicSpansSet2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbCoSer2444AbusivenessAnalysis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbCoSer2444AbusivenessSet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbCoSer2444ToxicSpan1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbCoSer2444ToxicSpan2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbCoSer2444ToxicSpansSet2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbCoSer2444WholeAbusiveText"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbCoSer2444WholeTextAnalysis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbCoSer2444WholeTextSet1"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#AbCoSerCorpus"/>
     </Declaration>
     <Declaration>
@@ -719,36 +749,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#WholeTextLevel"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#2444AbusiveSpeechToxicSpansSet1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#2444AbusiveSpeechToxicSpansSet2"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#2444AbusivenessAnalysis"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#2444AbusivenessSet"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#2444ToxicSpan1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#2444ToxicSpan2"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#2444ToxicSpansSet2"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#2444WholeAbusiveText"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#2444WholeTextAnalysis"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#2444WholeTextSet1"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="terms:abstract"/>
@@ -1762,6 +1762,46 @@
         <NamedIndividual IRI="#AbCoSer2444"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#AbusiveSpeech"/>
+        <NamedIndividual IRI="#AbCoSer2444AbusiveSpeechToxicSpansSet1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbusiveSpeech"/>
+        <NamedIndividual IRI="#AbCoSer2444AbusiveSpeechToxicSpansSet2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbusiveLanguageAnalysis"/>
+        <NamedIndividual IRI="#AbCoSer2444AbusivenessAnalysis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbusivenessSet"/>
+        <NamedIndividual IRI="#AbCoSer2444AbusivenessSet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbusiveText"/>
+        <NamedIndividual IRI="#AbCoSer2444ToxicSpan1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbusiveText"/>
+        <NamedIndividual IRI="#AbCoSer2444ToxicSpan2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbusivenessSet"/>
+        <NamedIndividual IRI="#AbCoSer2444ToxicSpansSet2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbusiveText"/>
+        <NamedIndividual IRI="#AbCoSer2444WholeAbusiveText"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbusiveLanguageAnalysis"/>
+        <NamedIndividual IRI="#AbCoSer2444WholeTextAnalysis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AbusivenessSet"/>
+        <NamedIndividual IRI="#AbCoSer2444WholeTextSet1"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Dataset"/>
         <NamedIndividual IRI="#AbCoSerCorpus"/>
     </ClassAssertion>
@@ -1809,55 +1849,75 @@
         <Class IRI="#AnnotationLevel"/>
         <NamedIndividual IRI="#WholeTextLevel"/>
     </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#AbusiveSpeech"/>
-        <NamedIndividual IRI="#2444AbusiveSpeechToxicSpansSet1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#AbusiveSpeech"/>
-        <NamedIndividual IRI="#2444AbusiveSpeechToxicSpansSet2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#AbusiveLanguageAnalysis"/>
-        <NamedIndividual IRI="#2444AbusivenessAnalysis"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#AbusivenessSet"/>
-        <NamedIndividual IRI="#2444AbusivenessSet"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#AbusiveText"/>
-        <NamedIndividual IRI="#2444ToxicSpan1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#AbusiveText"/>
-        <NamedIndividual IRI="#2444ToxicSpan2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#AbusivenessSet"/>
-        <NamedIndividual IRI="#2444ToxicSpansSet2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#AbusiveText"/>
-        <NamedIndividual IRI="#2444WholeAbusiveText"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#AbusiveLanguageAnalysis"/>
-        <NamedIndividual IRI="#2444WholeTextAnalysis"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#AbusivenessSet"/>
-        <NamedIndividual IRI="#2444WholeTextSet1"/>
-    </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAbusivenessAnalysis"/>
         <NamedIndividual IRI="#AbCoSer2444"/>
-        <NamedIndividual IRI="#2444AbusivenessAnalysis"/>
+        <NamedIndividual IRI="#AbCoSer2444AbusivenessAnalysis"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAbusivenessAnalysis"/>
         <NamedIndividual IRI="#AbCoSer2444"/>
-        <NamedIndividual IRI="#2444WholeTextAnalysis"/>
+        <NamedIndividual IRI="#AbCoSer2444WholeTextAnalysis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAbuseCategory"/>
+        <NamedIndividual IRI="#AbCoSer2444AbusiveSpeechToxicSpansSet1"/>
+        <NamedIndividual IRI="#HateSpeech"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTargetType"/>
+        <NamedIndividual IRI="#AbCoSer2444AbusiveSpeechToxicSpansSet1"/>
+        <NamedIndividual IRI="#SexualOrientation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAbuseCategory"/>
+        <NamedIndividual IRI="#AbCoSer2444AbusiveSpeechToxicSpansSet2"/>
+        <NamedIndividual IRI="#Profanity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:generated"/>
+        <NamedIndividual IRI="#AbCoSer2444AbusivenessAnalysis"/>
+        <NamedIndividual IRI="#AbCoSer2444AbusivenessSet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:generated"/>
+        <NamedIndividual IRI="#AbCoSer2444AbusivenessAnalysis"/>
+        <NamedIndividual IRI="#AbCoSer2444ToxicSpansSet2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAbusiveSpeech"/>
+        <NamedIndividual IRI="#AbCoSer2444AbusivenessSet"/>
+        <NamedIndividual IRI="#AbCoSer2444AbusiveSpeechToxicSpansSet1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAbusiveText"/>
+        <NamedIndividual IRI="#AbCoSer2444AbusivenessSet"/>
+        <NamedIndividual IRI="#AbCoSer2444ToxicSpan1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAbusiveSpeech"/>
+        <NamedIndividual IRI="#AbCoSer2444ToxicSpansSet2"/>
+        <NamedIndividual IRI="#AbCoSer2444AbusiveSpeechToxicSpansSet2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAbusiveText"/>
+        <NamedIndividual IRI="#AbCoSer2444ToxicSpansSet2"/>
+        <NamedIndividual IRI="#AbCoSer2444ToxicSpan2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="prov:generated"/>
+        <NamedIndividual IRI="#AbCoSer2444WholeTextAnalysis"/>
+        <NamedIndividual IRI="#AbCoSer2444WholeTextSet1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAbusiveSpeech"/>
+        <NamedIndividual IRI="#AbCoSer2444WholeTextSet1"/>
+        <NamedIndividual IRI="#Action"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAbusiveText"/>
+        <NamedIndividual IRI="#AbCoSer2444WholeTextSet1"/>
+        <NamedIndividual IRI="#AbCoSer2444WholeAbusiveText"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#containsEntry"/>
@@ -1867,7 +1927,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAnalysis"/>
         <NamedIndividual IRI="#AbCoSerToxicSpansAnnotation"/>
-        <NamedIndividual IRI="#2444AbusivenessAnalysis"/>
+        <NamedIndividual IRI="#AbCoSer2444AbusivenessAnalysis"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAnnotationLevel"/>
@@ -1877,7 +1937,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAnalysis"/>
         <NamedIndividual IRI="#AbCoSerWholeTextAnnotation"/>
-        <NamedIndividual IRI="#2444WholeTextAnalysis"/>
+        <NamedIndividual IRI="#AbCoSer2444WholeTextAnalysis"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAnnotationLevel"/>
@@ -1899,66 +1959,6 @@
         <NamedIndividual IRI="#Action"/>
         <NamedIndividual IRI="#SexualOrientation"/>
     </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAbuseCategory"/>
-        <NamedIndividual IRI="#2444AbusiveSpeechToxicSpansSet1"/>
-        <NamedIndividual IRI="#HateSpeech"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasTargetType"/>
-        <NamedIndividual IRI="#2444AbusiveSpeechToxicSpansSet1"/>
-        <NamedIndividual IRI="#SexualOrientation"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAbuseCategory"/>
-        <NamedIndividual IRI="#2444AbusiveSpeechToxicSpansSet2"/>
-        <NamedIndividual IRI="#Profanity"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="prov:generated"/>
-        <NamedIndividual IRI="#2444AbusivenessAnalysis"/>
-        <NamedIndividual IRI="#2444AbusivenessSet"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="prov:generated"/>
-        <NamedIndividual IRI="#2444AbusivenessAnalysis"/>
-        <NamedIndividual IRI="#2444ToxicSpansSet2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAbusiveSpeech"/>
-        <NamedIndividual IRI="#2444AbusivenessSet"/>
-        <NamedIndividual IRI="#2444AbusiveSpeechToxicSpansSet1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAbusiveText"/>
-        <NamedIndividual IRI="#2444AbusivenessSet"/>
-        <NamedIndividual IRI="#2444ToxicSpan1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAbusiveSpeech"/>
-        <NamedIndividual IRI="#2444ToxicSpansSet2"/>
-        <NamedIndividual IRI="#2444AbusiveSpeechToxicSpansSet2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAbusiveText"/>
-        <NamedIndividual IRI="#2444ToxicSpansSet2"/>
-        <NamedIndividual IRI="#2444ToxicSpan2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="prov:generated"/>
-        <NamedIndividual IRI="#2444WholeTextAnalysis"/>
-        <NamedIndividual IRI="#2444WholeTextSet1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAbusiveSpeech"/>
-        <NamedIndividual IRI="#2444WholeTextSet1"/>
-        <NamedIndividual IRI="#Action"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasAbusiveText"/>
-        <NamedIndividual IRI="#2444WholeTextSet1"/>
-        <NamedIndividual IRI="#2444WholeAbusiveText"/>
-    </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#entryId"/>
         <NamedIndividual IRI="#AbCoSer2444"/>
@@ -1971,32 +1971,32 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#abusiveBoolean"/>
-        <NamedIndividual IRI="#2444AbusivenessSet"/>
+        <NamedIndividual IRI="#AbCoSer2444AbusivenessSet"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#abusiveText"/>
-        <NamedIndividual IRI="#2444ToxicSpan1"/>
+        <NamedIndividual IRI="#AbCoSer2444ToxicSpan1"/>
         <Literal xml:lang="sr">pedere</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#abusiveText"/>
-        <NamedIndividual IRI="#2444ToxicSpan2"/>
+        <NamedIndividual IRI="#AbCoSer2444ToxicSpan2"/>
         <Literal xml:lang="sr">jebu u dupe</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#abusiveBoolean"/>
-        <NamedIndividual IRI="#2444ToxicSpansSet2"/>
+        <NamedIndividual IRI="#AbCoSer2444ToxicSpansSet2"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#abusiveText"/>
-        <NamedIndividual IRI="#2444WholeAbusiveText"/>
+        <NamedIndividual IRI="#AbCoSer2444WholeAbusiveText"/>
         <Literal xml:lang="sr">ja obozavam pedere na instagramu koji nam u bio objasne kako oni nemaju drugu drustvenu mrezu da slucajno ne pomislimo kako imaju profil na grinderu i kako se ne daj boze jebu u dupe</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#abusiveBoolean"/>
-        <NamedIndividual IRI="#2444WholeTextSet1"/>
+        <NamedIndividual IRI="#AbCoSer2444WholeTextSet1"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
@@ -2525,6 +2525,16 @@
         <DataProperty IRI="#stereotype"/>
         <Datatype abbreviatedIRI="rdf:langString"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AbCoSer2444AbusivenessAnalysis</IRI>
+        <Literal xml:lang="en">2444ToxicSpansAnalysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AbCoSer2444AbusivenessSet</IRI>
+        <Literal>2444ToxicSpansSet1</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Ableism</IRI>
@@ -4510,16 +4520,6 @@ Anti-gypsyism is recognized by international bodies like the Council of Europe, 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#usesRethoricalFigure</IRI>
         <Literal xml:lang="en">usesRethoricalFigure</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#2444AbusivenessAnalysis</IRI>
-        <Literal xml:lang="en">2444ToxicSpansAnalysis</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#2444AbusivenessSet</IRI>
-        <Literal>2444ToxicSpansSet1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

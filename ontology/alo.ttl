@@ -1844,10 +1844,80 @@ prov:Role rdf:type owl:Class ;
 ###  http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444
 alo:AbCoSer2444 rdf:type owl:NamedIndividual ,
                          alo:DatasetEntry ;
-                alo:hasAbusivenessAnalysis <http://llod.jerteh.rs/alo/alo.owl#2444AbusivenessAnalysis> ,
-                                           <http://llod.jerteh.rs/alo/alo.owl#2444WholeTextAnalysis> ;
+                alo:hasAbusivenessAnalysis alo:AbCoSer2444AbusivenessAnalysis ,
+                                           alo:AbCoSer2444WholeTextAnalysis ;
                 alo:entryId "175151" ;
                 alo:sourceText "ja obozavam pedere na instagramu koji nam u bio objasne kako oni nemaju drugu drustvenu mrezu da slucajno ne pomislimo kako imaju profil na grinderu i kako se ne daj boze jebu u dupe"@sr .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444AbusiveSpeechToxicSpansSet1
+alo:AbCoSer2444AbusiveSpeechToxicSpansSet1 rdf:type owl:NamedIndividual ,
+                                                    alo:AbusiveSpeech ;
+                                           alo:hasAbuseCategory alo:HateSpeech ;
+                                           alo:hasTargetType alo:SexualOrientation .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444AbusiveSpeechToxicSpansSet2
+alo:AbCoSer2444AbusiveSpeechToxicSpansSet2 rdf:type owl:NamedIndividual ,
+                                                    alo:AbusiveSpeech ;
+                                           alo:hasAbuseCategory alo:Profanity .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444AbusivenessAnalysis
+alo:AbCoSer2444AbusivenessAnalysis rdf:type owl:NamedIndividual ,
+                                            alo:AbusiveLanguageAnalysis ;
+                                   prov:generated alo:AbCoSer2444AbusivenessSet ,
+                                                  alo:AbCoSer2444ToxicSpansSet2 ;
+                                   rdfs:label "2444ToxicSpansAnalysis"@en .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444AbusivenessSet
+alo:AbCoSer2444AbusivenessSet rdf:type owl:NamedIndividual ,
+                                       alo:AbusivenessSet ;
+                              alo:hasAbusiveSpeech alo:AbCoSer2444AbusiveSpeechToxicSpansSet1 ;
+                              alo:hasAbusiveText alo:AbCoSer2444ToxicSpan1 ;
+                              alo:abusiveBoolean "true"^^xsd:boolean ;
+                              rdfs:label "2444ToxicSpansSet1" .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444ToxicSpan1
+alo:AbCoSer2444ToxicSpan1 rdf:type owl:NamedIndividual ,
+                                   alo:AbusiveText ;
+                          alo:abusiveText "pedere"@sr .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444ToxicSpan2
+alo:AbCoSer2444ToxicSpan2 rdf:type owl:NamedIndividual ,
+                                   alo:AbusiveText ;
+                          alo:abusiveText "jebu u dupe"@sr .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444ToxicSpansSet2
+alo:AbCoSer2444ToxicSpansSet2 rdf:type owl:NamedIndividual ,
+                                       alo:AbusivenessSet ;
+                              alo:hasAbusiveSpeech alo:AbCoSer2444AbusiveSpeechToxicSpansSet2 ;
+                              alo:hasAbusiveText alo:AbCoSer2444ToxicSpan2 ;
+                              alo:abusiveBoolean "true"^^xsd:boolean .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444WholeAbusiveText
+alo:AbCoSer2444WholeAbusiveText rdf:type owl:NamedIndividual ,
+                                         alo:AbusiveText ;
+                                alo:abusiveText "ja obozavam pedere na instagramu koji nam u bio objasne kako oni nemaju drugu drustvenu mrezu da slucajno ne pomislimo kako imaju profil na grinderu i kako se ne daj boze jebu u dupe"@sr .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444WholeTextAnalysis
+alo:AbCoSer2444WholeTextAnalysis rdf:type owl:NamedIndividual ,
+                                          alo:AbusiveLanguageAnalysis ;
+                                 prov:generated alo:AbCoSer2444WholeTextSet1 .
+
+
+###  http://llod.jerteh.rs/alo/alo.owl#AbCoSer2444WholeTextSet1
+alo:AbCoSer2444WholeTextSet1 rdf:type owl:NamedIndividual ,
+                                      alo:AbusivenessSet ;
+                             alo:hasAbusiveSpeech alo:Action ;
+                             alo:hasAbusiveText alo:AbCoSer2444WholeAbusiveText ;
+                             alo:abusiveBoolean "true"^^xsd:boolean .
 
 
 ###  http://llod.jerteh.rs/alo/alo.owl#AbCoSerCorpus
@@ -1859,14 +1929,14 @@ alo:AbCoSerCorpus rdf:type owl:NamedIndividual ,
 ###  http://llod.jerteh.rs/alo/alo.owl#AbCoSerToxicSpansAnnotation
 alo:AbCoSerToxicSpansAnnotation rdf:type owl:NamedIndividual ,
                                          alo:Annotation ;
-                                alo:hasAnalysis <http://llod.jerteh.rs/alo/alo.owl#2444AbusivenessAnalysis> ;
+                                alo:hasAnalysis alo:AbCoSer2444AbusivenessAnalysis ;
                                 alo:hasAnnotationLevel alo:TextSpanLevel .
 
 
 ###  http://llod.jerteh.rs/alo/alo.owl#AbCoSerWholeTextAnnotation
 alo:AbCoSerWholeTextAnnotation rdf:type owl:NamedIndividual ,
                                         alo:Annotation ;
-                               alo:hasAnalysis <http://llod.jerteh.rs/alo/alo.owl#2444WholeTextAnalysis> ;
+                               alo:hasAnalysis alo:AbCoSer2444WholeTextAnalysis ;
                                alo:hasAnnotationLevel alo:WholeTextLevel .
 
 
@@ -1927,76 +1997,6 @@ alo:TextSpanLevel rdf:type owl:NamedIndividual ,
 ###  http://llod.jerteh.rs/alo/alo.owl#WholeTextLevel
 alo:WholeTextLevel rdf:type owl:NamedIndividual ,
                             alo:AnnotationLevel .
-
-
-###  http://llod.jerteh.rs/alo/alo.owl#2444AbusiveSpeechToxicSpansSet1
-<http://llod.jerteh.rs/alo/alo.owl#2444AbusiveSpeechToxicSpansSet1> rdf:type owl:NamedIndividual ,
-                                                                             alo:AbusiveSpeech ;
-                                                                    alo:hasAbuseCategory alo:HateSpeech ;
-                                                                    alo:hasTargetType alo:SexualOrientation .
-
-
-###  http://llod.jerteh.rs/alo/alo.owl#2444AbusiveSpeechToxicSpansSet2
-<http://llod.jerteh.rs/alo/alo.owl#2444AbusiveSpeechToxicSpansSet2> rdf:type owl:NamedIndividual ,
-                                                                             alo:AbusiveSpeech ;
-                                                                    alo:hasAbuseCategory alo:Profanity .
-
-
-###  http://llod.jerteh.rs/alo/alo.owl#2444AbusivenessAnalysis
-<http://llod.jerteh.rs/alo/alo.owl#2444AbusivenessAnalysis> rdf:type owl:NamedIndividual ,
-                                                                     alo:AbusiveLanguageAnalysis ;
-                                                            prov:generated <http://llod.jerteh.rs/alo/alo.owl#2444AbusivenessSet> ,
-                                                                           <http://llod.jerteh.rs/alo/alo.owl#2444ToxicSpansSet2> ;
-                                                            rdfs:label "2444ToxicSpansAnalysis"@en .
-
-
-###  http://llod.jerteh.rs/alo/alo.owl#2444AbusivenessSet
-<http://llod.jerteh.rs/alo/alo.owl#2444AbusivenessSet> rdf:type owl:NamedIndividual ,
-                                                                alo:AbusivenessSet ;
-                                                       alo:hasAbusiveSpeech <http://llod.jerteh.rs/alo/alo.owl#2444AbusiveSpeechToxicSpansSet1> ;
-                                                       alo:hasAbusiveText <http://llod.jerteh.rs/alo/alo.owl#2444ToxicSpan1> ;
-                                                       alo:abusiveBoolean "true"^^xsd:boolean ;
-                                                       rdfs:label "2444ToxicSpansSet1" .
-
-
-###  http://llod.jerteh.rs/alo/alo.owl#2444ToxicSpan1
-<http://llod.jerteh.rs/alo/alo.owl#2444ToxicSpan1> rdf:type owl:NamedIndividual ,
-                                                            alo:AbusiveText ;
-                                                   alo:abusiveText "pedere"@sr .
-
-
-###  http://llod.jerteh.rs/alo/alo.owl#2444ToxicSpan2
-<http://llod.jerteh.rs/alo/alo.owl#2444ToxicSpan2> rdf:type owl:NamedIndividual ,
-                                                            alo:AbusiveText ;
-                                                   alo:abusiveText "jebu u dupe"@sr .
-
-
-###  http://llod.jerteh.rs/alo/alo.owl#2444ToxicSpansSet2
-<http://llod.jerteh.rs/alo/alo.owl#2444ToxicSpansSet2> rdf:type owl:NamedIndividual ,
-                                                                alo:AbusivenessSet ;
-                                                       alo:hasAbusiveSpeech <http://llod.jerteh.rs/alo/alo.owl#2444AbusiveSpeechToxicSpansSet2> ;
-                                                       alo:hasAbusiveText <http://llod.jerteh.rs/alo/alo.owl#2444ToxicSpan2> ;
-                                                       alo:abusiveBoolean "true"^^xsd:boolean .
-
-
-###  http://llod.jerteh.rs/alo/alo.owl#2444WholeAbusiveText
-<http://llod.jerteh.rs/alo/alo.owl#2444WholeAbusiveText> rdf:type owl:NamedIndividual ,
-                                                                  alo:AbusiveText ;
-                                                         alo:abusiveText "ja obozavam pedere na instagramu koji nam u bio objasne kako oni nemaju drugu drustvenu mrezu da slucajno ne pomislimo kako imaju profil na grinderu i kako se ne daj boze jebu u dupe"@sr .
-
-
-###  http://llod.jerteh.rs/alo/alo.owl#2444WholeTextAnalysis
-<http://llod.jerteh.rs/alo/alo.owl#2444WholeTextAnalysis> rdf:type owl:NamedIndividual ,
-                                                                   alo:AbusiveLanguageAnalysis ;
-                                                          prov:generated <http://llod.jerteh.rs/alo/alo.owl#2444WholeTextSet1> .
-
-
-###  http://llod.jerteh.rs/alo/alo.owl#2444WholeTextSet1
-<http://llod.jerteh.rs/alo/alo.owl#2444WholeTextSet1> rdf:type owl:NamedIndividual ,
-                                                               alo:AbusivenessSet ;
-                                                      alo:hasAbusiveSpeech alo:Action ;
-                                                      alo:hasAbusiveText <http://llod.jerteh.rs/alo/alo.owl#2444WholeAbusiveText> ;
-                                                      alo:abusiveBoolean "true"^^xsd:boolean .
 
 
 #################################################################
