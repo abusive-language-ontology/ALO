@@ -9,7 +9,9 @@ SELECT DISTINCT
     ?canonicalForm
     ?lexicalSense
     ?definition
+    ?originalExample
     ?originalExampleText
+    ?syntheticExample
     ?syntheticExampleText
 WHERE {
 
