@@ -1,0 +1,22 @@
+10.5281/zenodo.22877250
+cff-version: 1.2.0
+message: "If you use ALO, please cite it using the metadata below."
+
+title: "ALO: Abusive Language Ontology"
+version: "1.0.0"
+
+authors:
+  - family-names: "Jokić"
+    given-names: "Danka M."
+    orcid: "https://orcid.org/0000-0002-7621-5847"
+
+doi: "10.5281/zenodo.22877250"
+
+date-released: "2026-09-22"
+
+repository-code: "https://github.com/abusive-language-ontology/ALO"
+
+url: "https://abusive-language-ontology.github.io/ALO/"
+
+license: "CC BY 4.0"
+  
