@@ -45,7 +45,7 @@ ALO, the AloLex abusive language lexicon, the SALD manually annotated
 abusive language corpus, NIF-based representations of abusive text spans,
 and a synthetic abusive language dataset.
 
-The resulting knowledge graph comprises 506,338 RDF triples organized
+The resulting knowledge graph comprises 506,338 explicit RDF triples organized
 across four resource-specific named graphs.
 
 To avoid unrestricted redistribution of the underlying social media
