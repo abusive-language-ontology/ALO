@@ -1,4 +1,4 @@
-SPARQL 1
+SPARQL 1: consistency of ALO-based and ITS-RDF lexical-entry references
 
 
 PREFIX alo:     <http://llod.jerteh.rs/alo/alo.owl#>

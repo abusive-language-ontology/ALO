@@ -1,4 +1,4 @@
-SPARQL 1:
+SPARQL 1: Is there any unresolved NIF reference to lexical entry
 
 PREFIX nif:     <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>
 PREFIX itsrdf:  <http://www.w3.org/2005/11/its/rdf#>
@@ -19,7 +19,7 @@ WHERE {
     }
 }
 
-SPARQL 2: count of connected spans to lexical entries
+SPARQL 2: count of connected NIF spans to lexical entries
 
 PREFIX nif:    <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#>
 PREFIX itsrdf: <http://www.w3.org/2005/11/its/rdf#>
