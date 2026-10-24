@@ -3989,7 +3989,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
-  "@id" : "http://llod.jerteh.rs/alo/alo.owl#usesRethoricalFigure",
+  "@id" : "http://llod.jerteh.rs/alo/alo.owl#usesRhetoricalFigure",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -4000,7 +4000,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "usesRethoricalFigure"
+    "@value" : "usesRhetoricalFigure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://llod.jerteh.rs/alo/alo.owl#RhetoricalFigure"

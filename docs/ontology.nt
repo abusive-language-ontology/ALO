@@ -340,13 +340,13 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://llod.jerteh.rs/alo/alo.owl#triggersIncitement> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates abusive speech to incitement that it may provoke, encourage, or trigger."@en .
 <http://llod.jerteh.rs/alo/alo.owl#triggersIncitement> <http://www.w3.org/2000/01/rdf-schema#label> "triggersIncitement"@en .
 # 
-# http://llod.jerteh.rs/alo/alo.owl#usesRethoricalFigure
-<http://llod.jerteh.rs/alo/alo.owl#usesRethoricalFigure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://llod.jerteh.rs/alo/alo.owl#usesRethoricalFigure> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-<http://llod.jerteh.rs/alo/alo.owl#usesRethoricalFigure> <http://www.w3.org/2000/01/rdf-schema#domain> <http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech> .
-<http://llod.jerteh.rs/alo/alo.owl#usesRethoricalFigure> <http://www.w3.org/2000/01/rdf-schema#range> <http://llod.jerteh.rs/alo/alo.owl#RhetoricalFigure> .
-<http://llod.jerteh.rs/alo/alo.owl#usesRethoricalFigure> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates abusive speech to the rhetorical figure or stylistic device used in it."@en .
-<http://llod.jerteh.rs/alo/alo.owl#usesRethoricalFigure> <http://www.w3.org/2000/01/rdf-schema#label> "usesRethoricalFigure"@en .
+# http://llod.jerteh.rs/alo/alo.owl#usesRhetoricalFigure
+<http://llod.jerteh.rs/alo/alo.owl#usesRhetoricalFigure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://llod.jerteh.rs/alo/alo.owl#usesRhetoricalFigure> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://llod.jerteh.rs/alo/alo.owl#usesRhetoricalFigure> <http://www.w3.org/2000/01/rdf-schema#domain> <http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech> .
+<http://llod.jerteh.rs/alo/alo.owl#usesRhetoricalFigure> <http://www.w3.org/2000/01/rdf-schema#range> <http://llod.jerteh.rs/alo/alo.owl#RhetoricalFigure> .
+<http://llod.jerteh.rs/alo/alo.owl#usesRhetoricalFigure> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates abusive speech to the rhetorical figure or stylistic device used in it."@en .
+<http://llod.jerteh.rs/alo/alo.owl#usesRhetoricalFigure> <http://www.w3.org/2000/01/rdf-schema#label> "usesRhetoricalFigure"@en .
 # 
 # http://www.w3.org/2002/07/owl#topObjectProperty
 <http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech> .

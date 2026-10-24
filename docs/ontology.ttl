@@ -383,13 +383,13 @@ owl:imports rdf:type owl:AnnotationProperty .
                     rdfs:label "triggersIncitement"@en .
 
 
-###  http://llod.jerteh.rs/alo/alo.owl#usesRethoricalFigure
-:usesRethoricalFigure rdf:type owl:ObjectProperty ;
+###  http://llod.jerteh.rs/alo/alo.owl#usesRhetoricalFigure
+:usesRhetoricalFigure rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf owl:topObjectProperty ;
                       rdfs:domain :AbusiveSpeech ;
                       rdfs:range :RhetoricalFigure ;
                       rdfs:comment "Relates abusive speech to the rhetorical figure or stylistic device used in it."@en ;
-                      rdfs:label "usesRethoricalFigure"@en .
+                      rdfs:label "usesRhetoricalFigure"@en .
 
 
 ###  http://www.w3.org/2002/07/owl#topObjectProperty
