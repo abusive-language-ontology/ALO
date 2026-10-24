@@ -546,14 +546,14 @@
     
 
 
-    <!-- http://llod.jerteh.rs/alo/alo.owl#usesRethoricalFigure -->
+    <!-- http://llod.jerteh.rs/alo/alo.owl#usesRhetoricalFigure -->
 
-    <owl:ObjectProperty rdf:about="http://llod.jerteh.rs/alo/alo.owl#usesRethoricalFigure">
+    <owl:ObjectProperty rdf:about="http://llod.jerteh.rs/alo/alo.owl#usesRhetoricalFigure">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://llod.jerteh.rs/alo/alo.owl#AbusiveSpeech"/>
         <rdfs:range rdf:resource="http://llod.jerteh.rs/alo/alo.owl#RhetoricalFigure"/>
         <rdfs:comment xml:lang="en">Relates abusive speech to the rhetorical figure or stylistic device used in it.</rdfs:comment>
-        <rdfs:label xml:lang="en">usesRethoricalFigure</rdfs:label>
+        <rdfs:label xml:lang="en">usesRhetoricalFigure</rdfs:label>
     </owl:ObjectProperty>
     
 

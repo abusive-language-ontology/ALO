@@ -628,7 +628,7 @@
         <ObjectProperty IRI="#triggersIncitement"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#usesRethoricalFigure"/>
+        <ObjectProperty IRI="#usesRhetoricalFigure"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="prov:generated"/>
@@ -2068,7 +2068,7 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#usesRethoricalFigure"/>
+        <ObjectProperty IRI="#usesRhetoricalFigure"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -2206,7 +2206,7 @@
         <Class IRI="#AbusiveSpeech"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#usesRethoricalFigure"/>
+        <ObjectProperty IRI="#usesRhetoricalFigure"/>
         <Class IRI="#AbusiveSpeech"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -2334,7 +2334,7 @@
         <Class IRI="#Incitement"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#usesRethoricalFigure"/>
+        <ObjectProperty IRI="#usesRhetoricalFigure"/>
         <Class IRI="#RhetoricalFigure"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -4513,13 +4513,13 @@ Anti-gypsyism is recognized by international bodies like the Council of Europe, 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#usesRethoricalFigure</IRI>
+        <IRI>#usesRhetoricalFigure</IRI>
         <Literal xml:lang="en">Relates abusive speech to the rhetorical figure or stylistic device used in it.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#usesRethoricalFigure</IRI>
-        <Literal xml:lang="en">usesRethoricalFigure</Literal>
+        <IRI>#usesRhetoricalFigure</IRI>
+        <Literal xml:lang="en">usesRhetoricalFigure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
