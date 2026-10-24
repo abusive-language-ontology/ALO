@@ -43,18 +43,12 @@
       "preferredNamespacePrefix" : [ {
         "identifier" : "preferredNamespacePrefix",
         "language" : "en",
-        "value" : "alo",
+        "value" : "http://llod.jerteh.rs/alo/alo.owl#",
         "type" : "label"
       }, {
         "identifier" : "preferredNamespacePrefix",
         "language" : "en",
-        "value" : "http://llod.jerteh.rs/alo/alo.owl#",
-        "type" : "label"
-      } ],
-      "publisher" : [ {
-        "identifier" : "publisher",
-        "language" : "en",
-        "value" : "University of Belgrade",
+        "value" : "alo",
         "type" : "label"
       } ],
       "modified" : [ {
@@ -63,16 +57,22 @@
         "value" : "02-07-2026",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
+      "publisher" : [ {
+        "identifier" : "publisher",
         "language" : "en",
-        "value" : "1.0.0",
+        "value" : "University of Belgrade",
         "type" : "label"
       } ],
       "abstract" : [ {
         "identifier" : "abstract",
         "language" : "en",
         "value" : "The ontology of abusive speech is designed for publishing results of the abusive language annotation process in a structured form. The goal is to have a placeholder for different dataset formats, to support diverse abusive language detection methodologies and content providers.",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "1.0.0",
         "type" : "label"
       } ],
       "title" : [ {
@@ -283,7 +283,7 @@
     "id" : "21",
     "type" : "owl:Class"
   }, {
-    "id" : "289",
+    "id" : "287",
     "type" : "owl:Class"
   }, {
     "id" : "210",
@@ -406,7 +406,7 @@
     "id" : "396",
     "type" : "owl:Class"
   }, {
-    "id" : "77",
+    "id" : "72",
     "type" : "owl:Class"
   }, {
     "id" : "417",
@@ -469,10 +469,10 @@
     "id" : "302",
     "type" : "owl:Class"
   }, {
-    "id" : "111",
+    "id" : "18",
     "type" : "owl:Class"
   }, {
-    "id" : "18",
+    "id" : "111",
     "type" : "owl:Class"
   }, {
     "id" : "155",
@@ -493,10 +493,10 @@
     "id" : "257",
     "type" : "owl:Class"
   }, {
-    "id" : "217",
+    "id" : "84",
     "type" : "owl:Class"
   }, {
-    "id" : "84",
+    "id" : "217",
     "type" : "owl:Class"
   }, {
     "id" : "168",
@@ -544,7 +544,7 @@
     "id" : "261",
     "type" : "owl:Class"
   }, {
-    "id" : "72",
+    "id" : "77",
     "type" : "owl:Class"
   }, {
     "id" : "219",
@@ -911,7 +911,7 @@
   }, {
     "instances" : 0,
     "union" : [ "182", "28" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "181"
   }, {
     "iri" : "http://llod.jerteh.rs/alo/alo.owl#Ageism",
@@ -944,7 +944,7 @@
     },
     "subClasses" : [ "152" ],
     "comment" : {
-      "en" : "Profanity: This term encompasses a broader range of offensive language, including swearing, cursing, and other vulgar expressions. Profanity generally refers to language that is disrespectful or irreverent, especially towards sacred thing (Wikipedia)"
+      "en" : "Untargeted offensive language that is considered socially offensive due to being vulgar, obscene, or irreverent (Caselli et al., 2020, Britanicca)."
     },
     "id" : "153",
     "superClasses" : [ "143" ]
@@ -999,7 +999,7 @@
   }, {
     "instances" : 0,
     "union" : [ "182", "28" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "205"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -1018,7 +1018,7 @@
   }, {
     "instances" : 0,
     "union" : [ "108", "31" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "122"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -1077,12 +1077,12 @@
   }, {
     "instances" : 0,
     "union" : [ "182", "28" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "234"
   }, {
     "instances" : 0,
     "union" : [ "182", "28" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "236"
   }, {
     "iri" : "http://llod.jerteh.rs/alo/alo.owl#BisexualPerson",
@@ -1109,7 +1109,7 @@
       "en" : "Represents a social, demographic, cultural, religious, ethnic, or other identifiable group targeted by abusive speech."
     },
     "id" : "259",
-    "superClasses" : [ "77" ]
+    "superClasses" : [ "72" ]
   }, {
     "iri" : "http://llod.jerteh.rs/alo/alo.owl#NonUrbanPerson",
     "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
@@ -1443,7 +1443,7 @@
     "comment" : {
       "en" : "A rhetorical technique or figure of speech characterized by the clever manipulation or exploitation of the sounds, meanings (especially polysemy or ambiguity), or form of words, typically intended to produce a humorous or witty effect."
     },
-    "id" : "289",
+    "id" : "287",
     "superClasses" : [ "341" ]
   }, {
     "iri" : "http://llod.jerteh.rs/alo/alo.owl#NewsArticle",
@@ -1628,17 +1628,17 @@
         "value" : "qualified",
         "type" : "label"
       } ],
-      "n" : [ {
-        "identifier" : "n",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-attribute",
-        "type" : "label"
-      } ],
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov#hadRole",
         "type" : "iri"
+      } ],
+      "n" : [ {
+        "identifier" : "n",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-attribute",
+        "type" : "label"
       } ]
     },
     "label" : {
@@ -1771,7 +1771,7 @@
       "en" : "Target of abusive speech which is not in other defined categories"
     },
     "id" : "67",
-    "superClasses" : [ "77" ]
+    "superClasses" : [ "72" ]
   }, {
     "iri" : "http://llod.jerteh.rs/alo/alo.owl#AntiGerman",
     "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
@@ -1834,7 +1834,7 @@
       "IRI-based" : "RhetoricalFigure",
       "en" : "RhetoricalFigure"
     },
-    "subClasses" : [ "284", "289", "279", "280" ],
+    "subClasses" : [ "284", "287", "279", "280" ],
     "comment" : {
       "en" : "Represents a rhetorical device or figure of speech that may be used to express abusive or offensive meaning."
     },
@@ -2081,7 +2081,7 @@
     "comment" : {
       "en" : "Target of abusive speech can be person, group or other."
     },
-    "id" : "77"
+    "id" : "72"
   }, {
     "iri" : "http://www.w3.org/ns/prov#Agent",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -2155,7 +2155,7 @@
       "en" : "Represents an individual who is the target of abusive speech."
     },
     "id" : "63",
-    "superClasses" : [ "77" ]
+    "superClasses" : [ "72" ]
   }, {
     "iri" : "http://llod.jerteh.rs/alo/alo.owl#Bystander",
     "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
@@ -2404,19 +2404,6 @@
     "id" : "302",
     "superClasses" : [ "303" ]
   }, {
-    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Hurt",
-    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Hurt",
-      "en" : "Hurt"
-    },
-    "comment" : {
-      "en" : "Represents incitement encouraging or advocating hurted against an individual or group."
-    },
-    "id" : "111",
-    "superClasses" : [ "110" ]
-  }, {
     "iri" : "http://llod.jerteh.rs/alo/alo.owl#LexicalSourceConcept",
     "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
     "instances" : 0,
@@ -2429,6 +2416,19 @@
       "en" : "Represents the semantic domain of an abusive lexical expression, corresponding to the conceptual category from which the expression originates (e.g., animals, plants, professions, or diseases)."
     },
     "id" : "18"
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#Hurt",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hurt",
+      "en" : "Hurt"
+    },
+    "comment" : {
+      "en" : "Represents incitement encouraging or advocating hurted against an individual or group."
+    },
+    "id" : "111",
+    "superClasses" : [ "110" ]
   }, {
     "iri" : "http://llod.jerteh.rs/alo/alo.owl#Prostitution",
     "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
@@ -2508,19 +2508,6 @@
     "id" : "257",
     "superClasses" : [ "83" ]
   }, {
-    "iri" : "http://llod.jerteh.rs/alo/alo.owl#AntiCroatian",
-    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "AntiCroatian",
-      "en" : "AntiCroatian"
-    },
-    "comment" : {
-      "en" : "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Croatian ethnic or national identity."
-    },
-    "id" : "217",
-    "superClasses" : [ "7" ]
-  }, {
     "iri" : "http://llod.jerteh.rs/alo/alo.owl#Stigmatization",
     "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
     "instances" : 0,
@@ -2533,6 +2520,19 @@
     },
     "id" : "84",
     "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#AntiCroatian",
+    "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AntiCroatian",
+      "en" : "AntiCroatian"
+    },
+    "comment" : {
+      "en" : "Represents prejudice, discrimination, hostility, or hatred directed toward individuals or groups based on their Croatian ethnic or national identity."
+    },
+    "id" : "217",
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "http://llod.jerteh.rs/alo/alo.owl#Croatian",
     "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
@@ -2720,7 +2720,7 @@
     "comment" : {
       "en" : "Target types are usually combined into target group based on some common characteristics."
     },
-    "id" : "72"
+    "id" : "77"
   }, {
     "iri" : "http://llod.jerteh.rs/alo/alo.owl#ParticipantRole",
     "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
@@ -2905,7 +2905,7 @@
       "en" : "Represents an organization, institution, company, or other organized entity that is the target of abusive speech."
     },
     "id" : "62",
-    "superClasses" : [ "77" ]
+    "superClasses" : [ "72" ]
   }, {
     "iri" : "http://llod.jerteh.rs/alo/alo.owl#SevenDeadlySins",
     "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
@@ -3438,10 +3438,10 @@
     "id" : "286",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "287",
+    "id" : "288",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "288",
+    "id" : "289",
     "type" : "owl:disjointWith"
   }, {
     "id" : "290",
@@ -4140,7 +4140,7 @@
     },
     "domain" : "31",
     "subproperty" : [ "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "30"
   }, {
     "range" : "55",
@@ -4188,17 +4188,17 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "68"
   }, {
-    "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasTargetGroup",
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasTarget",
     "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
     "range" : "72",
     "label" : {
-      "IRI-based" : "hasTargetGroup",
-      "en" : "hasTargetGroup"
+      "IRI-based" : "hasTarget",
+      "en" : "hasTarget"
     },
     "superproperty" : [ "30" ],
     "domain" : "71",
     "comment" : {
-      "en" : "Relates abusive speech to the group targeted by it."
+      "en" : "Relates abusive speech to the individual, group, or entity targeted by it."
     },
     "attributes" : [ "object", "someValues" ],
     "id" : "70"
@@ -4208,17 +4208,17 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "73"
   }, {
-    "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasTarget",
+    "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasTargetGroup",
     "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
     "range" : "77",
     "label" : {
-      "IRI-based" : "hasTarget",
-      "en" : "hasTarget"
+      "IRI-based" : "hasTargetGroup",
+      "en" : "hasTargetGroup"
     },
     "superproperty" : [ "30" ],
     "domain" : "71",
     "comment" : {
-      "en" : "Relates abusive speech to the individual, group, or entity targeted by it."
+      "en" : "Relates abusive speech to the group targeted by it."
     },
     "attributes" : [ "object", "someValues" ],
     "id" : "76"
@@ -4475,7 +4475,7 @@
       "IRI-based" : "topDataProperty"
     },
     "domain" : "172",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "171"
   }, {
     "range" : "86",
@@ -4624,7 +4624,7 @@
       "en" : "hasTargetType"
     },
     "superproperty" : [ "30" ],
-    "domain" : "72",
+    "domain" : "77",
     "comment" : {
       "en" : "Relates abusive speech to the target type on the basis of which it is directed toward an individual or group."
     },
@@ -4638,7 +4638,7 @@
   }, {
     "iri" : "http://llod.jerteh.rs/alo/alo.owl#belongsToTargetGroup",
     "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
-    "range" : "72",
+    "range" : "77",
     "label" : {
       "IRI-based" : "belongsToTargetGroup",
       "en" : "belongsToTargetGroup"
@@ -4845,27 +4845,27 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "285"
   }, {
-    "range" : "284",
-    "domain" : "280",
+    "range" : "287",
+    "domain" : "279",
     "attributes" : [ "object", "anonymous" ],
     "id" : "286"
   }, {
     "range" : "102",
     "domain" : "264",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "287"
-  }, {
-    "range" : "289",
-    "domain" : "279",
-    "attributes" : [ "object", "anonymous" ],
     "id" : "288"
+  }, {
+    "range" : "284",
+    "domain" : "280",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "289"
   }, {
     "range" : "14",
     "domain" : "275",
     "attributes" : [ "object", "anonymous" ],
     "id" : "290"
   }, {
-    "range" : "289",
+    "range" : "287",
     "domain" : "280",
     "attributes" : [ "object", "anonymous" ],
     "id" : "291"
@@ -4875,7 +4875,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "292"
   }, {
-    "range" : "289",
+    "range" : "287",
     "domain" : "284",
     "attributes" : [ "object", "anonymous" ],
     "id" : "293"
@@ -5956,22 +5956,22 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "443"
   }, {
-    "range" : "77",
+    "range" : "72",
     "domain" : "67",
     "attributes" : [ "object", "anonymous" ],
     "id" : "444"
   }, {
-    "range" : "77",
+    "range" : "72",
     "domain" : "62",
     "attributes" : [ "object", "anonymous" ],
     "id" : "445"
   }, {
-    "range" : "77",
+    "range" : "72",
     "domain" : "259",
     "attributes" : [ "object", "anonymous" ],
     "id" : "446"
   }, {
-    "range" : "77",
+    "range" : "72",
     "domain" : "63",
     "attributes" : [ "object", "anonymous" ],
     "id" : "447"
@@ -5999,7 +5999,7 @@
     },
     "domain" : "172",
     "subproperty" : [ "452" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "451"
   }, {
     "iri" : "http://llod.jerteh.rs/alo/alo.owl#sourceText",
@@ -6067,7 +6067,7 @@
     "id" : "464"
   }, {
     "range" : "341",
-    "domain" : "289",
+    "domain" : "287",
     "attributes" : [ "object", "anonymous" ],
     "id" : "465"
   }, {
@@ -6137,7 +6137,7 @@
   }, {
     "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasTargetGroup",
     "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
-    "range" : "72",
+    "range" : "77",
     "label" : {
       "IRI-based" : "hasTargetGroup",
       "en" : "hasTargetGroup"
@@ -6261,17 +6261,17 @@
     "baseIri" : "http://www.w3.org/ns/prov",
     "range" : "108",
     "annotations" : {
-      "sharesDefinitionWith" : [ {
-        "identifier" : "sharesDefinitionWith",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Generation",
-        "type" : "iri"
-      } ],
       "inverse" : [ {
         "identifier" : "inverse",
         "language" : "undefined",
         "value" : "wasGeneratedBy",
         "type" : "label"
+      } ],
+      "sharesDefinitionWith" : [ {
+        "identifier" : "sharesDefinitionWith",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#Generation",
+        "type" : "iri"
       } ],
       "editorialNote" : [ {
         "identifier" : "editorialNote",
@@ -6288,12 +6288,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
+        "value" : "http://www.w3.org/ns/prov-o-inverses#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov-o-inverses#",
+        "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -6314,7 +6314,7 @@
     },
     "superproperty" : [ "451" ],
     "domain" : "299",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "452"
   }, {
     "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasAbusiveSpeech",
@@ -6417,7 +6417,7 @@
   }, {
     "iri" : "http://llod.jerteh.rs/alo/alo.owl#hasTarget",
     "baseIri" : "http://llod.jerteh.rs/alo/alo.owl",
-    "range" : "77",
+    "range" : "72",
     "label" : {
       "IRI-based" : "hasTarget",
       "en" : "hasTarget"
